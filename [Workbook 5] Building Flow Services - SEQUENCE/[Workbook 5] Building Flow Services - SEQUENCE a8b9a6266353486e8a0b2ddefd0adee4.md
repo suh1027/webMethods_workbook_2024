@@ -2,26 +2,29 @@
 
 ## Overview
 
-이 연습에서는 **SEQUENCE** 문을 이해하고, **Flow service**에 **Sequence service**를 사용한 **Try/Catch** 로직을 구성하는 방법을 설명합니다. 
+이 연습에서는 **SEQUENCE** 문을 이해하고, **Flow service**에 **Sequence service**를 사용한 **Try/Catch** 로직을 구성하는 방법을 설명합니다.
+(**10.x 버전 이후로 Try/Catch 문이 추가 되어 해당 로직을 사용해도 됩니다.**)
 **Exception**로 반환되는 **service**를 만들고 **Try/Catch Sequence**에서 **service**를 내장합니다. 
 
 
 ## Steps
 
-#### STEP 1. **acme.PurchaseOrder.work** 폴더에서 **riskOperation**이라는 새 **Flow service**를 만듭니다. **input**은 **fileName**이라는 **String**으로, **output**은 **String**이라는 **result**로 설정합니다. 
+#### STEP 0. IS 가 설치 된 서버 내 (Linux 기준) /webM/IS01/ 아래 test.txt 라는 파일을 생성합니다.
+
+#### STEP 1. **acme.PurchaseOrder.work** 폴더에서 **riskOperation**이라는 새 **Flow service**를 만듭니다. **input**은 **fileName** 이라는 **String Type** 필드로, **output**은 **String Type** 의 **result** 필드로 설정합니다. 
     
 ![Untitled](%5BWorkbook%205%5D%20Building%20Flow%20Services%20-%20SEQUENCE%20a8b9a6266353486e8a0b2ddefd0adee4/Untitled.png)
     
 
-#### STEP 2. **pub.file:getFile**를 **service**에 추가하고 **fileName**을 **filename**에 매핑합니다.   
+#### STEP 2. **pub.file:getFile**를 **service** 스탭에 추가하고 **fileName**을 **filename**에 그대로 매핑합니다. (*Note. 이름이 동일한 필드의 경우 자동으로 매핑됩니다.*)   
     
 ![Untitled](%5BWorkbook%205%5D%20Building%20Flow%20Services%20-%20SEQUENCE%20a8b9a6266353486e8a0b2ddefd0adee4/Untitled%201.png)
     
 ![Untitled](%5BWorkbook%205%5D%20Building%20Flow%20Services%20-%20SEQUENCE%20a8b9a6266353486e8a0b2ddefd0adee4/Untitled%202.png)
     
 
-#### STEP 3. **string:bytesToString**를 **service**에 추가합니다.
-- **body/bytes**를 **bytes**로 연결하고 **string**을 **result**로 연결합니다.
+#### STEP 3. **string:bytesToString**를 **service** 스탭에 추가합니다.
+- **body/bytes**를 **bytes**로 연결하고 **string**을 **result**로 매핑합니다.
 - **Pipeline Out**에서 다른 모든 변수를 **drop** 합니다.
     
 ![Untitled](%5BWorkbook%205%5D%20Building%20Flow%20Services%20-%20SEQUENCE%20a8b9a6266353486e8a0b2ddefd0adee4/Untitled%203.png)
@@ -29,31 +32,32 @@
 ![Untitled](%5BWorkbook%205%5D%20Building%20Flow%20Services%20-%20SEQUENCE%20a8b9a6266353486e8a0b2ddefd0adee4/Untitled%204.png)
     
 
-#### STEP 4. **Service**를 저장하고 실행합니다. **c:\notthere.txt**의 **input fileName**을 제공합니다**.** (또는 존재하지 않는 다른 파일) 어떤 **result**를 받나요? **c:\autoexec.bat** 같은 기존 파일로 **service** 해보세요. 그럼 어떤 결과를 받나요?    
+#### STEP 4. **Service**를 저장하고 실행합니다. **/notthere.txt** 라는 값으로 **input 의 fileName** 값을 입력합니다**. **(또는 존재하지 않는 다른 파일 명으로 입력) 어떤 **result**를 받는지 확인하세요.   
     
-![Untitled](%5BWorkbook%205%5D%20Building%20Flow%20Services%20-%20SEQUENCE%20a8b9a6266353486e8a0b2ddefd0adee4/Untitled%205.png)
-    
-#### STEP 5. 이제 **sequenceTryCatch**라고 불리는 **acme.PurchaseOrder.work**  새로운 **service**를 만듭니다. 파일 이름이 올바르지 않는 경우 작업을 **riskyOperation**에서 발생하는 **exception**를 파악할 수 있습니다. **fileName**이라는 서비스에 대한 단일 입력 **String**과 **result**라는 단일 출력 **String**을 정의합니다.   
+![Untitled](%5BWorkbook%205%5D%20Building%20Flow%20Services%20-%20SEQUENCE%20a8b9a6266353486e8a0b2ddefd0adee4/Untitled%205.png)  -> 캡쳐 수정
+
+---
+
+#### STEP 5. **sequenceTryCatch** 라는 이름으로 **acme.PurchaseOrder.work** 폴더 아래 새로운 **Flowservice**를 생성합니다. Input/Output 은 위 서비스와 동일하게 구성합니다.   
     
 ![Untitled](%5BWorkbook%205%5D%20Building%20Flow%20Services%20-%20SEQUENCE%20a8b9a6266353486e8a0b2ddefd0adee4/Untitled%206.png)
     
 
-#### STEP 6. **sequenceTryCatch** **service**에서 다음과 같이 세 개의 **SEQUENCE**를 추가하여 **Flow try/catch** 블록을 만듭니다. :
-- **SEQUENCE가 SUCCESS일** **때** **종료로** **설정됨**
-    - **SEQUENCE가 FAILURE일** **때** **종료** (첫 번째 **SEQUENCE** 아래에 움푹 들어간 상태인지 확인)
-    - **SEQUENCE 가 DONE일** **때** **종료** (첫 번째 **SEQUENCE** 아래에 움푹 들어간 상태인지 확인)
+#### STEP 6. **sequenceTryCatch** **service**에서 다음과 같이 세 개의 **SEQUENCE**를 추가하여 **Flow try/catch** 블록을 만듭니다.
+- SEQUENCE Exit on SUCCESS 설정 (*Note. TRY-CATCH 블록으로 SEQUENCE 내부 로직이 SUCCESS 일 때 Exit*)
+    - SEQUENCE가 Exit on FAILURE (*Note. TRY 블록으로 SEQUENCE 내부 로직이 FAILUER 일 때 Exit*)
+    - SEQUENCE 가 Exit on DONE (*Note. CATCH 블록으로 SEQUENCE 내부 로직을 모두 수행 후 (DONE) Exit*)
         
     
-    개별 **SEQUENCE**문을 만드는 동안에 **exit on**의 조건에 따라 종료를 반영하도록 **comment property**를 설정합니다. 
+    개별 **SEQUENCE**문을 만드는 동안에 **exit on**의 조건에 따라 종료를 반영하도록 **Comment** 와 **Property** 를 설정합니다. 
     
-#### STEP 7. **SEQUENCE**가 **FAILURE**일 때 종료에서, **acme.PurchaseOrder.work:riskyOperation** **service**를 추가합니다 (실패 시 시퀀스 종료).   
+#### STEP 7. **SEQUENCE**가 **FAILURE**일 때 종료 스탭 (TRY 블록) 에서, **acme.PurchaseOrder.work:riskyOperation** **service**를 추가합니다.   
     
 ![Untitled](%5BWorkbook%205%5D%20Building%20Flow%20Services%20-%20SEQUENCE%20a8b9a6266353486e8a0b2ddefd0adee4/Untitled%207.png)
     
-Pipeline 탭에서 다음과 같이 매핑합니다 :
-    
-- **fileName**에서 **fileName**으로 매핑
-- **result**에서**result**로 매핑
+- Pipeline 탭에서 다음과 같이 매핑합니다
+    - **fileName**에서 **fileName**으로 매핑
+    - **result**에서**result**로 매핑
     
 ![Untitled](%5BWorkbook%205%5D%20Building%20Flow%20Services%20-%20SEQUENCE%20a8b9a6266353486e8a0b2ddefd0adee4/Untitled%208.png)
     
@@ -62,8 +66,7 @@ Pipeline 탭에서 다음과 같이 매핑합니다 :
     
 ![Untitled](%5BWorkbook%205%5D%20Building%20Flow%20Services%20-%20SEQUENCE%20a8b9a6266353486e8a0b2ddefd0adee4/Untitled%209.png)
     
-
-Pipeline 탭에서 다음과 같이 매핑합니다:
+- Pipeline 탭에서 다음과 같이 매핑합니다
 
 #### STEP 9. **lastError/error**에서 **result**로 매핑
     
@@ -76,12 +79,12 @@ Pipeline 탭에서 다음과 같이 매핑합니다:
     
 
 #### STEP 11. **service**를 저장하고 실행합니다. **Results** 탭과 **IS Server log**를 확인합니다.
-- **실패하려면 c:\notthere.txt를** **파일로** **입력합니다. IS Server log에 error message가** **있는지** **확인합니다.**
-- **성공하려면 c:\autoexec.bat를 입력합니다. 성공적으로 실행되면 파일 내용이 Results 탭에 표시되고 IS Server log에  error message가 표시되지 않습니다.**
+- **실패하려면 /notthere.txt를** **파일로** **입력합니다. IS Server log에 error message가** **있는지** **확인합니다.**
+- **성공하려면 /webM/IS01/test.txt 를 입력합니다. 성공적으로 실행되면 파일 내용이 Results 탭에 표시되고 IS Server log에 error message가 표시되지 않습니다.**
 
 
 ## Check Your Understanding
-#### QUIZ 1. 실패할 것을 알고 있는 서비스를 사용하는 것보다 Flow에서 어떻게 Exception 를 던질 수 있습니까?
-#### QUIZ 2. riskyOperation  service 가 작동하면 어떻게 됩니까? (실패하지 않음) 
+#### QUIZ 1. 실패할 것을 알고 있는 서비스를 사용할 때 Flowservice 내부에서 어떻게 에러를 처리할 수 있습니까? (2가지 방법)
+#### QUIZ 2. riskyOperation service 가 실행 되면 어떻게 되나요?
 
 
