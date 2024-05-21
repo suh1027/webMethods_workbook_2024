@@ -9,7 +9,7 @@
 
 #### STEP 0. acme.PurchaseOrder.docs 폴더 아래 Depart 라는 명칭으로 다음과 같은 새로운 Document Type 을 생성합니다.
 
-![Untitled](%5BWorkbook%204%5D%20Building%20Flow%20Services%20-%20LOOP%20adc3c2842c234df2ba93e2fcfb87669d/Untitled.png)
+![Untitled](%5BWorkbook%204%5D%20Building%20Flow%20Services%20-%20LOOP%20adc3c2842c234df2ba93e2fcfb87669d/Untitled0.png)
 
 
 #### STEP 1. acme.PurchaseOrder.work 폴더에 loopTest라는 새로운 Flow service 을 만듭니다. 서비스의 input 은 acmeSupport.docs:Depart라는 Dept로 Document Reference(문서 참조)로 설정하고 output을 count라는 단일 String Type 으로 설정합니다.
