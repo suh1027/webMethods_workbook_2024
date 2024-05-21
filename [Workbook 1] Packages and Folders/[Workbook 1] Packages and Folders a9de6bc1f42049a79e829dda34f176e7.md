@@ -51,4 +51,6 @@ STEP 6. 동일한 방식으로 acme.PurchaseOrder folder 아래 다음 7개의 �
 **※ Check Your Understanding**
 
 QUIZ 1. 만약 folder을 잘못된 상위 폴더에 배치할 경우, 어떻게 수정 할 수 있습니까?
+
+
 QUIZ 2. 모든 package에서 일관된 folder 구조가 중요한 이유가 무엇입니까?
