@@ -2,31 +2,16 @@
 
 **※ Overview**
 
-
-
-
 이 연습에서는 향후 Workbook 에서 수행할 Integration Server 내 개발 컴포넌트들을 저장할 Package 와 Folder 를 만듭니다.
 
-
-
-
 ---
-
-
-
 
 **※ Steps**
 
 
-
-
 개발을 시작하기 위해서 개발 컴포넌트들을 보관할 Package 와 Folder 가 필요합니다.
 
-
 STEP 1. Software AG Designer 를 실행 시켜 기본 workspace 을 유지 또는 새로운 workspace 를 생성 한 다음 실행합니다
-
-
-
 
 SETP 2. Designer에서 기본 시작 화면을 표시하는 경우
 
