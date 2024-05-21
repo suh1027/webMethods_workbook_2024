@@ -36,7 +36,7 @@ Service Development 선택
 
 ![Untitled](%5BWorkbook%201%5D%20Packages%20and%20Folders%20a9de6bc1f42049a79e829dda34f176e7/Untitled%206.png)
 
-5.  동일한 방식으로 acme folder 아래 PurchaseOrder라는 folder를 만듭니다.
+5. 동일한 방식으로 acme folder 아래 PurchaseOrder라는 folder를 만듭니다.
 6. 동일한 방식으로 acme.PurchaseOrder folder 아래 다음 7개의 폴더를 만듭니다.
 
  a. **adapters**
