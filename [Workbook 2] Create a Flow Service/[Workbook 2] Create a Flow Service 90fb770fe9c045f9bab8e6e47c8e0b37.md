@@ -52,19 +52,17 @@
 이 단계를 완료하려면 하단의 pipeline 탭을 클릭하고 customWriteToLog의 editor view에서 pub.string:concat을 선택해야 합니다. 그런 다음 inMsg1 인수를 concat 서비스의 inString1 매개 변수로 Drag & Drop 하여 매핑합니다. inMsg2 및 inString2 도 동일하게 수행하여 매핑 시켜줍니다.
         
 - pub.string:toUpper
-  - value에서 inString에 매핑해야 합니다. * 동일하게 Drag & Drop 하여 필드를 매핑시킵니다. *
+  - value에서 inString에 매핑해야 합니다.
         
 ![Untitled](%5BWorkbook%202%5D%20Create%20a%20Flow%20Service%2090fb770fe9c045f9bab8e6e47c8e0b37/Untitled%209.png)
         
 - pub.flow:debugLog
-  - value에서 message에 매핑해야 합니다. * 동일하게 Drag & Drop 하여 필드를 매핑시킵니다. *
-        
-           
+  - value에서 message에 매핑해야 합니다.          
         
 ![Untitled](%5BWorkbook%202%5D%20Create%20a%20Flow%20Service%2090fb770fe9c045f9bab8e6e47c8e0b37/Untitled%2010.png)
         
 
-#### STEP 6. service를 저장하고 실행합니다. service 을 처음 실행하려면 service 메뉴에서 R **Run As** → **Run Flow Service** 를 선택해야 합니다. 
+#### STEP 6. service 를 저장하고 실행합니다. service 을 실행하려면 실행하고자 하는 서비스를 우클릭 Run As → Run Flow Service 를 선택해야 합니다. 
     
 ![Untitled](%5BWorkbook%202%5D%20Create%20a%20Flow%20Service%2090fb770fe9c045f9bab8e6e47c8e0b37/Untitled%2011.png)
     
