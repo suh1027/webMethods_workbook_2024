@@ -20,19 +20,18 @@
     
 
 #### STEP 3. 새로운 service에 다음과 같이 세 가지 서비스 단계를 추가합니다.
-- flow:debugLog
-- string:toUpper
-- string:concat
+    - flow:debugLog
+    - string:toUpper
+    - string:concat
 
-*Note.* 이러한 service 단계를 추가하는 가장 쉬운 방법은 우측 Palette 에서 invoke... 을 클릭하여 서비스를 검색하거나 Package Navigatior 에서 WmPublic package 를 찾아 해당 services 을 끌어오는 것입니다.
+    *Note. 이러한 service 단계를 추가하는 가장 쉬운 방법은 우측 Palette 에서 invoke... 을 클릭하여 서비스를 검색하거나 Package Navigatior 에서 WmPublic package 를 찾아 해당 services 을 끌어오는 것입니다.*
 
 ![Untitled](%5BWorkbook%202%5D%20Create%20a%20Flow%20Service%2090fb770fe9c045f9bab8e6e47c8e0b37/Untitled%205.png)
     
 #### STEP 4. 위로 이동 및 아래로 이동 화살표 아이콘을 사용하여 서비스 순서를 다음과 같이 바꿉니다. 
-    1. **string:concat**
-    2. **string:toUpper**
-    3. **flow:debugLog**
-        
+    - string:concat
+    - string:toUpper
+    - flow:debugLog
 ![Untitled](%5BWorkbook%202%5D%20Create%20a%20Flow%20Service%2090fb770fe9c045f9bab8e6e47c8e0b37/Untitled%206.png)
         
 (현재 비활성화된) 왼쪽 이동 아이콘과 오른쪽 이동 아이콘은 위로 이동 및 아래로 이동 아이콘 옆에 있으므로 나중에 연습할 경우 필요할 것입니다.
@@ -41,21 +40,21 @@
         
     
 #### STEP 5. 다음과 같이 services를 통해 입력한 데이터 흐름을 매핑합니다:
-    1. **pub.string:concat** 
-        1. **Msg1에서 String1에** **매핑해야** **합니다.**
-        2. **Msg2에서 String2에** **매핑해야** **합니다.**
+    - pub.string:concat
+        - Msg1에서 String1에 매핑해야 합니다.
+        - Msg2에서 String2에 매핑해야 합니다.
         
 ![Untitled](%5BWorkbook%202%5D%20Create%20a%20Flow%20Service%2090fb770fe9c045f9bab8e6e47c8e0b37/Untitled%208.png)
         
-        이 단계를 완료하려면 IDE 하단의 pipeline view 로 전환하고 customWriteToLog의  editor view에서 pub.string:concat을 선택해야 합니다. 그런 다음 inMsg1 인수를 concat 서비스의 inString1 매개 변수로 끕니다. inMsg2 및 inString2에서 동일하게 수행합니다.
+이 단계를 완료하려면 IDE 하단의 pipeline view 로 전환하고 customWriteToLog의  editor view에서 pub.string:concat을 선택해야 합니다. 그런 다음 inMsg1 인수를 concat 서비스의 inString1 매개 변수로 끕니다. inMsg2 및 inString2에서 동일하게 수행합니다.
         
-    2. **pub.string:toUpper**
-        1. **value**에서 **inString에** **매핑해야** **합니다.**
+    - pub.string:toUpper
+        - value**에서 inString에 매핑해야 합니다.
         
 ![Untitled](%5BWorkbook%202%5D%20Create%20a%20Flow%20Service%2090fb770fe9c045f9bab8e6e47c8e0b37/Untitled%209.png)
         
-    3. **pub.flow:debugLog**
-        1. **value**에서 **message에 매핑해야 합니다.**
+    - pub.flow:debugLog
+        - value에서 message에 매핑해야 합니다.
         
            
         
