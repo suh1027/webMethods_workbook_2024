@@ -2,7 +2,8 @@
 
 ## Overview
 
-이 연습에서는 두 가지 다른 **Branch** 단계를 사용하여 Flowservice 로직을 생성합니다. 하나는 변수의 내용을 테스트하는 것이고 하나는 로직과 관련된 **label** 을 사용하여 분기 처리하는 것입니다. 
+이 연습에서는 **Branch** 의 두 가지 다른 기능을 사용하여 Flowservice 로직을 생성하는 방법을 설명합니다.
+첫번 째 예제는 변수의 값을 사용한 분기을 테스트하는 것이고 두번 째는 **Evaluate labels** 기능을 사용, **label** 내 정규표현식을 사용한 분기 처리 방식입니다. 
 
 
 ## Steps
@@ -23,7 +24,7 @@
         
 ![Untitled](%5BWorkbook%203%5D%20Building%20Flow%20Services%20-%20BRANCH%2016e22a6d373042f8b7c70b086784f6ca/Untitled%202.png)
         
-- debugLog 문에 대한 Pipeline 탭에서 변수 메시지의 값을 “The value is TRUE”로 설정합니다. eye-catcher로서 함수의 값을 +++ +++로 설정합니다.
+- debugLog 문에 대한 Pipeline 탭에서 변수 메시지의 값을 “The value is TRUE”로 설정합니다. Server Log 에서 눈에 띄기 쉽게 Function 의 값은 ++++++로 설정합니다.
         
 ![Untitled](%5BWorkbook%203%5D%20Building%20Flow%20Services%20-%20BRANCH%2016e22a6d373042f8b7c70b086784f6ca/Untitled%203.png)
         
@@ -58,12 +59,12 @@
     
 *참고: **service**가 작동하지 않거나 올바른 메시지가 출력되지 않으면 **debugger**을 사용해 **service**를 실행하여 코드를 확인할 수 있습니다.*
     
-#### STEP 6. **acme.PurchaseOrder.work** 폴더에서 **String type**의 **input**값**2**개 **(account & cost)** 및 **String type**의 **output**값 **(message)**가 있는 **branch2**라는 다른 **Flow Service**를 만듭니다.
+#### STEP 6. 다른 테스트를 위해 새로운 "branch2" 라는 이름의 Flow service 를 **acme.PurchaseOrder.work** 폴더 아래 생성합니다. in/output 값은 **String type**의 **input**값 **2**개 **account, cost** 와 **String type**의 **output**값 **message** 로 구성합니다.
     
 ![Untitled](%5BWorkbook%203%5D%20Building%20Flow%20Services%20-%20BRANCH%2016e22a6d373042f8b7c70b086784f6ca/Untitled%207.png)
     
 
-#### STEP 7. 다음 섹션에서는 **BRANCH**와 **flow:debugLog** 코드를 작성하여 (**input field** 값을 기준으로) **Server Log**에 메시지를 작성합니다. 이 서비스에서는 **label**을 평가하려고 하므로 **BRANCH switch** 매개 변수를 비워두고 **Evaluate Labels**를 **True**로 설정해야 합니다. 이 서비스의 구조는 다음과 같습니다.
+#### STEP 7. **BRANCH**문과 **flow:debugLog** 를 사용하여 코드를 작성하며 (**input field** 값을 기준으로) **Server Log**에 메시지를 작성합니다. 이 서비스에서는 **label**을 평가하려고 하므로 **BRANCH switch** 매개 변수를 비워두고 **Evaluate Labels**를 **True**로 설정해야 합니다. 이 서비스의 구조는 다음과 같습니다.
 
 - **cost** 변수의 **contents**가 **>= 100**인 경우 **IS Server log**에 **Free Shipping**이라고 적습니다. *참고* : **%cost% >= 100** 는 **run-time**에 **cost**의 **contents**를 평가합니다.
 - **Account**가 **PRE0 ~ PRE9**로 시작하는 경우 **IS Server log**에 **50% Shopping Discount**라고 적습니다. *참고*: **%account% = /^PRE[0-9]/**와 같은 정규식을 사용하여 한 단계로 테스트할 수 있습니다.
