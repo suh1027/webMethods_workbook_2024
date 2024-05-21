@@ -51,7 +51,7 @@
     - SEQUENCE 가 Exit on DONE (*Note. CATCH 블록으로 SEQUENCE 내부 로직을 모두 수행 후 (DONE) Exit*)
         
     
-    개별 **SEQUENCE**문을 만드는 동안에 **exit on**의 조건에 따라 종료를 반영하도록 **Comment** 와 **Property** 를 설정합니다. 
+    개별 **SEQUENCE** 문을 만들 때 **exit on** 의 조건에 따라 종료를 반영하도록 **Comment** 와 **Property** 를 반드시 설정합니다. 
     
 #### STEP 7. **SEQUENCE**가 **FAILURE**일 때 종료 스탭 (TRY 블록) 에서, **acme.PurchaseOrder.work:riskyOperation** **service**를 추가합니다.   
     
