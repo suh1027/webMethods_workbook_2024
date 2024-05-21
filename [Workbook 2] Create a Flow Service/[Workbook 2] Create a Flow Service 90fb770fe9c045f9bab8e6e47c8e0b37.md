@@ -75,22 +75,21 @@
 ![Untitled](%5BWorkbook%202%5D%20Create%20a%20Flow%20Service%2090fb770fe9c045f9bab8e6e47c8e0b37/Untitled%2013.png)
     
 
-#### STEP 7. Designer에서 Service Result 보기를 확인한 다음 브라우저 기반 Integration Server Administration Console에서 Server log를 확인하여 service 가 성공적으로 executed 되었는지 확인합니다.
+#### STEP 7. Designer에서 Service Result 보기를 확인한 다음 브라우저 기반의 Integration Server Administration Console > Server log 탭에서 service 가 성공적으로 실행되어 로그가 남았는지 확인합니다.
     
 ![Untitled](%5BWorkbook%202%5D%20Create%20a%20Flow%20Service%2090fb770fe9c045f9bab8e6e47c8e0b37/Untitled%2014.png)
     
 ![Untitled](%5BWorkbook%202%5D%20Create%20a%20Flow%20Service%2090fb770fe9c045f9bab8e6e47c8e0b37/Untitled%2015.png)
     
 
-#### STEP 8. 이 service에 대한 개발이 완료된 대로 service 잠금을 해제합니다.
+#### STEP 8. service 에 대한 개발이 완료되었다면 Unlock 기능을 통해 서비스 Edit 권한을 해제합니다.
 
 ![Untitled](%5BWorkbook%202%5D%20Create%20a%20Flow%20Service%2090fb770fe9c045f9bab8e6e47c8e0b37/Untitled%2016.png)
 
----
 
 ##  Check Your Understanding
 
 #### QUIZ 1. Service의 순서가 중요한 이유는 무엇입니까?
 #### QUIZ 2. string:toUpper service는 몇 개의 input값을 받을 수 있습니까?
-#### QUIZ 3. server 가 명령 프롬프트를 통해 실행되지 않는 경우 server log는 어디에 표시됩니까?
-#### QUIZ 4. Upper service의 output값을 매핑할 필요가 없었던 이유는 무엇입니까?
+#### QUIZ 3. server log는 어디에 표시됩니까?
+#### QUIZ 4. Upper service의 output값을 매핑할 필요가 없는 무엇입니까?
