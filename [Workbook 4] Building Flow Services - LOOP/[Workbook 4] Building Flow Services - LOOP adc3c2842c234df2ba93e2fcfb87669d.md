@@ -18,8 +18,8 @@
 ![Untitled](%5BWorkbook%204%5D%20Building%20Flow%20Services%20-%20LOOP%20adc3c2842c234df2ba93e2fcfb87669d/Untitled.png)
     
 
-#### STEP 2. Service의 Input/Output 탭에서 Department 변수를 확장하여 Department/department/employee를 찾고 Copy를 마우스 오른쪽 버튼으로 클릭합니다.
-#### STEP 3. Service에서 LOOP 문을 추가하고 Input array 속성에서 Department/employee에 붙여넣습니다. Enter 키를 누르면 LOOP에 Input array가 표시됩니다. 
+#### STEP 2. Service의 Input/Output 탭에서 Department Document 를 확장하여 /Dept/department/employee를 찾고 클릭 후 Copy 합니다.
+#### STEP 3. Service에서 LOOP 문을 추가하고 Input array 속성에 /Dept/department/employee에 붙여 넣습니다. Enter 키를 누르면 LOOP에 Input array가 표시됩니다. 
     
 ![Untitled](%5BWorkbook%204%5D%20Building%20Flow%20Services%20-%20LOOP%20adc3c2842c234df2ba93e2fcfb87669d/Untitled%201.png)
     
@@ -34,15 +34,15 @@
 ![Untitled](%5BWorkbook%204%5D%20Building%20Flow%20Services%20-%20LOOP%20adc3c2842c234df2ba93e2fcfb87669d/Untitled%204.png)
     
 
-#### STEP 5. Pub.flow:debugLog를 MAP 단계 아래에 추가합니다(LOOP 아래에 들여쓰기 되지 않았는지 확인). Count를 message에 매핑하고 function을 설정합니다. 
+#### STEP 5. pub.flow:debugLog 를 MAP 단계 아래에 추가합니다 (LOOP 아래에 들여쓰기 되지 않았는지 확인). Count를 message 에 매핑하고 function을 ++++ 으로 설정합니다. 
     
 ![Untitled](%5BWorkbook%204%5D%20Building%20Flow%20Services%20-%20LOOP%20adc3c2842c234df2ba93e2fcfb87669d/Untitled%205.png)
     
 ![Untitled](%5BWorkbook%204%5D%20Building%20Flow%20Services%20-%20LOOP%20adc3c2842c234df2ba93e2fcfb87669d/Untitled%206.png)
     
-*참고: LOOP 문을 추가하면 $iteration이라는 새로운 변수가 Pipeline에 나타납니다. 이 변수는 루프의 반복 횟수를 추적합니다.* 
+*참고: LOOP 문을 추가하면 $iteration이라는 새로운 변수가 Pipeline에 생성됩니다. 이 변수는 루프의 반복 횟수를 나타냅니다.* 
     
-#### STEP 6. Service를 저장하고 실행합니다. Service가 input값을 요청하면 input box를 확장하고, employee를선택하고, 2명을 선택한 후 행을 추가합니다. 각 employee의 data를 입력합니다. 확인을 클릭합니다. Server log에서 2를 봐야 합니다. 
+#### STEP 6. Service를 저장하고 실행합니다. Service가 input값을 요청하면 input 필드를 확장하고, employee를 선택, 2개의 행을 추가합니다. (아이콘 중 아래 행을 추가하는 아이콘을 클릭합니다.) 각 employee의 data를 입력 후 확인을 클릭합니다. 실행 후 Server Log 를 확인합니다. 
     
 ![Untitled](%5BWorkbook%204%5D%20Building%20Flow%20Services%20-%20LOOP%20adc3c2842c234df2ba93e2fcfb87669d/Untitled%207.png)
     
