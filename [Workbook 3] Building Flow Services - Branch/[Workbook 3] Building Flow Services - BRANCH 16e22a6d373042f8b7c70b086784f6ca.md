@@ -82,3 +82,8 @@
     
 
 ---
+
+Check Your Understanding
+1.	BANCH에서 정규 표현식은 언제 유용합니까?
+2.	switch variable를 Evaluate labels=True와 결합할 수 있습니까?
+3.	Branch 문에서 labels로 사용할 수 있는 special test values은 무엇입니까? 
