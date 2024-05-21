@@ -29,10 +29,13 @@
 ![Untitled](%5BWorkbook%202%5D%20Create%20a%20Flow%20Service%2090fb770fe9c045f9bab8e6e47c8e0b37/Untitled%205.png)
     
 #### STEP 4. 위로 이동 및 아래로 이동 화살표 아이콘을 사용하여 서비스 순서를 다음과 같이 바꿉니다. 
+
+![Untitled](%5BWorkbook%202%5D%20Create%20a%20Flow%20Service%2090fb770fe9c045f9bab8e6e47c8e0b37/Untitled%206.png)
+
 - string:concat
 - string:toUpper
 - flow:debugLog
-![Untitled](%5BWorkbook%202%5D%20Create%20a%20Flow%20Service%2090fb770fe9c045f9bab8e6e47c8e0b37/Untitled%206.png)
+
         
 (현재 비활성화된) 왼쪽 이동 아이콘과 오른쪽 이동 아이콘은 위로 이동 및 아래로 이동 아이콘 옆에 있으므로 나중에 연습할 경우 필요할 것입니다.
         
@@ -42,7 +45,7 @@
 #### STEP 5. 다음과 같이 services를 통해 입력한 데이터 흐름을 매핑합니다:
 - pub.string:concat
   - Msg1에서 String1에 매핑해야 합니다.
-    - Msg2에서 String2에 매핑해야 합니다.
+  - Msg2에서 String2에 매핑해야 합니다.
         
 ![Untitled](%5BWorkbook%202%5D%20Create%20a%20Flow%20Service%2090fb770fe9c045f9bab8e6e47c8e0b37/Untitled%208.png)
         
