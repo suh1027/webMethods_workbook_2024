@@ -24,7 +24,7 @@
 - string:toUpper
 - string:concat
 
-    *Note. 이러한 service 단계를 추가하는 가장 쉬운 방법은 우측 Palette 에서 invoke... 을 클릭하여 서비스를 검색하거나 Package Navigatior 에서 WmPublic package 를 찾아 해당 services 을 끌어오는 것입니다.*
+*Note. 이러한 service 단계를 추가하는 가장 쉬운 방법은 우측 Palette 에서 invoke... 을 클릭하여 서비스를 검색하거나 Package Navigatior 에서 WmPublic package 를 찾아 해당 services 을 끌어오는 것입니다.*
 
 ![Untitled](%5BWorkbook%202%5D%20Create%20a%20Flow%20Service%2090fb770fe9c045f9bab8e6e47c8e0b37/Untitled%205.png)
     
@@ -37,7 +37,7 @@
 - flow:debugLog
 
         
-(현재 비활성화된) 왼쪽 이동 아이콘과 오른쪽 이동 아이콘은 위로 이동 및 아래로 이동 아이콘 옆에 있으므로 나중에 연습할 경우 필요할 것입니다.
+(현재 비활성화된) 왼쪽 이동 아이콘과 오른쪽 이동 아이콘은 위로 이동 및 아래로 이동 아이콘 옆에 있으므로 나중에 연습으로 사용해보시는 것을 권장드립니다.
         
 ![Untitled](%5BWorkbook%202%5D%20Create%20a%20Flow%20Service%2090fb770fe9c045f9bab8e6e47c8e0b37/Untitled%207.png)
         
@@ -49,15 +49,15 @@
         
 ![Untitled](%5BWorkbook%202%5D%20Create%20a%20Flow%20Service%2090fb770fe9c045f9bab8e6e47c8e0b37/Untitled%208.png)
         
-이 단계를 완료하려면 IDE 하단의 pipeline view 로 전환하고 customWriteToLog의  editor view에서 pub.string:concat을 선택해야 합니다. 그런 다음 inMsg1 인수를 concat 서비스의 inString1 매개 변수로 끕니다. inMsg2 및 inString2에서 동일하게 수행합니다.
+이 단계를 완료하려면 하단의 pipeline 탭을 클릭하고 customWriteToLog의 editor view에서 pub.string:concat을 선택해야 합니다. 그런 다음 inMsg1 인수를 concat 서비스의 inString1 매개 변수로 Drag & Drop 하여 매핑합니다. inMsg2 및 inString2 도 동일하게 수행하여 매핑 시켜줍니다.
         
 - pub.string:toUpper
-  - value**에서 inString에 매핑해야 합니다.
+  - value에서 inString에 매핑해야 합니다. * 동일하게 Drag & Drop 하여 필드를 매핑시킵니다. *
         
 ![Untitled](%5BWorkbook%202%5D%20Create%20a%20Flow%20Service%2090fb770fe9c045f9bab8e6e47c8e0b37/Untitled%209.png)
         
 - pub.flow:debugLog
-  - value에서 message에 매핑해야 합니다.
+  - value에서 message에 매핑해야 합니다. * 동일하게 Drag & Drop 하여 필드를 매핑시킵니다. *
         
            
         
@@ -68,13 +68,13 @@
     
 ![Untitled](%5BWorkbook%202%5D%20Create%20a%20Flow%20Service%2090fb770fe9c045f9bab8e6e47c8e0b37/Untitled%2011.png)
     
-    추가적인 방법으로 상단 도구 모음의 녹색 화살표 버튼을 누르면 됩니다:  
+추가적인 방법으로 상단 도구 모음의 녹색 화살표 버튼을 누르면 됩니다:  
     
 ![Untitled](%5BWorkbook%202%5D%20Create%20a%20Flow%20Service%2090fb770fe9c045f9bab8e6e47c8e0b37/Untitled%2012.png)
     
-    그런 다음 string 타입의 inputs 값을 입력합니다.
+그런 다음 string 타입의 inputs 값을 입력합니다.
     
-    ![Untitled](%5BWorkbook%202%5D%20Create%20a%20Flow%20Service%2090fb770fe9c045f9bab8e6e47c8e0b37/Untitled%2013.png)
+![Untitled](%5BWorkbook%202%5D%20Create%20a%20Flow%20Service%2090fb770fe9c045f9bab8e6e47c8e0b37/Untitled%2013.png)
     
 
 #### STEP 7. Designer에서 Service Result 보기를 확인한 다음 브라우저 기반 Integration Server Administration Console에서 Server log를 확인하여 service 가 성공적으로 executed 되었는지 확인합니다.
