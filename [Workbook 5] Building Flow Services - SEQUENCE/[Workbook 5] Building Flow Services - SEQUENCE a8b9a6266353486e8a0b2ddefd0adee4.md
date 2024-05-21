@@ -34,7 +34,7 @@
 ![Untitled](%5BWorkbook%205%5D%20Building%20Flow%20Services%20-%20SEQUENCE%20a8b9a6266353486e8a0b2ddefd0adee4/Untitled%204.png)
     
 
-#### STEP 4. **Service**를 저장하고 실행합니다. **/notthere.txt** 라는 값으로 **input 의 fileName** 값을 입력합니다**. **(또는 존재하지 않는 다른 파일 명으로 입력) 어떤 **result**를 받는지 확인하세요.   
+#### STEP 4. **Service**를 저장하고 실행합니다. **/notthere.txt** 라는 값으로 **input 의 fileName** 값을 입력합니다**. (또는 존재하지 않는 다른 파일 명으로 입력) 어떤 **result**를 받는지 확인하세요.   
     
 ![Untitled](%5BWorkbook%205%5D%20Building%20Flow%20Services%20-%20SEQUENCE%20a8b9a6266353486e8a0b2ddefd0adee4/Untitled%205.png)  -> 캡쳐 수정
 
