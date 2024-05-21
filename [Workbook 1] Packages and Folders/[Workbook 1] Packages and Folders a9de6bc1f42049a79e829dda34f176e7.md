@@ -38,13 +38,13 @@ Service Development 선택
 
 5. 동일한 방식으로 acme folder 아래 PurchaseOrder라는 folder를 만듭니다.
 6. 동일한 방식으로 acme.PurchaseOrder folder 아래 다음 7개의 폴더를 만듭니다.
- a. **adapters**
- b. **docs**
- c. **maps**
- d. **notifiers**
- e. **utils**
- f. **work**
- g. **ws**
+ a. **adapters**.
+ b. **docs**.
+ c. **maps**.
+ d. **notifiers**.
+ e. **utils**.
+ f. **work**.
+ g. **ws**.
 
   *참고1: 이 folder들을 모두 정확한 위치에 놓으려면 매번 **acme.PurchaseOrder folder**를  마우스 오른쪽 단추로 클릭하고 **New -> Folder**를 선택합니다. 만약 이름을 잘못 입력한 경우에는 folder 를 마우스 오른쪽 단추로 클릭하고 **Rename**을 선택합니다.*    
 
