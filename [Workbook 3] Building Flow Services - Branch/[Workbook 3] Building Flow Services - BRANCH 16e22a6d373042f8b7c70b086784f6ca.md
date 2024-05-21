@@ -32,24 +32,24 @@
 
 #### STEP 4. 다음 섹션에서 branch에 pub.flow:debugLog 문을 세 개 더 추가합니다(모두 Branch 아래로 들여쓰기하여 Branch 로직의 일부가 되도록 하십시오). 다음과 같이 각각의 Label 속성과 변수 메시지를 설정합니다.
 - flow:debugLog (**step 3**에서 이미 완료되었으며, 예시로 나열하였습니다.)
- - Label = true
- - message = The value is TRUE
- - function = +++++
+     - Label = true
+     - message = The value is TRUE
+     - function = +++++
 
 - flow:debugLog
- - Label = false
- - message = The value is FALSE
- - function = +++++
+     - Label = false
+     - message = The value is FALSE
+     - function = +++++
 
 - flow:debugLog
- - Label = $default
- - message = The value is neither TRUE or FALSE
- - function = +++++
+     - Label = $default
+     - message = The value is neither TRUE or FALSE
+     - function = +++++
  
 - flow:debugLog
- - Label = $null
- - Message = The value was not provided
- - function = +++++
+     - Label = $null
+     - Message = The value was not provided
+     - function = +++++
     
     ![Untitled](%5BWorkbook%203%5D%20Building%20Flow%20Services%20-%20BRANCH%2016e22a6d373042f8b7c70b086784f6ca/Untitled%205.png)
     
@@ -69,7 +69,7 @@
 
 #### STEP 7. 다음 섹션에서는 **BRANCH**와 **flow:debugLog** 코드를 작성하여 (**input field** 값을 기준으로) **Server Log**에 메시지를 작성합니다. 이 서비스에서는 **label**을 평가하려고 하므로 **BRANCH switch** 매개 변수를 비워두고 **Evaluate Labels**를 **True**로 설정해야 합니다. 이 서비스의 구조는 다음과 같습니다.
 
-- ****cost** 변수의 **contents**가 **>= 100**인 경우 **IS Server log**에 **Free Shipping**이라고 적습니다. *참고* : **%cost% >= 100** 는 **run-time**에 **cost**의 **contents**를 평가합니다.
+- **cost** 변수의 **contents**가 **>= 100**인 경우 **IS Server log**에 **Free Shipping**이라고 적습니다. *참고* : **%cost% >= 100** 는 **run-time**에 **cost**의 **contents**를 평가합니다.
 - **Account**가 **PRE0 ~ PRE9**로 시작하는 경우 **IS Server log**에 **50% Shopping Discount**라고 적습니다. *참고*: **%account% = /^PRE[0-9]/**와 같은 정규식을 사용하여 한 단계로 테스트할 수 있습니다.
 - 그렇지 않으면 **IS Server log**에 **Full Shipping**을 기록합니다.
         
