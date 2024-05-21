@@ -1,12 +1,12 @@
 # [Workbook 1] Packages and Folders
 
-**※ Overview**
+##※ Overview
 
 이 연습에서는 향후 Workbook 에서 수행할 Integration Server 내 개발 컴포넌트들을 저장할 Package 와 Folder 를 만듭니다.
 
 ---
 
-**※ Steps**
+##※ Steps
 
 
 개발을 시작하기 위해서 개발 컴포넌트들을 보관할 Package 와 Folder 가 필요합니다.
