@@ -2,7 +2,6 @@
 
 **※ Overview**
 
-
 이 연습에서는 향후 연습에서 수행할 Integration Server 개발 작업을 저장할 package 및 folders 를 만듭니다.
 
 ---
