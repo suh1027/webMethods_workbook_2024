@@ -52,6 +52,6 @@
     
 ## Check Your Understanding
     
-#### QUIZ 1. LOOP 아래에 MAP 단계를 들여놓지 않으면 어떻게 됩니까?
+#### QUIZ 1. LOOP 아래에 MAP 단계를 들여놓지 않으면 어떻게 되나요?
 #### QUIZ 2. Employee를 몇 명 추가할 수 있습니까? LOOP에 제한이 있습니까?
 #### QUIZ 3. Service input에 document를 작성하지 않고 document references를 사용하려는 이유는 무엇입니까?
