@@ -39,19 +39,21 @@ Service Development 선택
 5.  동일한 방식으로 acme folder 아래 PurchaseOrder라는 folder를 만듭니다.
 6. 동일한 방식으로 acme.PurchaseOrder folder 아래 다음 7개의 폴더를 만듭니다.
 
-1. **adapters**
-2. **docs**
-3. **maps**
-4. **notifiers**
-5. **utils**
-6. **work**
-7. **ws**
+ a. **adapters**
+ b. **docs**
+ c. **maps**
+ d. **notifiers**
+ e. **utils**
+ f. **work**
+ g. **ws**
 
   *참고1: 이 folder들을 모두 정확한 위치에 놓으려면 매번 **acme.PurchaseOrder folder**를  마우스 오른쪽 단추로 클릭하고 **New -> Folder**를 선택합니다. 만약 이름을 잘못 입력한 경우에는 folder 를 마우스 오른쪽 단추로 클릭하고 **Rename**을 선택합니다.*    
 
  *참고 2: **PurchaseOrder.ws** folder에서 아래와 같이 두 개의 folder을 새로 만들 수 있습니다:*
 
 ![Untitled](%5BWorkbook%201%5D%20Packages%20and%20Folders%20a9de6bc1f42049a79e829dda34f176e7/Untitled%207.png)
+
+---
 
 **※ Check Your Understanding**
 
