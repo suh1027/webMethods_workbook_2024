@@ -13,16 +13,16 @@
     
 
 #### STEP 2. inMsg1, inMsg2로 불리는 두 개의 String 타입의 input 값을 새로운 service에 추가합니다. 아래 메뉴를 보려면 Input/Output 탭을 선택하고 왼쪽에 있는 Input 패널에서 마우스 오른쪽 버튼을 클릭합니다. input Document 를 지정할 수 있는 text field과 혼동하지 마십시오.
-  
+
 ![Untitled](%5BWorkbook%202%5D%20Create%20a%20Flow%20Service%2090fb770fe9c045f9bab8e6e47c8e0b37/Untitled%202.png)  
 ![Untitled](%5BWorkbook%202%5D%20Create%20a%20Flow%20Service%2090fb770fe9c045f9bab8e6e47c8e0b37/Untitled%203.png) 
 ![Untitled](%5BWorkbook%202%5D%20Create%20a%20Flow%20Service%2090fb770fe9c045f9bab8e6e47c8e0b37/Untitled%204.png)
     
 
 #### STEP 3. 새로운 service에 다음과 같이 세 가지 서비스 단계를 추가합니다.
-    - **flow:debugLog**
-    - **string:toUpper**
-    - **string:concat**
+    - flow:debugLog
+    - string:toUpper
+    - string:concat
     
     이러한 service 단계를 추가하는 가장 쉬운 방법은 우측 Palette 에서 invoke... 을 클릭하여 서비스를 검색하거나 Package Navigatior 에서 WmPublic package 를 찾아 해당 services 을 끌어오는 것입니다.
 
