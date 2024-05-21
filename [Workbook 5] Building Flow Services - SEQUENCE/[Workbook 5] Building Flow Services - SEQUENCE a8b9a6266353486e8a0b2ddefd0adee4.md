@@ -3,7 +3,9 @@
 ## Overview
 
 이 연습에서는 **SEQUENCE** 문을 이해하고, **Flow service**에 **Sequence service**를 사용한 **Try/Catch** 로직을 구성하는 방법을 설명합니다.
+
 (**10.x 버전 이후로 Try/Catch 문이 추가 되어 해당 로직을 사용해도 됩니다.**)
+
 **Exception**로 반환되는 **service**를 만들고 **Try/Catch Sequence**에서 **service**를 내장합니다. 
 
 
