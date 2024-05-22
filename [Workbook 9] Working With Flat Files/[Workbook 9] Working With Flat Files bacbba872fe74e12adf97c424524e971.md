@@ -22,7 +22,7 @@
 **작업을 저장하세요**
     
 
-#### STEP 3. **acme.ff.schema:addressFixed**라는 새로운 **Flat File Schema**를 생성하세요. **Record length**가 **79** **Fixed Length**로 지정합니다.    
+#### STEP 3. **acme.ff.schema:addressFixed**라는 새로운 **Flat File Schema**를 생성하세요. **Record length** 값을 **79** **Fixed Length**로 지정합니다.    
     
 ![Untitled](%5BWorkbook%209%5D%20Working%20With%20Flat%20Files%20bacbba872fe74e12adf97c424524e971/Untitled%203.png)
     
