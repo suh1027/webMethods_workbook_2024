@@ -37,7 +37,7 @@
 
 ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%200b64172d40ae455893028de2efff8fe6/Untitled%206.png)
 
-    - **Result** tab 에서, **Result Field:** **insertCount** / **Result Field Type**: **java.lang.String** 설정합니다.     
+- **Result** tab 에서, **Result Field:** **insertCount** / **Result Field Type**: **java.lang.String** 설정합니다.     
 
 ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%200b64172d40ae455893028de2efff8fe6/Untitled%207.png)
 
