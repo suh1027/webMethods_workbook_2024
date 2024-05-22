@@ -73,7 +73,7 @@
 - headers/Content-type : application/json
 
 
-## Check Your Understanding**
+## Check Your Understanding
 
 #### QUIZ 1. HTTP Methods 인 GET, POST, PUT, DELETE 각 작업의 차이점은 무엇입니까?
 
