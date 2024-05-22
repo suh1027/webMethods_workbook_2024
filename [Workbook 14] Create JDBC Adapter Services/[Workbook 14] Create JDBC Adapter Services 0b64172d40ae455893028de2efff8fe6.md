@@ -105,10 +105,10 @@ Hit OK. InsertCount 가 ‘1’로 반환 되는지 확인합니다.
 #### STEP 16. **PurchaseOrder.utils** 폴더에서, **insertOrderCanonical** 라는 새로운 Flow service 를 생성하세요**.** 이름이 **OrderCanonical** **인** **acme.PurchaseOrder.docs:OrderCanonical** document 에 대한 Document Reference(참조) 가 되도록 설정하세요.
     
 - **Tree** tab 으로 전환하고 **acme.**‌**PurchaseOrder.‌adapters** 를 드래그 합니다
-        **:‌insertOrderHeader** 를 서비스에 삽입합니다. Map all the fields from
-        **OrderCanonical/Header** 의 모든 필드를 **insertOrderHeaderInput** 에서 비슷한 이름의 
-        필드로 매핑합니다. Sender/ID 및 Receiver/ID 필드에서 매핑해야 합니다!   
-       **overrideCredentials** 또는 **$connectionName** 매핑하지 마십시오.   
+  **:‌insertOrderHeader** 를 서비스에 삽입합니다. Map all the fields from
+  **OrderCanonical/Header** 의 모든 필드를 **insertOrderHeaderInput** 에서 비슷한 이름의 
+  필드로 매핑합니다. Sender/ID 및 Receiver/ID 필드에서 매핑해야 합니다!   
+  **overrideCredentials** 또는 **$connectionName** 매핑하지 마십시오.   
     
 
 ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%200b64172d40ae455893028de2efff8fe6/Untitled%2015.png)
