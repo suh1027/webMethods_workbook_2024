@@ -7,7 +7,7 @@
 
 ## Steps
 
-#### STEP 1.  **PurchaseOrder.maps 폴더에서 orderRequestToCanonical라는 Flow 서비스를** **생성하세요.** 
+#### STEP 1.  PurchaseOrder.maps 폴더에서 orderRequestToCanonical라는 Flow 서비스를 생성하세요. 
 
 #### STEP 2. **isValid라는** **문자열** **변수를** **입력값으로** **하고** **PurchaseOrder.docs.request:OrderRequest** 문서를 참조하는 ‘**OrderRequest’로** **설정하세요**.
 #### STEP 3. 출력값으로 **PurchaseOrder.docs:OrderCanonical 문서를** **참조하는 ‘OrderCanonical’로** **설정하세요**.
