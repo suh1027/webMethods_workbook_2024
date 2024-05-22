@@ -2,7 +2,7 @@
 
 ## Overview
 
-이 연습에서는 이미 생성한 sequenceTryCatch 라는 Flow 서비스를 가져와 웹 서비스 설명자(WSD)를 생성, 웹 서비스를 통해 호출 가능하게 만듭니다. 
+이 연습에서는 미리 생성한 sequenceTryCatch 라는 Flow 서비스를 웹 서비스 설명자(WSD)를 생성, 웹 서비스를 통해 호출 가능하게 만듭니다. 
 
 IS 자체를 포함, 누구든지 웹 서비스로 sequenceTryCatch를 호출할 수 있음을 증명하기 위해 공급자 WSD에서 생성 된 WSDL을 기반으로 소비자 WSD를 생성하고 자동 생성된 웹 서비스 커넥터를 사용하여 sequenceTryCatch를 호출합니다. 
 
