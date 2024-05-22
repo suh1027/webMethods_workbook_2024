@@ -13,9 +13,8 @@
 ![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled.png)
         
 - 필요하다면 서비스를 저장하세요  
-- **브라우저 탭을 열고 URL [http://‌localhost:5555/‌xmlAdd?‌a=12&‌b=23](http://xn--localhost-p69d:5555/%E2%80%8CxmlAdd?%E2%80%8Ca=12&%E2%80%8Cb=23) 를 입력하세요.
-- 인증을 요청하면 Administrator | manage를 입력하세요. 다른 부라우저 탭에서 대체 URL
-- [http://‌localhost:5555/‌invoke/‌acmeSupport.xml/‌xmlAdd‌?‌a=12‌&b=23](http://xn--localhost-p69d:5555/%E2%80%8Cinvoke/%E2%80%8CacmeSupport.xml/%E2%80%8CxmlAdd%E2%80%8C?%E2%80%8Ca=12%E2%80%8C&b=23) 를 입력하세요
+- 브라우저 탭을 열고 URL [http://‌localhost:5555/‌xmlAdd?‌a=12&‌b=23](http://xn--localhost-p69d:5555/%E2%80%8CxmlAdd?%E2%80%8Ca=12&%E2%80%8Cb=23) 를 입력하세요.
+- 인증을 요청하면 Administrator | manage를 입력하세요. 다른 부라우저 탭에서 대체 URL [http://‌localhost:5555/‌invoke/‌acmeSupport.xml/‌xmlAdd‌?‌a=12‌&b=23](http://xn--localhost-p69d:5555/%E2%80%8Cinvoke/%E2%80%8CacmeSupport.xml/%E2%80%8CxmlAdd%E2%80%8C?%E2%80%8Ca=12%E2%80%8C&b=23) 를 입력하세요
 
 두 결과를 비교하여 차이점을 확인하세요.
         
@@ -23,7 +22,7 @@
         
     
 #### STEP 2. XML 입력값을 사용하여 서비스를 호출하세요.
-- **acmeSupport.xml:xmlAdd** 서비스를 마우스 오른쪽 버튼으로 클릭하고 **Debug As** Æ **Debug Configurations** 선택하세요. 다음 대화 상자에서 IS Service를 선택하세요:   
+- **acmeSupport.xml:xmlAdd** 서비스를 마우스 오른쪽 버튼으로 클릭하고 **Debug As** > **Debug Configurations** 선택하세요. 다음 대화 상자에서 IS Service를 선택하세요:   
         
 ![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled%202.png)
         
