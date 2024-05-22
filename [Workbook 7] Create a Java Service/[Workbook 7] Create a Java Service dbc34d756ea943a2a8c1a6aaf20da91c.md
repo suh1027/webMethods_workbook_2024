@@ -24,7 +24,7 @@ webMethods 내 Built-in 된 **pub.string** 폴더 아래는 이와 같은 서비
     
 
 #### STEP 3. 샘플 입력값으로 서비스를 저장하고 실행하세요. 반환된 값이 올바른지 확인하세요. 
-
+![Untitled](%5BWorkbook%207%5D%20Create%20a%20Java%20Service%20dbc34d756ea943a2a8c1a6aaf20da91c/Untitled%208.png)
 
 ## Check Your Understanding
 
