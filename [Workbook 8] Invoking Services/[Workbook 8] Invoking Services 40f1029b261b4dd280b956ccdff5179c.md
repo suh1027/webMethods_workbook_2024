@@ -32,15 +32,15 @@
         
 ![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled%204.png)
         
-        - 이제 **Input** 탭을 선택하고 **Use XML** 라디오 버튼을 선택하세요. **Browse를 클릭하여** XML File **...\‌IntegrationServer\‌packages\‌AcmeSupport\‌pub\‌addInput.xml**로 이동하고 ‘Open’을 누르세요. 그런 다음 다시 ‘Apply’를 클릭하세요.     
+- 이제 **Input** 탭을 선택하고 **Use XML** 라디오 버튼을 선택하세요. **Browse를 클릭하여** XML File **...\‌IntegrationServer\‌packages\‌AcmeSupport\‌pub\‌addInput.xml**로 이동하고 ‘Open’을 누르세요. 그런 다음 다시 ‘Apply’를 클릭하세요.     
         
 ![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled%205.png)
         
-        - 이제 **Common** 탭을 선택하고 **Display in favorites menu** 확인란을 선택하세요. 다시 **Apply**를 클릭하고 **Debug**를 누르세요   
+- 이제 **Common** 탭을 선택하고 **Display in favorites menu** 확인란을 선택하세요. 다시 **Apply**를 클릭하고 **Debug**를 누르세요   
         
 ![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled%206.png)
         
-        - Perspective switch에 관한 다이얼로그가 나타나면 Yes를 클릭하여 확인하세요. 선택적으로 Remember my decision확인란을 선택하여 이 다이얼로그의 추가적인 표시를 억제할 수 있습니다.
+- Perspective switch에 관한 다이얼로그가 나타나면 Yes를 클릭하여 확인하세요. 선택적으로 Remember my decision확인란을 선택하여 이 다이얼로그의 추가적인 표시를 억제할 수 있습니다.
         
 ![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled%207.png)
         
@@ -66,19 +66,19 @@
         
            
         
-        그리고 **Edit Email Client Configuration을 선택하세요:**   
+그리고 **Edit Email Client Configuration을 선택하세요:**   
         
 ![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled%2013.png)
         
-        **비밀번호로manage를 입력하세요**. 서비스가 처리되기를 기다리는 시간을 줄이기 위해 구성된 값인**Time Interval (seconds)**매개변수를 300에서 **10**초로 변경하세요. 그리고
+**비밀번호로manage를 입력하세요**. 서비스가 처리되기를 기다리는 시간을 줄이기 위해 구성된 값인**Time Interval (seconds)**매개변수를 300에서 **10**초로 변경하세요. 그리고
         
-        **Save Changes**를 클릭하세요.
+**Save Changes**를 클릭하세요.
         
-        **팁: 연습이 끝난 후에는 이 값을 300으로 다시 변경하는 것을 잊지 마세요.**
+**팁: 연습이 끝난 후에는 이 값을 300으로 다시 변경하는 것을 잊지 마세요.**
         
 ![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled%2014.png)
         
-        그런 다음 메일 포트를 활성화해야 합니다. 이를  위해 Enabled 열의 No를 클릭하여 이 포트를 활성화하세요. 화면 상단에 성공 메시지를 볼 수 있어야 합니다:
+그런 다음 메일 포트를 활성화해야 합니다. 이를  위해 Enabled 열의 No를 클릭하여 이 포트를 활성화하세요. 화면 상단에 성공 메시지를 볼 수 있어야 합니다:
         
 ![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled%2015.png)
         
