@@ -69,27 +69,27 @@
 
 #### STEP 14. 메인 Flow service 인 acme.PurchaseOrder.work.sequenceTryCatch를 열고 새 Error 문서를 사용하도록 수정합니다.
     
-    ![Untitled](%5BWorkbook%2010%5D%20Web%20Service%20Descriptors%20and%20Custom%20F%20b7ce5de1fb3a4023af5f789ba04b2676/Untitled%2013.png)
+![Untitled](%5BWorkbook%2010%5D%20Web%20Service%20Descriptors%20and%20Custom%20F%20b7ce5de1fb3a4023af5f789ba04b2676/Untitled%2013.png)
     
-    1. 서비스에서 Tree 탭을 엽니다. 서비스를 확장하고 pub.flow:getLastError 를 선택합니다.
-    2. Pipeline 탭을 클릭하고 Pipeline Out 섹션을 선택한 다음 해당 섹션을 마우스 오른쪽 단추로 클릭하고 문서 참조 삽입을 선택한 다음 acme.PurchaseOrder.docs:Error 를 선택하여 생성 후 이름을 Error로 지정합니다. 
-    3. Service Out의 마지막 Error/Error 변수를 Error 문서 참조의 Reason 변수에 매핑 합니다. 수정 내용을 저장합니다.
+1. 서비스에서 Tree 탭을 엽니다. 서비스를 확장하고 pub.flow:getLastError 를 선택합니다.
+2. Pipeline 탭을 클릭하고 Pipeline Out 섹션을 선택한 다음 해당 섹션을 마우스 오른쪽 단추로 클릭하고 문서 참조 삽입을 선택한 다음 acme.PurchaseOrder.docs:Error 를 선택하여 생성 후 이름을 Error로 지정합니다. 
+3. Service Out의 마지막 Error/Error 변수를 Error 문서 참조의 Reason 변수에 매핑 합니다. 수정 내용을 저장합니다.
 
 #### STEP 15. Webservice Descriptor 인 acme.PurchaseOrder.ws.provider.sequenceTryCatch 를 클릭하여 sequenceTryCatch 작업을 확장한 후 응답 문서를 확장합니다. 
     
-    ![Untitled](%5BWorkbook%2010%5D%20Web%20Service%20Descriptors%20and%20Custom%20F%20b7ce5de1fb3a4023af5f789ba04b2676/Untitled%2014.png)
+![Untitled](%5BWorkbook%2010%5D%20Web%20Service%20Descriptors%20and%20Custom%20F%20b7ce5de1fb3a4023af5f789ba04b2676/Untitled%2014.png)
     
-    1. 상단의 Add Header or Faullt 를 클릭합니다.
+1. 상단의 Add Header or Faullt 를 클릭합니다.
         
-        ![Untitled](%5BWorkbook%2010%5D%20Web%20Service%20Descriptors%20and%20Custom%20F%20b7ce5de1fb3a4023af5f789ba04b2676/Untitled%2015.png)
+![Untitled](%5BWorkbook%2010%5D%20Web%20Service%20Descriptors%20and%20Custom%20F%20b7ce5de1fb3a4023af5f789ba04b2676/Untitled%2015.png)
         
-    2. 팝업 대화 상자에서 acme.PurchaseOrder.docs:Error Document Type 을 선택한 후 확인 단추를 클릭합니다. sequenceTryCatchProvider는 다음과 같이 나타납니다.
+2. 팝업 대화 상자에서 acme.PurchaseOrder.docs:Error Document Type 을 선택한 후 확인 단추를 클릭합니다. sequenceTryCatchProvider는 다음과 같이 나타납니다.
         
-        ![Untitled](%5BWorkbook%2010%5D%20Web%20Service%20Descriptors%20and%20Custom%20F%20b7ce5de1fb3a4023af5f789ba04b2676/Untitled%2016.png)
+![Untitled](%5BWorkbook%2010%5D%20Web%20Service%20Descriptors%20and%20Custom%20F%20b7ce5de1fb3a4023af5f789ba04b2676/Untitled%2016.png)
         
-    3. 변경 내용을 저장합니다.
+3. 변경 내용을 저장합니다.
         
-        ![Untitled](%5BWorkbook%2010%5D%20Web%20Service%20Descriptors%20and%20Custom%20F%20b7ce5de1fb3a4023af5f789ba04b2676/Untitled%2017.png)
+![Untitled](%5BWorkbook%2010%5D%20Web%20Service%20Descriptors%20and%20Custom%20F%20b7ce5de1fb3a4023af5f789ba04b2676/Untitled%2017.png)
         
 
 #### STEP 16. 이제 Consumer WSD 를 재 생성하여 Provider WSD에 대한 변경 사항을 반영해야 합니다. Package Navigator 보기에서 consumer WSD를 마우스 오른쪽 버튼으로 클릭하고 웹 서비스 커넥터 새로 고침을 선택합니다
@@ -100,7 +100,7 @@
 
 #### STEP 17. 위의 단계에 따라 재 생성된 consumer Connector Service 를 실행하되 fileName에는 /nofiles.txt를 입력합니다. 
     
-    ![Untitled](%5BWorkbook%2010%5D%20Web%20Service%20Descriptors%20and%20Custom%20F%20b7ce5de1fb3a4023af5f789ba04b2676/Untitled%2020.png)
+![Untitled](%5BWorkbook%2010%5D%20Web%20Service%20Descriptors%20and%20Custom%20F%20b7ce5de1fb3a4023af5f789ba04b2676/Untitled%2020.png)
     
 
 
