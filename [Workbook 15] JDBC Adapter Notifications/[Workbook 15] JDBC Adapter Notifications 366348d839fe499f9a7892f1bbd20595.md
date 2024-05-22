@@ -68,9 +68,7 @@ JDBC Adapter type이 되도록 저장하고, InsertNotification template 선택,
 
 ![Untitled](%5BWorkbook%2015%5D%20JDBC%20Adapter%20Notifications%20366348d839fe499f9a7892f1bbd20595/Untitled%208.png)
 
-#### STEP 7. IS Administration Console 을 사용하여 선택
-
-:**Adapters** → **JDBC Adapter → Polling Notifications**
+#### STEP 7. IS Administration Console 을 사용하여 선택 :**Adapters** → **JDBC Adapter → Polling Notifications**
 
 Polling Notification 을 Disable 합니다.   
 
