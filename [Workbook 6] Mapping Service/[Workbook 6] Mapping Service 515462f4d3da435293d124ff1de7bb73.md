@@ -7,8 +7,6 @@
 
 ## Steps
 
-#### STEP 0. 
-
 #### STEP 1. PurchaseOrder.maps 폴더에서 orderRequestToCanonical라는 Flow 서비스를 생성하세요. 
 
 #### STEP 2. Input 값은 **isValid라는** **문자열** 변수와  **PurchaseOrder.docs.request:OrderRequest** 문서를 참조하여 ‘**OrderRequest’라는 명칭으로** **설정하세요**.
