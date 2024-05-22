@@ -25,7 +25,7 @@
 
 ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%200b64172d40ae455893028de2efff8fe6/Untitled%203.png)
 
-    - **INSERT**tab 에서, 먼저 **Insert** 행 버튼을 한번 누릅니다**.**
+- **INSERT**tab 에서, 먼저 **Insert** 행 버튼을 한번 누릅니다**.**
 
 다음 **Fill in all rows to the Table** 버튼을 클릭 합니다.
     
