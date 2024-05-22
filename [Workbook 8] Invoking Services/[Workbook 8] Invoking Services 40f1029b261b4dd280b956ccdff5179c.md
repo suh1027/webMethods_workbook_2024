@@ -18,8 +18,7 @@
 
 두 결과를 비교하여 차이점을 확인하세요.
         
-![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled%201.png)
-        
+![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled%201.png)    
     
 #### STEP 2. XML 입력값을 사용하여 서비스를 호출하세요.
 - **acmeSupport.xml:xmlAdd** 서비스를 마우스 오른쪽 버튼으로 클릭하고 **Debug As** > **Debug Configurations** 선택하세요. 다음 대화 상자에서 IS Service를 선택하세요:   
@@ -63,16 +62,14 @@
 - 기본적으로 비활성화된 Integration Server의 이메일 포트를 활성화하세요. 이를 위해 Integration Server 관리 콘솔을 열고 **Security** Æ **Ports** 메뉴로 이동하세요. **integration-server@company.com@localhost** 항목을 클릭하세요.   
         
 ![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled%2012.png)
-        
+
            
         
 그리고 **Edit Email Client Configuration을 선택하세요:**   
         
 ![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled%2013.png)
         
-**비밀번호로manage를 입력하세요**. 서비스가 처리되기를 기다리는 시간을 줄이기 위해 구성된 값인**Time Interval (seconds)**매개변수를 300에서 **10**초로 변경하세요. 그리고
-        
-**Save Changes**를 클릭하세요.
+**비밀번호로manage를 입력하세요**. 서비스가 처리되기를 기다리는 시간을 줄이기 위해 구성된 값인**Time Interval (seconds)**매개변수를 300에서 **10**초로 변경하세요. 그리고 **Save Changes**를 클릭하세요.
         
 **팁: 연습이 끝난 후에는 이 값을 300으로 다시 변경하는 것을 잊지 마세요.**
         
@@ -90,15 +87,15 @@
         
 ![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled%2018.png)
         
-        메일 작성을 완료하면 **Send**버튼을 눌러 전송하세요.
+메일 작성을 완료하면 **Send**버튼을 눌러 전송하세요.
         
-        참고: 가상 머신에서는 메일 서비스와 Thunderbird가 모든 메일을 로컬로 처리하도록 설정되어 있습니다. 외부 메일 시스템과의 연결이 없습니다. Thunderbird 와 hMail Server ‘company.com’ 도메인을 제공하도록 설정되어 있습니다. 구성 설정을 변경하지 마세요.
+참고: 가상 머신에서는 메일 서비스와 Thunderbird가 모든 메일을 로컬로 처리하도록 설정되어 있습니다. 외부 메일 시스템과의 연결이 없습니다. Thunderbird 와 hMail Server ‘company.com’ 도메인을 제공하도록 설정되어 있습니다. 구성 설정을 변경하지 마세요.
         
-        메일을 보낸 후 약 15초 동안 기다린 다음 Thunderbird에서 **Get Mail**
+메일을 보낸 후 약 15초 동안 기다린 다음 Thunderbird에서 **Get Mail**
         
 ![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled%2019.png)
         
-        버튼을 클릭하면 Integration Server로부터 메시지 처리 결과가 포함된 답장을 받게 됩니다.
+버튼을 클릭하면 Integration Server로부터 메시지 처리 결과가 포함된 답장을 받게 됩니다.
         
 ![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled%2020.png)
         
@@ -229,25 +226,25 @@
         
 ![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled%2029.png)
         
-         Dialog 안에서 **xmlAdd** 를 프로젝트 이름으로 입력하세요. 기본값을 변경하지 말고 **Finish 버튼**을 누르십시오. Java perspective 변경을 허용하세요.
+Dialog 안에서 **xmlAdd** 를 프로젝트 이름으로 입력하세요. 기본값을 변경하지 말고 **Finish 버튼**을 누르십시오. Java perspective 변경을 허용하세요.
         
 - 이 프로젝트는 두 개의 추가적인 외부의 Jar 파일이 필요합니다. 추가하려면, project node () 를 우-클릭하고 pop up 버튼 아래에 있는 **Properties** 항목을 선택하세요. 나타나는 dialog 에서 **Java Build Path** 를 선택하고**Libraries** tab 을 클릭하세요. 이 창에서 **Add external Jars** 를 선택하고 libraries **...\SoftwareAG\common\lib\wm-isclient.jar** 및 **...\SoftwareAG\common\lib\ext\mail.jar** 를 추가하세요. 완료가 되면, 창은 다음과 같습니다:   
         
 ![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled%2030.png)
         
-            **OK** 버튼을 클릭하여 dialog 를 닫습니다.   
+**OK** 버튼을 클릭하여 dialog 를 닫습니다.   
         
 - 이제 첫 번째 단계에서 생성된 Java 소스를 가져옵니다. 그렇게 하려면, right-click the **xmlAdd** node 를 한 번 더 추가하고 menu  에서 **Import** option  옵션을 선택합니다. 선택: **General** Æ **File System** 후 click **Next**. 다음 창에서 directory 로 **C:\temp** 를 찾아보고 **xmlAdd.java** 파일을 선택합니다. **Into Folder** field 에 **xmlAdd\src** 를 입력합니다. Dialog 는 다음과 같아야 합니다:     
         
 ![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled%2031.png)
         
-            **Finish** 버튼을 클릭하세요.   
+**Finish** 버튼을 클릭하세요.   
         
 - **xmlAdd.java** 파일을 열고 행을 변경하십시오.   
         
 ![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled%2032.png)
         
-        다음과 같이 자격 증명을 수정합니다:
+다음과 같이 자격 증명을 수정합니다:
         
 ![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled%2033.png)
         
