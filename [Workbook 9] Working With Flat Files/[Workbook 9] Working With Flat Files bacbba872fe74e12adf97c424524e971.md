@@ -2,9 +2,15 @@
 
 ## Overview
 
-이번 연습에서는, 새로운 **Flat File Dictionary**을 생성하고, **Dictionary**에 재사용 가능한 **record definition**을 생성,
+이번 연습에서는 Flatfile 을 다루는 서비스를 연습합니다.
 
-새 **Flat File Schema**에서 **record definition**를 참조하고, **Flat File Schema**를 테스트 합니다.
+webMethods 에서 Flatfile 을 다루기 위해서는 **Flat File Dictionary** 와 **Flat File Schema** 두 개의 컴포넌트 가 필요합니다.
+
+**Flat File Dictionary** 에는 재사용 가능한 **record definition**을 생성하고,
+
+**Flat File Schema** 에서는 생성 된 **record definition**를 참조하여 스키마를 구성합니다. 
+
+구성 된 컴포넌트를 사용하여 서비스를 생성 & 테스트 합니다.
 
 
 ## Steps
@@ -43,7 +49,7 @@
 ![Untitled](%5BWorkbook%209%5D%20Working%20With%20Flat%20Files%20bacbba872fe74e12adf97c424524e971/Untitled%206.png)
     
 
-#### STEP 5. Package Navigator에서 addressFixed Flat File Schema**를 우클릭 하여 작업을 저장하고 테스트 합니다. Run As → Flat File Schema 선택. Input 으로 ...\‌IntegrationServer\‌packages\‌AcmeSupport\‌pub\‌FlatFile\‌addressFixed.txt 파일을 찾습니다.
+#### STEP 5. Package Navigator에서 addressFixed Flat File Schema를 우클릭 하여 작업을 저장하고 테스트 합니다. Run As → Flat File Schema 선택. Input 으로 ...\‌IntegrationServer\‌packages\‌AcmeSupport\‌pub\‌FlatFile\‌addressFixed.txt 파일을 찾습니다.
     
 **Flat File Results view**에서 테스트 결과를 검사하십시오.
     
