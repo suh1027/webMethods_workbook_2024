@@ -255,7 +255,7 @@ Dialog 안에서 **xmlAdd** 를 프로젝트 이름으로 입력하세요. 기�
         
 ![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled%2034.png)
         
-- **a =”** 와 “ **b =”** 프롬프트에 두 개의 작은 숫자를 입력하고 Enter 키를 누르세요. 결과를 확인하세요.
+- **a =** 와 **b =** 프롬프트에 두 개의 작은 숫자를 입력하고 Enter 키를 누르세요. 결과를 확인하세요.
 - *참고* : 커서 키를 사용하여 커서를 ‘=’ 기호 뒤에 위치시키지 마세요. 커서위치 오류는 Eclipse IDE의 미세한 버그입니다. 커서가 올바른 위치에 있는 것처럼 숫자를 입력하세요.
         
 ![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled%2035.png)
