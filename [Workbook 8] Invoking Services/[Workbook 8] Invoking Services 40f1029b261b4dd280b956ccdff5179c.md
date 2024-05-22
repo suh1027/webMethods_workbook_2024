@@ -216,7 +216,7 @@
         
 ![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled%2026.png)
         
-         Code Generation 위한 directory로 **C:\TEMP** 를 사용합니다**.**   
+Code Generation 위한 directory로 **C:\TEMP** 를 사용합니다**.**   
         
 ![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled%2027.png)
         
