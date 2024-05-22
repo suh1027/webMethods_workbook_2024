@@ -8,7 +8,7 @@
 
 ## Steps
 
-#### STEP 1. **PurchaseOrder.work.REST** 라는 폴더와 getBook Flowservice 를 생성하세요**.**
+#### STEP 1. **PurchaseOrder.work.REST** 라는 폴더와 getBook Flowservice 를 생성하세요.
 #### STEP 2. REST 폴더 아래, **bookInformation** 라는 **REST Resource** 을 생성하세요.
 
 ![Untitled](%5BWorkbook%2011%5D%20Create%20REST%20Service%20in%20Integration%20S%20a83f4bcce6ee49c0a838556798b4e09c/Untitled.png)
