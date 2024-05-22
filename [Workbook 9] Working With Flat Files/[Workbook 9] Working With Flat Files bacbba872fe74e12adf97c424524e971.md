@@ -2,7 +2,8 @@
 
 ## Overview
 
-이번 연습에서는 , 새로운 **Flat File Dictionary**을 생성하고, **Dictionary**에 재사용 가능한 **record definition**을 생성, 
+이번 연습에서는, 새로운 **Flat File Dictionary**을 생성하고, **Dictionary**에 재사용 가능한 **record definition**을 생성,
+
 새 **Flat File Schema**에서 **record definition**를 참조하고, **Flat File Schema**를 테스트 합니다.
 
 
