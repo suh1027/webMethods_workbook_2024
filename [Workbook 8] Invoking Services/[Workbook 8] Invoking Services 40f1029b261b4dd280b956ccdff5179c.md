@@ -96,7 +96,107 @@
     
     $ systemctl restart sendmail
     ```
-  -  sendmail.mc를  설정하세요.
+  -  Telnet을 사용한 메일전송 테스트입니다. 로컬 SMTP 서버를 사용하여 hiworks 메일로 전송하기 입니다. \
+      ```
+        # 로컬 SMTP 서버를 사용 - hiworks 메일로 전송
+
+        # telnet 으로 localhost 의 SMTP 서버 접속
+        
+        $ telnet localhost 25
+        
+        Trying ::1... 
+        
+        telnet: connect to address ::1: Connection refused 
+        
+        Trying 127.0.0.1... 
+        
+        Connected to localhost. 
+        
+        Escape character is '^]'. 
+        
+        220 192.168.1.51 ESMTP Sendmail 8.14.7/8.14.7; Mon, 21 Aug 2023 13:42:59 +0900
+        
+        
+        EHLO smtps.hiworks.com  # hiworks SMTP 서버와 통신 시작
+        												# 성공시 250 OK
+        
+        
+        250-192.168.1.51 Hello localhost [127.0.0.1], pleased to meet you 
+        
+        250-ENHANCEDSTATUSCODES 
+        
+        250-PIPELINING 
+        
+        250-8BITMIME 
+        
+        250-SIZE 
+        
+        250-DSN 
+        
+        250-ETRN 
+        
+        250-AUTH GSSAPI DIGEST-MD5 CRAM-MD5 LOGIN PLAIN 
+        
+        250-DELIVERBY 
+        
+        250 HELP
+        
+        
+        
+        MAIL FROM:CUDO@Noreply.co.kr   #받는 SMTP 서버에 메시지 보낸 사람을 알리기 위한 명령
+        
+        250 2.1.0 CUDO@Noreply.co.kr... Sender ok
+        
+        
+        RCPT TO:sjh@cudo.co.kr          #받는 SMTP 서버에 메시지 받는 사람을 알리기 위한 명령
+        
+        250 2.1.5 sjh@cudo.co.kr... Recipient ok
+        
+        
+        DATA                             #데이터를 보낼 준비가 완료 되었음
+        
+        354 Enter mail, end with "." on a line by itself #성공
+        
+        Subject:sendmail test mail        #메일 제목 
+        
+        
+        This is Test Message               
+        
+        .                                  #끝맺음    
+        
+        250 2.0.0 37L4oCHa015323 Message accepted for delivery 
+        
+        
+        QUIT
+        
+        221 2.0.0 192.168.1.51 closing connection 
+        
+        Connection closed by foreign host.
+
+
+      ```
+
+  - mailx 사용한 메일 전송 테스트입니다.
+    ```
+    # mailx 설치
+
+    $ yum install -y mailx
+    
+    $ mail sjh@cudo.co.kr
+    
+    Subject : test Mail!! 
+    
+    Test mail.....!!!!!
+    
+    
+    # CTRL + D 명령으로 메일 끝맺음
+    
+    EOT
+    ```
+
+
+  - webMethods를 사용한 메일전송 테스트입니다.  CUDO_SJH.IF0007.svc 폴더에 svc_IF0007_smtp 서비스를 생성합니다.
+    
 
 
 
