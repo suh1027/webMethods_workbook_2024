@@ -6,6 +6,8 @@
 
 
 ## Steps
+#### STEP 0. 최상위 폴더 아래 IF0007 과 svc 폴더를 생성합니다. 
+
 
 #### STEP 1. HTTP를 사용하여 서비스를 호출합니다:
 - HTTP를 사용하여 서비스를 호출하려면 Designer를 시작하고 acmeSuppor 패키지의 acmeSupport.xml 폴더에서 xmlAdd 서비스를 찾아 편집을 위해 잠금 설정합니다.HTTP URL별칭 속성을 찾아 확인하고 이 속성이 ‘xmlAdd’로 설정되어 있는지 확인하세요.
