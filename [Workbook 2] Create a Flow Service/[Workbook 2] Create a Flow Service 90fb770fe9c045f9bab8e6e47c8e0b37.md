@@ -77,12 +77,12 @@
     
 그런 다음 string 타입의 inputs 값을 입력합니다.
     
-![Untitled](%5BWorkbook%202%5D%20Create%20a%20Flow%20Service%2090fb770fe9c045f9bab8e6e47c8e0b37/Untitled%2013.png)
+![Untitled](%5BWorkbook%202%5D%20Create%20a%20Flow%20Service%2090fb770fe9c045f9bab8e6e47c8e0b37/chapter2_8.png)
     
 
 #### STEP 7. Designer에서 Service Result 보기를 확인한 다음 브라우저 기반의 Integration Server Administration Console > Server log 탭에서 service 가 성공적으로 실행되어 로그가 남았는지 확인합니다.
     
-![Untitled](%5BWorkbook%202%5D%20Create%20a%20Flow%20Service%2090fb770fe9c045f9bab8e6e47c8e0b37/Untitled%2014.png)
+![Untitled](%5BWorkbook%202%5D%20Create%20a%20Flow%20Service%2090fb770fe9c045f9bab8e6e47c8e0b37/chapter2_9.png)
     
 ![Untitled](%5BWorkbook%202%5D%20Create%20a%20Flow%20Service%2090fb770fe9c045f9bab8e6e47c8e0b37/Untitled%2015.png)
     
