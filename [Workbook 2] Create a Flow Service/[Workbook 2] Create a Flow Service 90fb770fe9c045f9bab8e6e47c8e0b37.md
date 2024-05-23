@@ -31,7 +31,7 @@
 
 *Note. 이러한 service 단계를 추가하는 가장 쉬운 방법은 우측 Palette 에서 invoke... 을 클릭하여 서비스를 검색하거나 Package Navigatior 에서 WmPublic package 를 찾아 해당 services 을 끌어오는 것입니다.*
 
-![Untitled](%5BWorkbook%202%5D%20Create%20a%20Flow%20Service%2090fb770fe9c045f9bab8e6e47c8e0b37/Untitled%205.png)
+![Untitled](%5BWorkbook%202%5D%20Create%20a%20Flow%20Service%2090fb770fe9c045f9bab8e6e47c8e0b37/chapter2_6.png)
     
 #### STEP 4. 위로 이동 및 아래로 이동 화살표 아이콘을 사용하여 서비스 순서를 다음과 같이 바꿉니다. 
 
