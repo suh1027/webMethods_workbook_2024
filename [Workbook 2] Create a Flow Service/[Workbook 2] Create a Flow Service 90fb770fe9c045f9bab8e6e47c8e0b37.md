@@ -7,11 +7,9 @@
 
 ## Steps
 
-#### STEP 1. Acme package 의 acme.PurchaseOrder.work folder 에서 customWriteToLog 라는 새로운 Flow service을 만듭니다.
-![Untitled](%5BWorkbook%202%5D%20Create%20a%20Flow%20Service%2090fb770fe9c045f9bab8e6e47c8e0b37/Untitled.png)
-![Untitled](%5BWorkbook%202%5D%20Create%20a%20Flow%20Service%2090fb770fe9c045f9bab8e6e47c8e0b37/Untitled%201.png)
+#### STEP 1. IF0001 아래 svc 폴더에 svc_IF0001_customWriteToLog라는 빈 Flow service을 만듭니다.
 ![Untitled](%5BWorkbook%202%5D%20Create%20a%20Flow%20Service%2090fb770fe9c045f9bab8e6e47c8e0b37/chapter2_1.png)
-
+    
 
     
 
