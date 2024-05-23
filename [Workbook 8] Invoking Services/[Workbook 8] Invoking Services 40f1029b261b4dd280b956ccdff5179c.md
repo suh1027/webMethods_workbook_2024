@@ -17,8 +17,7 @@
 #### STEP 2. HTTP를 사용하여 서비스를 호출합니다:
 
 - HTTP를 사용하여 서비스를 호출하려면 Designer를 시작하고 CUDO_SJH 패키지의 IF0007.svc 폴더에서 addInts 서비스를 찾아 편집을 위해 잠금 설정합니다.HTTP URL별칭 속성을 찾아 확인하고 이 속성이 ‘addInts’로 설정되어 있는지 확인하세요.
-        
-![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled.png)
+![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/chapter8_4.png)
         
 - 필요하다면 서비스를 저장하세요  
 - 브라우저 탭을 열고 URL [http://192.168.1.100:5555/addInts?a=23&b=21](http://xn--localhost-p69d:5555/%E2%80%8CxmlAdd?%E2%80%8Ca=12&%E2%80%8Cb=23) 를 입력하세요.
@@ -26,7 +25,7 @@
 
 두 결과를 비교하여 차이점을 확인하세요.
         
-![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled%201.png)    
+![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/chapter8_3.png)   
     
 #### STEP 2. XML 입력값을 사용하여 서비스를 호출하세요.
 - **acmeSupport.xml:xmlAdd** 서비스를 마우스 오른쪽 버튼으로 클릭하고 **Debug As** > **Debug Configurations** 선택하세요. 다음 대화 상자에서 IS Service를 선택하세요:   
