@@ -7,7 +7,7 @@
 
 ## Steps
 
-#### STEP 0. acme.PurchaseOrder.docs 폴더 아래 Depart 라는 명칭으로 다음과 같은 새로운 Document Type 을 생성합니다.
+#### STEP 0.최상위 폴더 아래 IF0003 와 svc 와 docs 폴더를 생성합니다. docs 폴더 아래 Depart 라는 명칭으로 다음과 같은 새로운 Document Type 을 생성합니다.
 
 ![Untitled](%5BWorkbook%204%5D%20Building%20Flow%20Services%20-%20LOOP%20adc3c2842c234df2ba93e2fcfb87669d/Untitled0.png)
 
