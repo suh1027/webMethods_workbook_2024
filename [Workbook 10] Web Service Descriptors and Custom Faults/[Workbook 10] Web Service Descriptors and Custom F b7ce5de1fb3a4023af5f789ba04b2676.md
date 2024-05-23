@@ -70,15 +70,15 @@
 
 #### STEP 14. 서비스 결과 보기에서 결과를 검토합니다.
 
-![Untitled](%5BWorkbook%2010%5D%20Web%20Service%20Descriptors%20and%20Custom%20F%20b7ce5de1fb3a4023af5f789ba04b2676/Untitled%2011.png)
+![Untitled](%5BWorkbook%2010%5D%20Web%20Service%20Descriptors%20and%20Custom%20F%20b7ce5de1fb3a4023af5f789ba04b2676/new11.png)
 
 #### STEP 15. 이제PurchaseOrder.docs:Error 문서 유형에 문자열 필드 하나를 추가하고 이름을 Reason 으로 지정하고 저장합니다.
 
-![Untitled](%5BWorkbook%2010%5D%20Web%20Service%20Descriptors%20and%20Custom%20F%20b7ce5de1fb3a4023af5f789ba04b2676/Untitled%2012.png)
+![Untitled](%5BWorkbook%2010%5D%20Web%20Service%20Descriptors%20and%20Custom%20F%20b7ce5de1fb3a4023af5f789ba04b2676/new12.png)
 
 #### STEP 16. 메인 Flow service 인 acme.PurchaseOrder.work.sequenceTryCatch를 열고 새 Error 문서를 사용하도록 수정합니다.
     
-![Untitled](%5BWorkbook%2010%5D%20Web%20Service%20Descriptors%20and%20Custom%20F%20b7ce5de1fb3a4023af5f789ba04b2676/Untitled%2013.png)
+![Untitled](%5BWorkbook%2010%5D%20Web%20Service%20Descriptors%20and%20Custom%20F%20b7ce5de1fb3a4023af5f789ba04b2676/new13.png)
     
 1. 서비스에서 Tree 탭을 엽니다. 서비스를 확장하고 pub.flow:getLastError 를 선택합니다.
 2. Pipeline 탭을 클릭하고 Pipeline Out 섹션을 선택한 다음 해당 섹션을 마우스 오른쪽 단추로 클릭하고 문서 참조 삽입을 선택한 다음 acme.PurchaseOrder.docs:Error 를 선택하여 생성 후 이름을 Error로 지정합니다. 
