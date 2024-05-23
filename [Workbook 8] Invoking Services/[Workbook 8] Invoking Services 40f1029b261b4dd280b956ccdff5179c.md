@@ -46,6 +46,56 @@
       - IP, Domain, Email Address, 네트워크에 대해 Sendmail 에 접근하지 못하도록 제한 설정 파일입니다.
       - 스펨메일 방지나 스펨메일 릴레이 방지에 사용합니다.
       - makemap hash /etc/mail/access < /etc/mail/access 커맨드로 설정 적용합니다.
+  
+  - sendmail.mc를  설정하세요.
+    ```
+      $ cd /etc/mail
+
+      $ vi sendmail.mc
+
+
+    [수정 전]
+    
+    ...(중략)
+    
+    dnl TRUST_AUTH_MECH(`EXTERNAL DIGEST-MD5 CRAM-MD5 LOGIN PLAIN')dnl
+    
+    dnl define(`confAUTH_MECHANISMS', `EXTERNAL GSSAPI DIGEST-MD5 CRAM-MD5 LOGIN PLAIN')dnl
+    
+    ... (중략)
+    
+    DAEMON_OPTIONS(`Port=smtp, Addr=127.0.0.1, Name=MTA')dnl
+    
+    
+    ## dnl 은 주석 처리문자이며 위 두 라인은 dnl 삭제 
+    
+    ## 외부 어디에서나 현재 서버의 메일 서비스를 사용할 수 있도록 루프백 주소를 (127.0.0.1 -> 0.0.0.0) 으로 변경
+    
+    
+    [수정 후]
+    
+    
+    ... (중략)
+    
+    
+    define(`confAUTH_MECHANISMS', `EXTERNAL GSSAPI DIGEST-MD5 CRAM-MD5 LOGIN PLAIN')dnl 
+    
+    TRUST_AUTH_MECH(`EXTERNAL DIGEST-MD5 CRAM-MD5 LOGIN PLAIN')dnl
+    
+    
+    ... (중략)
+    
+    
+    DAEMON_OPTIONS(`Port=smtp, Addr=0.0.0.0, Name=MTA')dnl
+    
+    # 설정 적용 후 sendmail.mc 를 sendmail.cf에 반영
+    
+    $ m4 /etc/mail/sendmail.mc > /etc/mail/sendmail.cf
+    
+    # sendmail 재시작
+    
+    $ systemctl restart sendmail
+    ```    
 
 
 
