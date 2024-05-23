@@ -9,6 +9,10 @@
 
 #### STEP 1. IF0001 아래 svc 폴더에 svc_IF0001_customWriteToLog라는 빈 Flow service을 만듭니다.
 ![Untitled](%5BWorkbook%202%5D%20Create%20a%20Flow%20Service%2090fb770fe9c045f9bab8e6e47c8e0b37/chapter2_1.png)
+-	Flow Service 는 IF0001.svc 아래 우클릭 > New > Flow Service 를 클릭하여 생성합니다.
+
+![Untitled](%5BWorkbook%202%5D%20Create%20a%20Flow%20Service/%5BWorkbook%202%5D%20Create%20a%20Flow%20Service%2090fb770fe9c045f9bab8e6e47c8e0b37/chapter2_2.png)
+
     
 
     
