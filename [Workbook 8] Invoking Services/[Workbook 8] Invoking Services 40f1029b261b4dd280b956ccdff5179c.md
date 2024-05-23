@@ -6,11 +6,12 @@
 
 
 ## Steps
-#### STEP 0. 최상위 폴더 아래 IF0007 과 svc 폴더를 생성합니다. 
+#### STEP 0. 최상위 폴더 아래 IF0007 과 svc 폴더를 생성합니다.
+![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/chapter8_1.png)
 
 #### STEP 1. String 입력 2개를 받아 외부로 부터 호출 받는 서비스 svc_IF0007_addInts를 생성합니다:
 - 서비스에 MAP을 설정하고 Input 값과 output 사이에 pub.math.addInts를 두어 a는 num1 과 b는 num2와 value는 output 값에 연결합니다.
-- 
+  ![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/chapter8_2.png)
 
 
 #### STEP 2. HTTP를 사용하여 서비스를 호출합니다:
