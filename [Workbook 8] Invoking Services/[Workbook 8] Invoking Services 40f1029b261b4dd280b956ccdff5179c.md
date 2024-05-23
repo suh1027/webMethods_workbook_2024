@@ -16,7 +16,7 @@
 
 #### STEP 2. HTTP를 사용하여 서비스를 호출합니다:
 
-- HTTP를 사용하여 서비스를 호출하려면 Designer를 시작하고 CUDO_SJH 패키지의 IF0007.svc 폴더에서 addInts 서비스를 찾아 편집을 위해 잠금 설정합니다.HTTP URL별칭 속성을 찾아 확인하고 이 속성이 ‘addInts’로 설정되어 있는지 확인하세요.
+- HTTP를 사용하여 서비스를 호출하려면 Designer를 시작하고 CUDO_SJH 패키지의 IF0007.svc 폴더에서 addInts 서비스를 찾아 편집을 위해 잠금 설정합니다.HTTP URL별칭 속성을 찾아 확인하고 이 속성이 ‘addInput’로 설정되어 있는지 확인하세요.
 ![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/chapter8_4.png)
         
 - 필요하다면 서비스를 저장하세요  
