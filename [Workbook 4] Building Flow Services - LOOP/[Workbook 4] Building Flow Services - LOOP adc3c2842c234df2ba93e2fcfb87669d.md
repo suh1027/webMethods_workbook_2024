@@ -7,13 +7,14 @@
 
 ## Steps
 
-#### STEP 0.최상위 폴더 아래 IF0003 와 svc 와 docs 폴더를 생성합니다. docs 폴더 아래 Depart 라는 명칭으로 다음과 같은 새로운 Document Type 을 생성합니다.
+#### STEP 0. 최상위 폴더 아래 IF0003 와 svc 와 docs 폴더를 생성합니다. docs 폴더 아래 Depart 라는 명칭으로 다음과 같은 새로운 Document Type 을 생성합니다.
 
 ![Untitled](%5BWorkbook%204%5D%20Building%20Flow%20Services%20-%20LOOP%20adc3c2842c234df2ba93e2fcfb87669d/Untitled0.png)
 
 
-#### STEP 1. acme.PurchaseOrder.work 폴더에 loopTest라는 새로운 Flow service 을 만듭니다. 서비스의 input 은 acmeSupport.docs:Depart라는 Dept로 Document Reference(문서 참조)로 설정하고 output을 count라는 단일 String Type 으로 설정합니다.
-    
+#### STEP 1. svc_IF0003_loopTest라는 새 빈 Flow service 을 만듭니다. 서비스의 input 은 IF0003.docs:doc_IF0003_Depart라는 Deart로 Document Reference(문서 참조)로 설정하고 output을 count라는 단일 String field 로 설정합니다.
+
+참고 :Input 또는 output 항목 field는 사용하지 마십시오. 이 항목의 목적에 대해서는 추후에 설명합니다.
     
 ![Untitled](%5BWorkbook%204%5D%20Building%20Flow%20Services%20-%20LOOP%20adc3c2842c234df2ba93e2fcfb87669d/Untitled.png)
     
