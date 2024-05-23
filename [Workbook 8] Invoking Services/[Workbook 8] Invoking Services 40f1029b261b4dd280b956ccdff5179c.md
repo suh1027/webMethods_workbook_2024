@@ -8,14 +8,19 @@
 ## Steps
 #### STEP 0. 최상위 폴더 아래 IF0007 과 svc 폴더를 생성합니다. 
 
+#### STEP 1. String 입력 2개를 받아 외부로 부터 호출 받는 서비스 svc_IF0007_addInts를 생성합니다:
+- 서비스에 MAP을 설정하고 Input 값과 output 사이에 pub.math.addInts를 두어 a는 num1 과 b는 num2와 value는 output 값에 연결합니다.
+- 
 
-#### STEP 1. HTTP를 사용하여 서비스를 호출합니다:
-- HTTP를 사용하여 서비스를 호출하려면 Designer를 시작하고 acmeSuppor 패키지의 acmeSupport.xml 폴더에서 xmlAdd 서비스를 찾아 편집을 위해 잠금 설정합니다.HTTP URL별칭 속성을 찾아 확인하고 이 속성이 ‘xmlAdd’로 설정되어 있는지 확인하세요.
+
+#### STEP 2. HTTP를 사용하여 서비스를 호출합니다:
+
+- HTTP를 사용하여 서비스를 호출하려면 Designer를 시작하고 CUDO_SJH 패키지의 IF0007.svc 폴더에서 addInts 서비스를 찾아 편집을 위해 잠금 설정합니다.HTTP URL별칭 속성을 찾아 확인하고 이 속성이 ‘addInts’로 설정되어 있는지 확인하세요.
         
 ![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled.png)
         
 - 필요하다면 서비스를 저장하세요  
-- 브라우저 탭을 열고 URL [http://‌localhost:5555/‌xmlAdd?‌a=12&‌b=23](http://xn--localhost-p69d:5555/%E2%80%8CxmlAdd?%E2%80%8Ca=12&%E2%80%8Cb=23) 를 입력하세요.
+- 브라우저 탭을 열고 URL [http://192.168.1.100:5555/addInts?a=23&b=21](http://xn--localhost-p69d:5555/%E2%80%8CxmlAdd?%E2%80%8Ca=12&%E2%80%8Cb=23) 를 입력하세요.
 - 인증을 요청하면 Administrator | manage를 입력하세요. 다른 부라우저 탭에서 대체 URL [http://‌localhost:5555/‌invoke/‌acmeSupport.xml/‌xmlAdd‌?‌a=12‌&b=23](http://xn--localhost-p69d:5555/%E2%80%8Cinvoke/%E2%80%8CacmeSupport.xml/%E2%80%8CxmlAdd%E2%80%8C?%E2%80%8Ca=12%E2%80%8C&b=23) 를 입력하세요
 
 두 결과를 비교하여 차이점을 확인하세요.
