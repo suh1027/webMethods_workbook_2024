@@ -89,7 +89,7 @@
 
 #### STEP 8. service 에 대한 개발이 완료되었다면 Unlock 기능을 통해 서비스 Edit 권한을 해제합니다.
 
-![Untitled](%5BWorkbook%202%5D%20Create%20a%20Flow%20Service%2090fb770fe9c045f9bab8e6e47c8e0b37/Untitled%2016.png)
+![Untitled](%5BWorkbook%202%5D%20Create%20a%20Flow%20Service%2090fb770fe9c045f9bab8e6e47c8e0b37/chapter2_10.png)
 
 
 ##  Check Your Understanding
