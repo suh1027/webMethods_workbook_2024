@@ -30,24 +30,24 @@
 #### STEP 4. LOOP 단계 아래에 MAP 문을 추가합니다(LOOP 아래에 들여쓰기를 확인하십시오). $iteration을 계산할 수 있도록 합니다.
     
     
-![Untitled](%5BWorkbook%204%5D%20Building%20Flow%20Services%20-%20LOOP%20adc3c2842c234df2ba93e2fcfb87669d/Untitled%203.png)
+![Untitled](%5BWorkbook%204%5D%20Building%20Flow%20Services%20-%20LOOP%20adc3c2842c234df2ba93e2fcfb87669d/chapter4_5.png)
     
-![Untitled](%5BWorkbook%204%5D%20Building%20Flow%20Services%20-%20LOOP%20adc3c2842c234df2ba93e2fcfb87669d/Untitled%204.png)
+![Untitled](%5BWorkbook%204%5D%20Building%20Flow%20Services%20-%20LOOP%20adc3c2842c234df2ba93e2fcfb87669d/chapter4_6.png)
     
 
 #### STEP 5. pub.flow:debugLog 를 MAP 단계 아래에 추가합니다 (LOOP 아래에 들여쓰기 되지 않았는지 확인). Count를 message 에 매핑하고 function을 ++++ 으로 설정합니다. 
     
-![Untitled](%5BWorkbook%204%5D%20Building%20Flow%20Services%20-%20LOOP%20adc3c2842c234df2ba93e2fcfb87669d/Untitled%205.png)
+![Untitled](%5BWorkbook%204%5D%20Building%20Flow%20Services%20-%20LOOP%20adc3c2842c234df2ba93e2fcfb87669d/chapter4_7.png)
     
-![Untitled](%5BWorkbook%204%5D%20Building%20Flow%20Services%20-%20LOOP%20adc3c2842c234df2ba93e2fcfb87669d/Untitled%206.png)
+![Untitled](%5BWorkbook%204%5D%20Building%20Flow%20Services%20-%20LOOP%20adc3c2842c234df2ba93e2fcfb87669d/chapter4_8.png)
     
 *참고: LOOP 문을 추가하면 $iteration이라는 새로운 변수가 Pipeline에 생성됩니다. 이 변수는 루프의 반복 횟수를 나타냅니다.* 
     
 #### STEP 6. Service를 저장하고 실행합니다. Service가 input값을 요청하면 input 필드를 확장하고, employee를 선택, 2개의 행을 추가합니다. (아이콘 중 아래 행을 추가하는 아이콘을 클릭합니다.) 각 employee의 data를 입력 후 확인을 클릭합니다. 실행 후 Server Log 를 확인합니다. 
     
-![Untitled](%5BWorkbook%204%5D%20Building%20Flow%20Services%20-%20LOOP%20adc3c2842c234df2ba93e2fcfb87669d/Untitled%207.png)
+![Untitled](%5BWorkbook%204%5D%20Building%20Flow%20Services%20-%20LOOP%20adc3c2842c234df2ba93e2fcfb87669d/chapter4_9.png)
     
-![Untitled](%5BWorkbook%204%5D%20Building%20Flow%20Services%20-%20LOOP%20adc3c2842c234df2ba93e2fcfb87669d/Untitled%208.png)
+![Untitled](%5BWorkbook%204%5D%20Building%20Flow%20Services%20-%20LOOP%20adc3c2842c234df2ba93e2fcfb87669d/chapter4_10.png)
     
 
     
