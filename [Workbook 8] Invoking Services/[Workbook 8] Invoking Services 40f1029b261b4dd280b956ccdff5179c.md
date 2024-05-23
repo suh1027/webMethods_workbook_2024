@@ -95,7 +95,8 @@
     # sendmail 재시작
     
     $ systemctl restart sendmail
-    ```    
+    ```
+  -  sendmail.mc를  설정하세요.
 
 
 
