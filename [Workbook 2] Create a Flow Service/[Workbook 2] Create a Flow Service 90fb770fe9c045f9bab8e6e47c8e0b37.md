@@ -44,7 +44,7 @@
         
 (현재 비활성화된) 왼쪽 이동 아이콘과 오른쪽 이동 아이콘은 위로 이동 및 아래로 이동 아이콘 옆에 있으므로 나중에 연습으로 사용해보시는 것을 권장드립니다.
         
-![Untitled](%5BWorkbook%202%5D%20Create%20a%20Flow%20Service%2090fb770fe9c045f9bab8e6e47c8e0b37/Untitled%207.png)
+![Untitled](%5BWorkbook%202%5D%20Create%20a%20Flow%20Service%2090fb770fe9c045f9bab8e6e47c8e0b37/chapter2_7.png)
         
     
 #### STEP 5. 다음과 같이 services를 통해 입력한 데이터 흐름을 매핑합니다:
