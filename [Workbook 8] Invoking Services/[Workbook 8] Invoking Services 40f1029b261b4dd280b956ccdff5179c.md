@@ -15,16 +15,27 @@
 
 
 #### STEP 2. HTTP를 사용하여 서비스를 호출합니다:
+  - SMTP 서버 설치 (CentOS7 기준)입니다.
+  
+  ```
+  $ yum install sendmail sendmail-cf -y
+  
+  # sendmail 시작, 재시작, 중지 커맨드
+  
+  $ systemctl start sendmail
+  $ systemctl restart sendmail
+  $ systemctl stop sendmail
+  ```
+  - SMTP 서버 설정하세요.
+    - /etc/mail/sendmail.mc
+      - sendmail.cf 는 sendmail의 설정파일 입니다.
+      - sendmail.mc는 설정을 조금더 용이하게 하기 위한 보조 파일 입니다.
+      - m4 sendmail.mc > sendmail.cf 커맨드로 설정 적용합니다.
+    - /etc/mail/access
+      - IP, Domain, Email Address, 네트워크에 대해 Sendmail 에 접근하지 못하도록 제한 설정 파일입니다.
+      - 스펨메일 방지나 스펨메일 릴레이 방지에 사용합니다.
+      - makemap hash /etc/mail/access < /etc/mail/access 커맨드로 설정 적용합니다.
 
-```
-$ yum install sendmail sendmail-cf -y
-
-# sendmail 시작, 재시작, 중지 커맨드
-
-$ systemctl start sendmail
-$ systemctl restart sendmail
-$ systemctl stop sendmail
-```
 
 - HTTP를 사용하여 서비스를 호출하려면 Designer를 시작하고 CUDO_SJH 패키지의 IF0007.svc 폴더에서 addInts 서비스를 찾아 편집을 위해 잠금 설정합니다.HTTP URL별칭 속성을 찾아 확인하고 이 속성이 ‘addInput’로 설정되어 있는지 확인하세요.
 ![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/chapter8_4.png)
