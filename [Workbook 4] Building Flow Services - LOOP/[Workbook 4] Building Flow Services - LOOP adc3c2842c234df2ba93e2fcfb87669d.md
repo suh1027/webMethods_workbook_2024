@@ -19,7 +19,7 @@
 ![Untitled](%5BWorkbook%204%5D%20Building%20Flow%20Services%20-%20LOOP%20adc3c2842c234df2ba93e2fcfb87669d/chapter4_2.png)
     
 
-#### STEP 2. Service의 Input/Output 탭에서 Department Document 를 확장하여 /Dept/department/employee를 찾고 클릭 후 Copy 합니다.
+#### STEP 2. Service의 Input/Output 탭에서 doc_IF0003_Depart Document 를 확장하여 CUDO_SJH.IF0003.docs:doc_IF0003_Depart/department/employee를 찾고 클릭 후 Copy 합니다.
 #### STEP 3. Service에서 LOOP 문을 추가하고 Input array 속성에 /Dept/department/employee에 붙여 넣습니다. Enter 키를 누르면 LOOP에 Input array가 표시됩니다. 
     
 ![Untitled](%5BWorkbook%204%5D%20Building%20Flow%20Services%20-%20LOOP%20adc3c2842c234df2ba93e2fcfb87669d/Untitled%201.png)
