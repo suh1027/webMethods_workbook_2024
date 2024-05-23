@@ -13,7 +13,12 @@
 
 #### STEP 1. 최상위 폴더 아래 IF0009 폴더를 생성하고 다음과 같은 하위 폴더들을 생성합니다. 
 
-#### STEP 2. svc_IF0004_sequenceTryCatch Flowservice 를 복사하여 svc 아래 폴더에 붙여넣습니다.
+![Untitled](%5BWorkbook%2010%5D%20Web%20Service%20Descriptors%20and%20Custom%20F%20b7ce5de1fb3a4023af5f789ba04b2676/Untitled%2011.png)
+
+#### STEP 2. svc_IF0004_sequenceTryCatch Flowservice 내용을 복사하여 svc 아래 새로운 svc_IF0009_sequenceTryCatch 서비스 내 붙여넣습니다.
+
+![Untitled](%5BWorkbook%2010%5D%20Web%20Service%20Descriptors%20and%20Custom%20F%20b7ce5de1fb3a4023af5f789ba04b2676/Untitled%2013.png)
+![Untitled](%5BWorkbook%2010%5D%20Web%20Service%20Descriptors%20and%20Custom%20F%20b7ce5de1fb3a4023af5f789ba04b2676/Untitled%2012.png)
 
 #### STEP 3. IF0009.ws.새 web service descriptor를 만듭니다. sequenceTryCatch를 Element name 으로 사용합니다. **Next>** 버튼을 클릭하세요. 
 
