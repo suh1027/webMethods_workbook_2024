@@ -19,9 +19,9 @@
 
 #### STEP 2. inMsg1, inMsg2로 불리는 두 개의 String 타입의 input 값을 새로운 service에 추가합니다. 아래 메뉴를 보려면 Input/Output 탭을 선택하고 왼쪽에 있는 Input 패널에서 마우스 오른쪽 버튼을 클릭합니다. input Document 를 지정할 수 있는 text field과 혼동하지 마십시오.
 
-![Untitled](%5BWorkbook%202%5D%20Create%20a%20Flow%20Service%2090fb770fe9c045f9bab8e6e47c8e0b37/Untitled%202.png)  
-![Untitled](%5BWorkbook%202%5D%20Create%20a%20Flow%20Service%2090fb770fe9c045f9bab8e6e47c8e0b37/Untitled%203.png) 
-![Untitled](%5BWorkbook%202%5D%20Create%20a%20Flow%20Service%2090fb770fe9c045f9bab8e6e47c8e0b37/Untitled%204.png)
+![Untitled](%5BWorkbook%202%5D%20Create%20a%20Flow%20Service%2090fb770fe9c045f9bab8e6e47c8e0b37/chapter2_3.png)  
+![Untitled](%5BWorkbook%202%5D%20Create%20a%20Flow%20Service%2090fb770fe9c045f9bab8e6e47c8e0b37/chapter2_4.png) 
+![Untitled](%5BWorkbook%202%5D%20Create%20a%20Flow%20Service%2090fb770fe9c045f9bab8e6e47c8e0b37/chapter2_5.png)
     
 
 #### STEP 3. 새로운 service에 다음과 같이 세 가지 서비스 단계를 추가합니다.
