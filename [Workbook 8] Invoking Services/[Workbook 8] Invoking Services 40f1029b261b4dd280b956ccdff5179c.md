@@ -27,37 +27,7 @@
         
 ![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/chapter8_3.png)   
     
-#### STEP 2. XML 입력값을 사용하여 서비스를 호출하세요.
-- **acmeSupport.xml:xmlAdd** 서비스를 마우스 오른쪽 버튼으로 클릭하고 **Debug As** > **Debug Configurations** 선택하세요. 다음 대화 상자에서 IS Service를 선택하세요:   
-        
-![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled%202.png)
-        
-- 새로운 런치 구성을 만들기 위해 New 버튼을 클릭하세요. **acmeSupport.xml:xmlAdd**를 찾아 선택하세요. 그런다음 런치 구성의 이름을 New_configuration에서 **xmlAddWithXMLInput** 과 같이 의미 있는 이름으로 변경하고 **Apply**를 누르세요.   
-        
-![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled%203.png)
-        
-![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled%204.png)
-        
-- 이제 **Input** 탭을 선택하고 **Use XML** 라디오 버튼을 선택하세요. **Browse를 클릭하여** XML File **...\‌IntegrationServer\‌packages\‌AcmeSupport\‌pub\‌addInput.xml**로 이동하고 ‘Open’을 누르세요. 그런 다음 다시 ‘Apply’를 클릭하세요.     
-        
-![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled%205.png)
-        
-- 이제 **Common** 탭을 선택하고 **Display in favorites menu** 확인란을 선택하세요. 다시 **Apply**를 클릭하고 **Debug**를 누르세요   
-        
-![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled%206.png)
-        
-- Perspective switch에 관한 다이얼로그가 나타나면 Yes를 클릭하여 확인하세요. 선택적으로 Remember my decision확인란을 선택하여 이 다이얼로그의 추가적인 표시를 억제할 수 있습니다.
-        
-![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled%207.png)
-        
-- Debugger가 시작되고 파이프라인에 이미 있는 Object 유형의 단일 입력 변수 노드를 디버깅하고 있습니다. 이것이 어떻게 변환되고 추가되는지 확인하기 위해 서비스를 단계별로 진행하세요.
-        
-![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled%208.png)
-        
-![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled%209.png)
-        
-![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled%2010.png)
-        
+
 
 #### STEP 3. SMTP(메일)를 사용하여 서비스를 호출합니다
 
