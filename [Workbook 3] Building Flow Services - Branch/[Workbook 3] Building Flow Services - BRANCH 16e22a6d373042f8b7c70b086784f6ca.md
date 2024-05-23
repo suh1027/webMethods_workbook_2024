@@ -10,7 +10,7 @@
 
 #### STEP 1. acme.PurchaseOrder.work 하위 폴더에 branch1 이라는 새로운 Flow service를 새로 만듭니다.
 
-#### STEP 2. branch1의 input을 testValue 라는 String 을 정의하고 output을 testValue 라는 String 값으로 정의합니다.
+#### STEP 2. svc_IF0002_branch1의 Input을 testValue라는 String을 정의하고 Output을 testValue라는 String 값으로 정의합니다.
     
 ![Untitled](%5BWorkbook%203%5D%20Building%20Flow%20Services%20-%20BRANCH%2016e22a6d373042f8b7c70b086784f6ca/Untitled.png)
     
