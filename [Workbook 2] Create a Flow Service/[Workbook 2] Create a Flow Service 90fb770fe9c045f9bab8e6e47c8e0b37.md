@@ -54,7 +54,7 @@
         
 ![Untitled](%5BWorkbook%202%5D%20Create%20a%20Flow%20Service%2090fb770fe9c045f9bab8e6e47c8e0b37/Untitled%208.png)
         
-이 단계를 완료하려면 하단의 pipeline 탭을 클릭하고 customWriteToLog의 editor view에서 pub.string:concat을 선택해야 합니다. 그런 다음 inMsg1 인수를 concat 서비스의 inString1 매개 변수로 Drag & Drop 하여 매핑합니다. inMsg2 및 inString2 도 동일하게 수행하여 매핑 시켜줍니다.
+이 단계를 완료하려면 하단의 pipeline 탭을 클릭하고 svc_IF0001_customWriteToLog의 editor view에서 pub.string:concat을 선택해야 합니다. 그런 다음 inMsg1 인수를 concat 서비스의 inString1 매개 변수로 Drag & Drop 하여 매핑합니다. inMsg2 및 inString2 도 동일하게 수행하여 매핑 시켜줍니다.
         
 - pub.string:toUpper
   - value에서 inString에 매핑해야 합니다.
