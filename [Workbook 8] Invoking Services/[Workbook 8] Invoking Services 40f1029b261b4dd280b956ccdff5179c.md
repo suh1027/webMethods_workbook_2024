@@ -16,6 +16,16 @@
 
 #### STEP 2. HTTP를 사용하여 서비스를 호출합니다:
 
+```
+$ yum install sendmail sendmail-cf -y
+
+# sendmail 시작, 재시작, 중지 커맨드
+
+$ systemctl start sendmail
+$ systemctl restart sendmail
+$ systemctl stop sendmail
+```
+
 - HTTP를 사용하여 서비스를 호출하려면 Designer를 시작하고 CUDO_SJH 패키지의 IF0007.svc 폴더에서 addInts 서비스를 찾아 편집을 위해 잠금 설정합니다.HTTP URL별칭 속성을 찾아 확인하고 이 속성이 ‘addInput’로 설정되어 있는지 확인하세요.
 ![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/chapter8_4.png)
         
@@ -30,6 +40,8 @@
 
 
 #### STEP 3. SMTP(메일)를 사용하여 서비스를 호출합니다
+  - SMTP 서버 설치 (CentOS7 기준)입니다.
+    
 
 - Designer에서 다시 Service Development Perspective로 전환하세요. 패키지 네비게이터 뷰에서 문서**acmeSupport.xml:addDocument를 엽니다**. 해당 문서에는 a와 b라는 두 변수를 포함하는 간단한 루트 노드가 있는 것을 발견해야 합니다.   
         
