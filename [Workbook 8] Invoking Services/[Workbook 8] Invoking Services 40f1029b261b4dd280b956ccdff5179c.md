@@ -212,59 +212,6 @@
 
 
 
-#### STEP 3. SMTP(메일)를 사용하여 서비스를 호출합니다
-  - SMTP 서버 설치 (CentOS7 기준)입니다.
-    
-
-- Designer에서 다시 Service Development Perspective로 전환하세요. 패키지 네비게이터 뷰에서 문서**acmeSupport.xml:addDocument를 엽니다**. 해당 문서에는 a와 b라는 두 변수를 포함하는 간단한 루트 노드가 있는 것을 발견해야 합니다.   
-        
-![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled%2011.png)
-        
-- 이제 동일한 폴더에 있는 **xmlAdd** 서비스를 열고 해당 서비스가 무엇을 수행하는지 알아보세요. 또한 파일 **...\‌IntegrationServer\‌packages\‌AcmeSupport\‌pub\‌xml**의 내용을 확인하세요.이 파일을 xmlAdd 서비스의 입력으로 제공할 경우 어떤 결과를 기대할 것인가요?
-- 기본적으로 비활성화된 Integration Server의 이메일 포트를 활성화하세요. 이를 위해 Integration Server 관리 콘솔을 열고 **Security** Æ **Ports** 메뉴로 이동하세요. **integration-server@company.com@localhost** 항목을 클릭하세요.   
-        
-![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled%2012.png)
-
-           
-        
-그리고 **Edit Email Client Configuration을 선택하세요:**   
-        
-![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled%2013.png)
-        
-**비밀번호로manage를 입력하세요**. 서비스가 처리되기를 기다리는 시간을 줄이기 위해 구성된 값인**Time Interval (seconds)**매개변수를 300에서 **10**초로 변경하세요. 그리고 **Save Changes**를 클릭하세요.
-        
-**팁: 연습이 끝난 후에는 이 값을 300으로 다시 변경하는 것을 잊지 마세요.**
-        
-![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled%2014.png)
-        
-그런 다음 메일 포트를 활성화해야 합니다. 이를  위해 Enabled 열의 No를 클릭하여 이 포트를 활성화하세요. 화면 상단에 성공 메시지를 볼 수 있어야 합니다:
-        
-![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled%2015.png)
-        
-- Mozilla Thunderbird를 시작하세요. 왼쪽에 있는 **[customer@company.com](mailto:customer@company.com)** 계정을 클릭하세요. 이제 **customer@company.com** 에서 **integration-server@company.com** 으로 빈 본문과 주제를**acmeSupport.xml:xmlAdd로 설정한 메일 메시지를 작성하세요.** 파일 첨부를 추가하고 **addInput.xml**문서를 선택하세요.   
-        
-![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled%2016.png)
-        
-![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled%2017.png)
-        
-![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled%2018.png)
-        
-메일 작성을 완료하면 **Send**버튼을 눌러 전송하세요.
-        
-참고: 가상 머신에서는 메일 서비스와 Thunderbird가 모든 메일을 로컬로 처리하도록 설정되어 있습니다. 외부 메일 시스템과의 연결이 없습니다. Thunderbird 와 hMail Server ‘company.com’ 도메인을 제공하도록 설정되어 있습니다. 구성 설정을 변경하지 마세요.
-        
-메일을 보낸 후 약 15초 동안 기다린 다음 Thunderbird에서 **Get Mail**
-        
-![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled%2019.png)
-        
-버튼을 클릭하면 Integration Server로부터 메시지 처리 결과가 포함된 답장을 받게 됩니다.
-        
-![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled%2020.png)
-        
-    
-- 이 부분의 연습을 마친 후에는 리소스의 낭비를 방지하기 위해 Integration Serve에서 이메일 포트를 비활성해야 합니다.
-    
-
 #### STEP 4. FTP를 사용하여 서비스를 호출합니다:
 - FTP를 사용하기 전에 통합 서버에 활성화된 FTP포트가 있는지 확인하세요. Integration Server Administration Console을 열고 **Security** Æ **Ports** 하위 메뉴로 이동하세요. 포트 9021을 위한 FTP 포트가 있는지 확인하고 해당 액세스 모드 설정이 모든 서비스 실행을 허용하는지 확인하세요:   
         
