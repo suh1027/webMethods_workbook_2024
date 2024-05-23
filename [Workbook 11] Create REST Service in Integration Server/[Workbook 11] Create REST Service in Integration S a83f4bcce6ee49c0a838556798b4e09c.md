@@ -20,7 +20,7 @@
 ![Untitled](%5BWorkbook%2011%5D%20Create%20REST%20Service%20in%20Integration%20S%20a83f4bcce6ee49c0a838556798b4e09c/Untitled%202.png)
 
 #### STEP 4. getBook Flowservice 를 구성합니다.
-- https://github.com/benoitvallon/100-best-books/blob/master/books.json 파일을 사용하여 bookList 를 불러오는 서비스를 개발합니다. (/webM/IS01/books.json 을 생성하고 내용을 입력합니다.)
+- https://github.com/benoitvallon/100-best-books/blob/master/books.json 파일을 사용하여 bookList 를 불러오는 서비스를 개발합니다. (/webM/IS01/books.json 을 생성하고 내용을 입력합니다. 또는 books.json 파일을 해당 경로에 업로드 합니다.)
         
   ![Untitled](%5BWorkbook%2011%5D%20Create%20REST%20Service%20in%20Integration%20S%20a83f4bcce6ee49c0a838556798b4e09c/Untitled%203.png)
         
