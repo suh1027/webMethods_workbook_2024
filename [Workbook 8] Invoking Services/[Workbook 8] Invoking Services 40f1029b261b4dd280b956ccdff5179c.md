@@ -197,6 +197,15 @@
 
   - webMethods를 사용한 메일전송 테스트입니다.  CUDO_SJH.IF0007.svc 폴더에 svc_IF0007_smtp 서비스를 생성합니다.
     
+    ![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/chapter8_5.png)
+
+    mailhost 에는 [localhost](http://localhost) mailhostPort는 25로 설정합니다.
+
+    Administration → Settings → Resources → Edit Resource Settings → Email Notification 을 설정하세요.
+    ![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/chapter8_6.png)   
+    
+    
+    
 
 
 
