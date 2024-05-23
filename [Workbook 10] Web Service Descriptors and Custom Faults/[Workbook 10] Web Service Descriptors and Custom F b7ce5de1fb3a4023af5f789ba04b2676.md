@@ -81,7 +81,7 @@
 ![Untitled](%5BWorkbook%2010%5D%20Web%20Service%20Descriptors%20and%20Custom%20F%20b7ce5de1fb3a4023af5f789ba04b2676/new012.png)
     
 1. 서비스에서 Tree 탭을 엽니다. 서비스를 확장하고 pub.flow:getLastError 를 선택합니다.
-2. Pipeline 탭을 클릭하고 Pipeline Out 섹션을 선택한 다음 해당 섹션을 마우스 오른쪽 단추로 클릭하고 문서 참조 삽입을 선택한 다음 acme.PurchaseOrder.docs:Error 를 선택하여 생성 후 이름을 Error로 지정합니다. 
+2. Pipeline 탭을 클릭하고 Pipeline Out 섹션을 선택한 다음 해당 섹션을 마우스 오른쪽 단추로 클릭하고 문서 참조 삽입을 선택한 다음 IF0009.docs:docs_IF0009_Error 를 선택하여 생성 후 이름을 docs_IF0009_Error로 지정합니다. 
 3. Service Out의 마지막 Error/Error 변수를 Error 문서 참조의 Reason 변수에 매핑 합니다. 수정 내용을 저장합니다.
 
 #### STEP 17. Webservice Descriptor 인 IF0009.ws.provider:IF0009_sequenceTryCatch_WS_P 를 클릭하여 IF0009_sequenceTryCatch_WS_P 을 확장한 후 응답 문서를 확장합니다. 
@@ -92,7 +92,7 @@
         
 ![Untitled](%5BWorkbook%2010%5D%20Web%20Service%20Descriptors%20and%20Custom%20F%20b7ce5de1fb3a4023af5f789ba04b2676/new006.png)
         
-2. 팝업 대화 상자에서 acme.PurchaseOrder.docs:Error Document Type 을 선택한 후 확인 단추를 클릭합니다. sequenceTryCatchProvider는 다음과 같이 나타납니다.
+2. 팝업 대화 상자에서 IF0009.docs:docs_IF0009_Error Document Type 을 선택한 후 확인 단추를 클릭합니다. sequenceTryCatchProvider는 다음과 같이 나타납니다.
         
 ![Untitled](%5BWorkbook%2010%5D%20Web%20Service%20Descriptors%20and%20Custom%20F%20b7ce5de1fb3a4023af5f789ba04b2676/new008.png)
         
