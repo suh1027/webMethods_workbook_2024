@@ -21,7 +21,7 @@
 ![Untitled](%5BWorkbook%202%5D%20Create%20a%20Flow%20Service%2090fb770fe9c045f9bab8e6e47c8e0b37/Untitled%203.png) 
 ![Untitled](%5BWorkbook%202%5D%20Create%20a%20Flow%20Service%2090fb770fe9c045f9bab8e6e47c8e0b37/Untitled%204.png)
     
-
+[Workbook 2] Create a Flow Service/[Workbook 2] Create a Flow Service 90fb770fe9c045f9bab8e6e47c8e0b37/chapter2_1.png
 #### STEP 3. 새로운 service에 다음과 같이 세 가지 서비스 단계를 추가합니다.
 - flow:debugLog
 - string:toUpper
