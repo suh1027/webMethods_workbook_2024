@@ -17,8 +17,7 @@
         
 - 필요하다면 서비스를 저장하세요  
 - 브라우저 탭을 열고 URL [http://192.168.1.100:5555/addInts?a=23&b=21](http://xn--localhost-p69d:5555/%E2%80%8CxmlAdd?%E2%80%8Ca=12&%E2%80%8Cb=23) 를 입력하세요.
-- 인증을 요청하면 Administrator | manage를 입력하세요. 다른 부라우저 탭에서 대체 URL [http://‌localhost:5555/‌invoke/‌acmeSupport.xml/‌xmlAdd‌?‌a=12‌&b=23](http://xn--localhost-    
-         p69d:5555/%E2%80%8Cinvoke/%E2%80%8CacmeSupport.xml/%E2%80%8CxmlAdd%E2%80%8C?%E2%80%8Ca=12%E2%80%8C&b=23) 를 입력하세요.
+- 인증을 요청하면 Administrator | manage를 입력하세요. 다른 부라우저 탭에서 대체 URL http://192.168.1.100:5555/invoke/CUDO_SJH.IF0007.svc/svc_IF0007_addInts?          a=123&b=13 를 입력하세요.
 
   두 결과를 비교하여 차이점을 확인하세요.
         
