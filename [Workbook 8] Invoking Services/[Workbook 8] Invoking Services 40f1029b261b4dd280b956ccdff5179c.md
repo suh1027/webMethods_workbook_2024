@@ -95,7 +95,7 @@
     
     $ systemctl restart sendmail
     ```
-  -  Telnet을 사용한 메일전송 테스트입니다. 로컬 SMTP 서버를 사용하여 hiworks 메일로 전송하기 입니다. \
+  -  Telnet을 사용한 메일전송 테스트입니다. 로컬 SMTP 서버를 사용하여 hiworks 메일로 전송하기 입니다. 
       ```
         # 로컬 SMTP 서버를 사용 - hiworks 메일로 전송
 
