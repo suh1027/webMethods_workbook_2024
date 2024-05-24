@@ -78,7 +78,7 @@
 ![Untitled](%5BWorkbook%205%5D%20Building%20Flow%20Services%20-%20SEQUENCE%20a8b9a6266353486e8a0b2ddefd0adee4/Untitled%2013.png)
     
 
-#### STEP 10. **pub.flow:getLastError**의 호출 아래에 **pub.flow:debugLog**의 호출을 추가합니다. **lastError/error**를 **debugLog** 서비스의 **message** 입력 매개 변수에 매핑합니다. **Function**을 설정합니다.   
+#### STEP 10. **pub.flow:getLastError**의 호출 아래에 **pub.flow:debugLog**의 호출을 추가합니다. **lastError/error**를 **debugLog** 서비스의 **message** 입력 매개 변수에 매핑합니다. 
     
 ![Untitled](%5BWorkbook%205%5D%20Building%20Flow%20Services%20-%20SEQUENCE%20a8b9a6266353486e8a0b2ddefd0adee4/Untitled%2014.png)
 
