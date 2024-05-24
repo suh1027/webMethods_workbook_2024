@@ -6,7 +6,7 @@
 
 (**10.x 버전 이후로 Try/Catch 문이 추가 되어 해당 로직을 사용해도 됩니다.**)
 
-**Flow service**를 만들고 **Sequence** 문을 사용하여 **Try/Catch Sequence** 블록을 생성, TRY 블록에 **Exception** 이 발생하는 **service** 를 구성합니다.
+**Flow service**를 만들고 **Sequence** 문을 사용하여 **Try/Catch Sequence** 블록을 생성, TRY 블록에 **Exception** 이 발생하는 **Service** 를 구성합니다.
 
 
 ## Steps
