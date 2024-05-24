@@ -60,7 +60,7 @@
 
 ---
 
-#### STEP 6. IF0002.svc 폴더에서 String type의 Input값 2개 (account & cost) 및 String type의 Output값 (message)가 있는 branch2라는 다른 Flow Service를 만듭니다. 
+#### STEP 6. IF0002.svc 폴더에서 String type의 Input값 2개 (account & cost) 와 String type의 Output값 (message)가 있는 svc_IF0002_branch2 라는 다른 Flow Service를 만듭니다. 
     
 ![Untitled](%5BWorkbook%203%5D%20Building%20Flow%20Services%20-%20BRANCH%2016e22a6d373042f8b7c70b086784f6ca/Untitled%207.png)
     
@@ -86,6 +86,5 @@
 ![Untitled](%5BWorkbook%203%5D%20Building%20Flow%20Services%20-%20BRANCH%2016e22a6d373042f8b7c70b086784f6ca/Untitled%2011.png)
 
 ## Check Your Understanding
-#### QUIZ 1. BANCH에서 정규 표현식은 언제 유용합니까?
-#### QUIZ 2. switch variable를 Evaluate labels=True와 결합할 수 있습니까?
-#### QUIZ 3. Branch 문에서 labels로 사용할 수 있는 special test values은 무엇입니까? 
+#### QUIZ 1. BRANCH에서 정규 표현식은 언제 유용합니까?
+#### QUIZ 2. BRANCH 문의 속성인 switch 와 Evaluate labels=true 속성을 결합하여 사용할 수 있습니까?
