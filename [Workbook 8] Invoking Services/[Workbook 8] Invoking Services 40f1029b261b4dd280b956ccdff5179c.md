@@ -212,7 +212,7 @@
 
 
 
-#### STEP 4. FTP를 사용하여 서비스를 호출합니다:
+#### STEP 3. FTP를 사용하여 서비스를 호출합니다:
 - FTP를 사용하기 전에 통합 서버에 활성화된 FTP포트가 있는지 확인하세요. Integration Server Administration Console을 열고 **Security** Æ **Ports** 하위 메뉴로 이동하세요. 포트 9021을 위한 FTP 포트가 있는지 확인하고 해당 액세스 모드 설정이 모든 서비스 실행을 허용하는지 확인하세요:   
         
 ![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled%2021.png)
@@ -315,8 +315,10 @@
         
     
 
-#### STEP 5.  Java 를 사용하여 서비스를 Invoke(호촐) 합니다: 
-- Designer 에서 위의 **xmlAdd** 서비스를 찾으십시오**.**
+#### STEP 4.  Java 를 사용하여 서비스를 Invoke(호촐) 합니다: 
+- IF0007.svc 폴더에서 svc_IF0007_addInts를 찾고 오른쪽 마우스클릭 후 Generate Code를 클릭합니다.
+
+- 
 - 서비스를 우-클릭 하고 **Generate Code** 항목을 선택합니다. 열린dialog box 에서          **For calling this service from a client** 를 선택합니다.   
         
 ![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled%2025.png)
@@ -335,15 +337,18 @@ Code Generation 위한 directory로 **C:\TEMP** 를 사용합니다**.**
         
 ![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled%2029.png)
         
-Dialog 안에서 **xmlAdd** 를 프로젝트 이름으로 입력하세요. 기본값을 변경하지 말고 **Finish 버튼**을 누르십시오. Java perspective 변경을 허용하세요.
+Dialog 안에서 **addInts** 를 프로젝트 이름으로 입력하세요. 기본값을 변경하지 말고 **Finish 버튼**을 누르십시오. Java perspective 변경을 허용하세요.
+라이브러리는 JavaSE-1.6 선택 후 진행합니다
+
+사진!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         
-- 이 프로젝트는 두 개의 추가적인 외부의 Jar 파일이 필요합니다. 추가하려면, project node () 를 우-클릭하고 pop up 버튼 아래에 있는 **Properties** 항목을 선택하세요. 나타나는 dialog 에서 **Java Build Path** 를 선택하고**Libraries** tab 을 클릭하세요. 이 창에서 **Add external Jars** 를 선택하고 libraries **...\SoftwareAG\common\lib\wm-isclient.jar** 및 **...\SoftwareAG\common\lib\ext\mail.jar** 를 추가하세요. 완료가 되면, 창은 다음과 같습니다:   
+- 이 프로젝트는 두 개의 추가적인 외부의 Jar 파일이 필요합니다. 추가하려면 **Properties** 항목을 선택하세요. 나타나는 dialog 에서 **Java Build Path** 를 선택하고**Libraries** tab 을 클릭하세요. 이 창에서 **Add external Jars** 를 선택하고 libraries **...\SoftwareAG\common\lib\wm-isclient.jar** 및 **...\SoftwareAG\common\lib\ext\mail.jar** 를 추가하세요. 완료가 되면, 창은 다음과 같습니다:   
         
 ![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled%2030.png)
         
 **OK** 버튼을 클릭하여 dialog 를 닫습니다.   
         
-- 이제 첫 번째 단계에서 생성된 Java 소스를 가져옵니다. 그렇게 하려면, right-click the **xmlAdd** node 를 한 번 더 추가하고 menu  에서 **Import** option  옵션을 선택합니다. 선택: **General** Æ **File System** 후 click **Next**. 다음 창에서 directory 로 **C:\temp** 를 찾아보고 **xmlAdd.java** 파일을 선택합니다. **Into Folder** field 에 **xmlAdd\src** 를 입력합니다. Dialog 는 다음과 같아야 합니다:     
+- 이제 첫 번째 단계에서 생성된 Java 소스를 가져옵니다. 그렇게 하려면, right-click the **xmlAdd** node 를 한 번 더 추가하고 menu  에서 **Import** option  옵션을 선택합니다. 선택: **General** Æ **File System** 후 click **Next**. 다음 창에서 directory 로 **C:\temp** 를 찾아보고 **svc_IF0007_addInts.java** 파일을 선택합니다. **Into Folder** field 에 **addInts\src** 를 입력합니다. Dialog 는 다음과 같아야 합니다:     
         
 ![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled%2031.png)
         
