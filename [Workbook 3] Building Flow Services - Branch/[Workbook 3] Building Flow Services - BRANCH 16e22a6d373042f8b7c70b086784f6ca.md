@@ -18,7 +18,7 @@
 #### STEP 3. 다음 단계에서 testValue 변수의 내용을 기반으로 조건부로 Server Log에 메시지를 작성하는 BRANCH 문을 Flow service에 구성합니다. 예를 들어 testValue = true인 경우 IS Server 로그에 The value is TRUE 메시지를 작성합니다.
 - service에 BRANCH문을 추가합니다. Switch 속성으로 /testValue를 지정합니다.    
         
-![Untitled](%5BWorkbook%203%5D%20Building%20Flow%20Services%20-%20BRANCH%2016e22a6d373042f8b7c70b086784f6ca/Untitled 1.png)
+![Untitled](%5BWorkbook%203%5D%20Building%20Flow%20Services%20-%20BRANCH%2016e22a6d373042f8b7c70b086784f6ca/Untitled%201.png))
         
 - Branch 아래에 pub.flow:debugLog 문을 추가합니다 (BANCH 논리의 일부가 되도록 BANCH 아래에 들여쓰기). debugLog 속성에서 서비스의 Label을 true로 설정합니다(모두 소문자). 
         
