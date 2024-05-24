@@ -219,7 +219,7 @@ port\pub
  
     
 
-#### STEP 4.  Java 를 사용하여 서비스를 Invoke(호촐) 합니다: 
+#### STEP 4.  Java 를 사용하여 서비스를 Invoke(호출) 합니다: 
 - IF0007.svc 폴더에서 svc_IF0007_addInts를 찾고 오른쪽 마우스클릭 후 Generate Code를 클릭합니다.
 
 - 서비스를 우-클릭 하고 **Generate Code** 항목을 선택합니다. 열린dialog box 에서          **For calling this service from a client** 를 선택합니다.   
