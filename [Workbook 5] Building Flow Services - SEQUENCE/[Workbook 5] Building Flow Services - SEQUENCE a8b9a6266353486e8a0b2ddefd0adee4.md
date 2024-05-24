@@ -12,7 +12,7 @@
 ## Steps
 
 #### STEP 0. IS 가 설치 된 서버 내 (Linux 기준) /webM/IS01/ 아래 test.txt 라는 파일을 생성합니다.
-
+https://github.com/suh1027/webMethods_workbook_2024/blob/main/%5BWorkbook%205%5D%20Building%20Flow%20Services%20-%20SEQUENCE/%5BWorkbook%205%5D%20Building%20Flow%20Services%20-%20SEQUENCE%20a8b9a6266353486e8a0b2ddefd0adee4/test.txt
 ![Untitled](%5BWorkbook%205%5D%20Building%20Flow%20Services%20-%20SEQUENCE%20a8b9a6266353486e8a0b2ddefd0adee4/Untitled.png))
 
 #### STEP 1. **acme.PurchaseOrder.work** 폴더에서 **riskOperation**이라는 새 **Flow service**를 만듭니다. **input**은 **fileName** 이라는 **String Type** 필드로, **output**은 **String Type** 의 **result** 필드로 설정합니다. 
