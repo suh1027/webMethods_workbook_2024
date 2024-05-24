@@ -79,7 +79,7 @@
 
 #### STEP 8. **Service**를 저장하고 테스트합니다. **IS Server log** 에서 결과를 확인합니다.     
     
-![Untitled](%5BWorkbook%203%5D%20Building%20Flow%20Services%20-%20Branch/%5BWorkbook%203%5D%20Building%20Flow%20Services%20-%20BRANCH%2016e22a6d373042f8b7c70b086784f6ca/Untitled%2010.png)
+![Untitled](%5BWorkbook%203%5D%20Building%20Flow%20Services%20-%20BRANCH%2016e22a6d373042f8b7c70b086784f6ca/Untitled%2010.png)
     
 위 스크린샷은 다음과 같은 **input**값을 이용한 **service**를 실행하여 생성되었습니다.
     
