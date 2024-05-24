@@ -37,7 +37,8 @@ webMethods 에서 Flatfile 을 다루기 위해서는 **Flat File Dictionary** �
 - Field 정의
   
 ![Untitled](%5BWorkbook%209%5D%20Working%20With%20Flat%20Files%20bacbba872fe74e12adf97c424524e971/Untitled%204.png)    
-
+Fixed Position은 시작과 끝을 길이로 제한하는 방식
+Nth Field는 스키마의 정의에 따라 Field를 구분하는 방식
 ![Untitled](%5BWorkbook%209%5D%20Working%20With%20Flat%20Files%20bacbba872fe74e12adf97c424524e971/Untitled%205.png)    
 
 **작업을 저장하세요**
