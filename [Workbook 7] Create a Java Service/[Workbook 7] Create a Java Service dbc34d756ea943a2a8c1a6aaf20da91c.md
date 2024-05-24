@@ -11,8 +11,7 @@ webMethods 내 Built-in 된 **pub.string** 폴더 아래는 이와 같은 서비
 
 ## Steps
 
-#### STEP 1. **acme.PurchaseOrder.work** 폴더에 **endsWith라는 새 Java 서비스를 생성하세요**. 이 서비스에는 **string** 및 **suffix**라는 두 개의 문자열 입력 및 **value**라는 문자열 출력이 있어야 합니다.   
-    
+#### STEP 1. 최상위 폴더 아래 IF0006 와 svc 폴더를 생성한 후 폴더에 svc_IF0006_endsWith라는 새 Java Service를 생성하세요. 이 서비스에는 string 및 suffix 두 개의 문자열 입력 및 value 라는 문자열 출력이 있어야 합니다.       
    ![Untitled](%5BWorkbook%207%5D%20Create%20a%20Java%20Service%20dbc34d756ea943a2a8c1a6aaf20da91c/Untitled.png)
     
 
