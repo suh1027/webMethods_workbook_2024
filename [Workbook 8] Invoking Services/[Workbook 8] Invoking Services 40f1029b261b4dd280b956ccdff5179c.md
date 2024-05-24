@@ -25,7 +25,7 @@
   ![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/chapter8_3.png)   
     
 
-#### STEP 2. HTTP를 사용하여 서비스를 호출합니다:
+#### STEP 2. SMTP(메일)를 사용하여 서비스를 호출합니다:
   - SMTP 서버 설치 (CentOS7 기준)입니다.
   
   ```
