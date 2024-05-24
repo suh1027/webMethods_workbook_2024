@@ -218,6 +218,9 @@
  ![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/chapter8_14.png)  
  ![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/chapter8_15.png)  
  ![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/chapter8_16.png)  
+
+
+ !!!!!!!!!!!!!!!!!!!!xml 파일 생성하는방법 모르겠습니다 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         
        
  
