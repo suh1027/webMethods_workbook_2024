@@ -15,7 +15,8 @@
 
 ## Steps
 
-#### STEP 1. 최상위 폴더 아래 **IF0008** 과 **svc**, **ff** 폴더를 생성합니다. (**ff** 폴더는 **flatfile** 컴포넌트 저장용 폴더입니다.)    
+#### STEP 1. 
+최상위 폴더 아래 **IF0008** 과 **svc**, **ff** 폴더를 생성합니다. (**ff** 폴더는 **flatfile** 컴포넌트 저장용 폴더입니다.)    
 
 #### STEP 2. 생성 된 IF0008.ff 폴더 아래, schema와 dictionary 두 개의 폴더를 생성합니다. IF0008.ff.dictionary:customer 라는 Flat File Dictionary 를 생성합니다.
 
