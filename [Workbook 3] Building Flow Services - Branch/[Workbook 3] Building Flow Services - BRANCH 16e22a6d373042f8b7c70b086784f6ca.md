@@ -22,7 +22,7 @@
         
 - Branch 아래에 pub.flow:debugLog 문을 추가합니다 (BANCH 논리의 일부가 되도록 BANCH 아래에 들여쓰기). debugLog 속성에서 서비스의 Label을 true로 설정합니다(모두 소문자). 
         
-![Untitled](%5BWorkbook%203%5D%20Building%20Flow%20Services%20-%20BRANCH%2016e22a6d373042f8b7c70b086784f6ca/Untitled3.png)
+![Untitled](%5BWorkbook%203%5D%20Building%20Flow%20Services%20-%20BRANCH%2016e22a6d373042f8b7c70b086784f6ca/Untitled%202.png))
         
 - debugLog 문에 대한 Pipeline 탭에서 변수 메시지의 값을 “The value is TRUE”로 설정합니다. Server Log 에서 눈에 띄기 쉽게 Function 의 값은 ++++++로 설정합니다.
         
