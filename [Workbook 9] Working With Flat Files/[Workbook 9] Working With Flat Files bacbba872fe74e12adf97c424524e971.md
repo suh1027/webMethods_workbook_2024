@@ -26,13 +26,16 @@ webMethods 에서 Flatfile 을 다루기 위해서는 **Flat File Dictionary** �
     
 ![Untitled](%5BWorkbook%209%5D%20Working%20With%20Flat%20Files%20bacbba872fe74e12adf97c424524e971/Untitled%201.png)
 
-    - Record Definition 생성
+- Record Definition 생성
+  
 ![Untitled](%5BWorkbook%209%5D%20Working%20With%20Flat%20Files%20bacbba872fe74e12adf97c424524e971/Untitled%202.png)
     
-    - Record 생성 후 Composite 또는 Field 생성
+- Record 생성 후 Composite 또는 Field 생성
+  
 ![Untitled](%5BWorkbook%209%5D%20Working%20With%20Flat%20Files%20bacbba872fe74e12adf97c424524e971/Untitled%203.png)    
 
-    - Field 정의
+- Field 정의
+  
 ![Untitled](%5BWorkbook%209%5D%20Working%20With%20Flat%20Files%20bacbba872fe74e12adf97c424524e971/Untitled%204.png)    
 
 ![Untitled](%5BWorkbook%209%5D%20Working%20With%20Flat%20Files%20bacbba872fe74e12adf97c424524e971/Untitled%205.png)    
