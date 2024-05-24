@@ -8,7 +8,7 @@
 
 ## Steps
 
-#### STEP 1. acme.PurchaseOrder.work 하위 폴더에 branch1 이라는 새로운 Flow service를 새로 만듭니다.
+#### STEP 1. 최상위 폴더 아래 IF0002 와 그 하위 폴더로 svc 를 생성합니다. svc 폴더 아래 svc_IF0002_branch1 이라는 새로운 Flow service를 새로 만듭니다.
 
 #### STEP 2. svc_IF0002_branch1의 Input을 testValue라는 String을 정의하고 Output을 testValue라는 String 값으로 정의합니다.
     
