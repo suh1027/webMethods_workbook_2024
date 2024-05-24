@@ -7,7 +7,9 @@
 
 ## Steps
 
-#### STEP 1. IF0001 아래 svc 폴더에 svc_IF0001_customWriteToLog라는 빈 Flow service을 만듭니다.
+#### STEP 0. Workbook 1 에서 최상위 폴더 {회사명}+{이니셜} 폴더 아래 IF0001 과 svc 폴더를 생성되어 있는지 확인합니다.
+
+#### STEP 1. Workbook 1 에서 생성 한 IF0001 아래 svc 폴더 안에 svc_IF0001_customWriteToLog라는 빈 Flow service을 만듭니다.
 ![Untitled](%5BWorkbook%202%5D%20Create%20a%20Flow%20Service%2090fb770fe9c045f9bab8e6e47c8e0b37/chapter2_1.png)
 -	Flow Service 는 IF0001.svc 아래 우클릭 > New > Flow Service 를 클릭하여 생성합니다.
 
