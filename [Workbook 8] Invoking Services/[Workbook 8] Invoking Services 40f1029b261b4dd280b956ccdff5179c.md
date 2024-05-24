@@ -318,7 +318,6 @@
 #### STEP 4.  Java 를 사용하여 서비스를 Invoke(호촐) 합니다: 
 - IF0007.svc 폴더에서 svc_IF0007_addInts를 찾고 오른쪽 마우스클릭 후 Generate Code를 클릭합니다.
 
-- 
 - 서비스를 우-클릭 하고 **Generate Code** 항목을 선택합니다. 열린dialog box 에서          **For calling this service from a client** 를 선택합니다.   
         
 ![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled%2025.png)
@@ -340,7 +339,8 @@ Code Generation 위한 directory로 **C:\TEMP** 를 사용합니다**.**
 Dialog 안에서 **addInts** 를 프로젝트 이름으로 입력하세요. 기본값을 변경하지 말고 **Finish 버튼**을 누르십시오. Java perspective 변경을 허용하세요.
 라이브러리는 JavaSE-1.6 선택 후 진행합니다
 
-사진!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled%2029.png)
+
         
 - 이 프로젝트는 두 개의 추가적인 외부의 Jar 파일이 필요합니다. 추가하려면 **Properties** 항목을 선택하세요. 나타나는 dialog 에서 **Java Build Path** 를 선택하고**Libraries** tab 을 클릭하세요. 이 창에서 **Add external Jars** 를 선택하고 libraries **...\SoftwareAG\common\lib\wm-isclient.jar** 및 **...\SoftwareAG\common\lib\ext\mail.jar** 를 추가하세요. 완료가 되면, 창은 다음과 같습니다:   
         
