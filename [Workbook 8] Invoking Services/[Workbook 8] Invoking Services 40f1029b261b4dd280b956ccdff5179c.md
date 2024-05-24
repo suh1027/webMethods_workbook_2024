@@ -339,18 +339,18 @@ Code Generation 위한 directory로 **C:\TEMP** 를 사용합니다**.**
 Dialog 안에서 **addInts** 를 프로젝트 이름으로 입력하세요. 기본값을 변경하지 말고 **Finish 버튼**을 누르십시오. Java perspective 변경을 허용하세요.
 라이브러리는 JavaSE-1.6 선택 후 진행합니다
 
-![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled%2029.png)
+![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/chapter8_9.png)
 
         
 - 이 프로젝트는 두 개의 추가적인 외부의 Jar 파일이 필요합니다. 추가하려면 **Properties** 항목을 선택하세요. 나타나는 dialog 에서 **Java Build Path** 를 선택하고**Libraries** tab 을 클릭하세요. 이 창에서 **Add external Jars** 를 선택하고 libraries **...\SoftwareAG\common\lib\wm-isclient.jar** 및 **...\SoftwareAG\common\lib\ext\mail.jar** 를 추가하세요. 완료가 되면, 창은 다음과 같습니다:   
         
-![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled%2030.png)
+![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/chapter8_10.png)
         
 **OK** 버튼을 클릭하여 dialog 를 닫습니다.   
         
-- 이제 첫 번째 단계에서 생성된 Java 소스를 가져옵니다. 그렇게 하려면, right-click the **xmlAdd** node 를 한 번 더 추가하고 menu  에서 **Import** option  옵션을 선택합니다. 선택: **General** Æ **File System** 후 click **Next**. 다음 창에서 directory 로 **C:\temp** 를 찾아보고 **svc_IF0007_addInts.java** 파일을 선택합니다. **Into Folder** field 에 **addInts\src** 를 입력합니다. Dialog 는 다음과 같아야 합니다:     
+- 이제 첫 번째 단계에서 생성된 Java 소스를 가져옵니다. 그렇게 하려면, right-click the **addInts** node 를 한 번 더 추가하고 menu  에서 **Import** option  옵션을 선택합니다. 선택: **General** Æ **File System** 후 click **Next**. 다음 창에서 directory 로 **C:\temp** 를 찾아보고 **svc_IF0007_addInts.java** 파일을 선택합니다. **Into Folder** field 에 **addInts\src** 를 입력합니다. Dialog 는 다음과 같아야 합니다:     
         
-![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled%2031.png)
+![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/chapter8_11.png)
         
 **Finish** 버튼을 클릭하세요.   
         
@@ -362,18 +362,18 @@ Dialog 안에서 **addInts** 를 프로젝트 이름으로 입력하세요. 기�
         
 ![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled%2033.png)
         
-- 변경사항을 저장하세요. **xmladd.java** 파일을 마우스 오른쪽 버튼으로 클릭하고 **Run As → Java Application**을 선택하여 프로그램을 실행하세요. 콘솔 뷰를 열어보세요:  
+- 변경사항을 저장하세요. **svc_IF0007_addInts.java** 파일을 마우스 오른쪽 버튼으로 클릭하고 **Run As → Java Application**을 선택하여 프로그램을 실행하세요. 콘솔 뷰를 열어보세요:  
         
         
          
         
-![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled%2034.png)
+![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/chapter8_12.png)
         
 - **a =** 와 **b =** 프롬프트에 두 개의 작은 숫자를 입력하고 Enter 키를 누르세요. 결과를 확인하세요.
 
 *참고* : 커서 키를 사용하여 커서를 ‘=’ 기호 뒤에 위치시키지 마세요. 커서위치 오류는 Eclipse IDE의 미세한 버그입니다. 커서가 올바른 위치에 있는 것처럼 숫자를 입력하세요.
         
-![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/Untitled%2035.png)
+![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/chapter8_13.png)
         
 
 ## Check Your Understanding
