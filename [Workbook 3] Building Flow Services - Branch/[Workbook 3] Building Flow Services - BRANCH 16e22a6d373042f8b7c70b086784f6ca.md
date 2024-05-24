@@ -18,17 +18,17 @@
 #### STEP 3. 다음 단계에서 testValue 변수의 내용을 기반으로 조건부로 Server Log에 메시지를 작성하는 BRANCH 문을 Flow service에 구성합니다. 예를 들어 testValue = true인 경우 IS Server 로그에 The value is TRUE 메시지를 작성합니다.
 - service에 BRANCH문을 추가합니다. Switch 속성으로 /testValue를 지정합니다.    
         
-![Untitled](%5BWorkbook%203%5D%20Building%20Flow%20Services%20-%20BRANCH%2016e22a6d373042f8b7c70b086784f6ca/Untitled%201.png))
+![Untitled](%5BWorkbook%203%5D%20Building%20Flow%20Services%20-%20BRANCH%2016e22a6d373042f8b7c70b086784f6ca/Untitled%201.png)
         
 - Branch 아래에 pub.flow:debugLog 문을 추가합니다 (BANCH 논리의 일부가 되도록 BANCH 아래에 들여쓰기). debugLog 속성에서 서비스의 Label을 true로 설정합니다(모두 소문자). 
         
-![Untitled](%5BWorkbook%203%5D%20Building%20Flow%20Services%20-%20BRANCH%2016e22a6d373042f8b7c70b086784f6ca/Untitled%202.png))
+![Untitled](%5BWorkbook%203%5D%20Building%20Flow%20Services%20-%20BRANCH%2016e22a6d373042f8b7c70b086784f6ca/Untitled%202.png)
         
 - debugLog 문에 대한 Pipeline 탭에서 변수 메시지의 값을 “The value is TRUE”로 설정합니다. Server Log 에서 눈에 띄기 쉽게 Function 의 값은 ++++++로 설정합니다.
         
-![Untitled](%5BWorkbook%203%5D%20Building%20Flow%20Services%20-%20BRANCH%2016e22a6d373042f8b7c70b086784f6ca/Untitled4.png)
+![Untitled](%5BWorkbook%203%5D%20Building%20Flow%20Services%20-%20BRANCH%2016e22a6d373042f8b7c70b086784f6ca/Untitled%203.png)
         
-![Untitled](%5BWorkbook%203%5D%20Building%20Flow%20Services%20-%20BRANCH%2016e22a6d373042f8b7c70b086784f6ca/Untitled5.png)
+![Untitled](%5BWorkbook%203%5D%20Building%20Flow%20Services%20-%20BRANCH%2016e22a6d373042f8b7c70b086784f6ca/Untitled%204.png)
         
 
 #### STEP 4. Branch 문 하위에 pub.flow:debugLog 문을 세 개 더 추가합니다 (모두 Branch 하위로 들여쓰기 하여 Branch 로직의 일부가 되도록 구성하십시오). 다음과 같이 각각의 Label 속성과 변수 메시지를 설정합니다.
