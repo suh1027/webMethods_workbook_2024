@@ -10,6 +10,7 @@
 #### STEP 0. 최상위 폴더 아래 IF0003 와 svc 와 docs 폴더를 생성합니다. docs 폴더 아래 Depart 라는 명칭으로 다음과 같은 새로운 Document Type 을 생성합니다.
 
 ![Untitled](%5BWorkbook%204%5D%20Building%20Flow%20Services%20-%20LOOP%20adc3c2842c234df2ba93e2fcfb87669d/chapter4_1.png)
+
 **Note.** Document List Type은 다건의 Document 를 처리하는데 사용하는 타입 입니다.
 
 
