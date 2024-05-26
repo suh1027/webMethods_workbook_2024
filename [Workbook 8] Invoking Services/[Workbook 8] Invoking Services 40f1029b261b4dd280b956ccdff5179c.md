@@ -221,7 +221,8 @@
 
 -  이제 (CentOS7 기준입니다) 명령 프롬프트를 열고 아래와 같이 표시된 명령을 실행하세요
     ```
-      ##### [sol@192 pub]$ cd /webM/IS01/IntegrationServer/instances/default/packages/AcmeSupport/pub
+      **[sol@192 pub]$ cd /webM/IS01/IntegrationServer/instances/default/packages/AcmeSupport/pub**
+      [sol@192 pub]$ cd /webM/IS01/IntegrationServer/instances/default/packages/AcmeSupport/pub  
       [sol@192 pub]$ ftp
       ftp> open localhost 9021
       Trying ::1...
@@ -261,9 +262,6 @@
       150 Binary mode  data connection for addInput.xml.out (0:0:0:0:0:0:0:1,0) (107 bytes).
       226 Binary transfer complete.
       107 bytes received in 0.000143 secs (748.25 Kbytes/sec)
-
-
-
     ```
 
 
