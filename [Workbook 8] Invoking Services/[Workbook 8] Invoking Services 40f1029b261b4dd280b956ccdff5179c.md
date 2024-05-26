@@ -221,7 +221,7 @@
 
 -  이제 (CentOS7 기준입니다) 명령 프롬프트를 열고 아래와 같이 표시된 명령을 실행하세요
     ```
-      [sol@192 pub]**$ cd /webM/IS01/IntegrationServer/instances/default/packages/AcmeSupport/pub**
+      [sol@192 pub]##$ cd /webM/IS01/IntegrationServer/instances/default/packages/AcmeSupport/pub##
       [sol@192 pub]$ ftp
       ftp> open localhost 9021
       Trying ::1...
