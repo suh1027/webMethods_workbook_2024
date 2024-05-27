@@ -115,7 +115,7 @@
 
   a. 최상위 폴더 아래 IF0005 와 svc 폴더를 생성한 후 svc_IF0005_transformer 라는 서비스를 생성 하세요.
 
-    ![Untitled](%5BWorkbook%206%5D%20Mapping%20Service%2032520d2f4376462f83bb53b45e0694d8/Untitled%2021.png)  
+![Untitled](%5BWorkbook%206%5D%20Mapping%20Service%2032520d2f4376462f83bb53b45e0694d8/Untitled%2021.png)  
 
   b. 서비스에 MAP을 추가 한 뒤, Transformer에 date:getCurrentDateString 서비스를 추가하세요.
   맵에서 다음 변수를
