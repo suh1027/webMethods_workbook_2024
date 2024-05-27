@@ -27,7 +27,7 @@
 - SELECT tab 에서, Insert Row 버튼을 한번 클릭, 다음 Fill in all rows to the table 버튼을
        클릭하세요.  
 
-![Untitled](%5BWorkbook%2015%5D%20JDBC%20Adapter%20Notifications%20366348d839fe499f9a7892f1bbd20595/chapter15_4.png)
+![Untitled](%5BWorkbook%2015%5D%20JDBC%20Adapter%20Notifications%20366348d839fe499f9a7892f1bbd20595/chatper15_4.png))
 
 - **WHEN** 및**Adapter Settings** tabs 을 skip 합니다. 
 - 작업을 저장하세요.
