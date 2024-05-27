@@ -221,50 +221,91 @@
 
 -  이제 (CentOS7 기준입니다) 명령 프롬프트를 열고 아래와 같이 표시된 명령을 실행하세요
     
-      **[sol@192 pub]$ cd /webM/IS01/IntegrationServer/instances/default/packages/AcmeSupport/pub** 
+      **[sol@192 pub]$ cd /webM/IS01/IntegrationServer/instances/default/packages/AcmeSupport/pub**
+   
       **[sol@192 pub]$ ftp**
+   
       **ftp> open localhost 9021**
+   
       Trying ::1...
+   
       Connected to localhost (::1).
+   
       220 192.168.1.100:9021 FTP server (webMethods Integration Server version 10.15.0.0) ready.
+   
       **Name (localhost:sol): Administrator**
+   
       331 Password required for Administrator.
+   
       **Password:**
+   
       230 User Administrator logged in.
+   
       Remote system type is UNIX.
+   
       Using binary mode to transfer files.
+   
       **ftp> cd ns**
+   
       250 CWD command successful.
+   
       **ftp> cd acmeSupport**
+   
       250 CWD command successful.
+   
       **tp> cd xml**
+   
       250 CWD command successful.
+   
       **ftp> cd xmlAdd**
+   
       250 CWD command successful.
+   
       **ftp> send addInput.xml**
+   
       local: addInput.xml remote: addInput.xml
+   
       229 Entering Extended Passive Mode (|||35950|)
+   
       150 Binary mode  data connection for addInput.xml (0:0:0:0:0:0:0:1,0).
+   
       226 Binary transfer complete.
+   
       184 bytes sent in 5.3e-05 secs (3471.70 Kbytes/sec)
+   
      **ftp> ls**
+   
       229 Entering Extended Passive Mode (|||42497|)
+   
       150 ASCII mode  data connection for /bin/ls (0:0:0:0:0:0:0:1,0).
+   
       total 1
+   
       dr-xr-xr-x  3 root      root                       1 May 27 08:48 .
+   
       dr-xr-xr-x  3 root      root                       1 May 27 08:48 ..
+   
       -r--r--r--  1 tx        tx                       107 May 27 08:48 addInput.xml.out
+   
       226 ASCII transfer complete.
+   
       **ftp> get addInput.xml.out**
+   
       local: addInput.xml.out remote: addInput.xml.out
+   
       229 Entering Extended Passive Mode (|||36189|)
+   
       150 Binary mode  data connection for addInput.xml.out (0:0:0:0:0:0:0:1,0) (107 bytes).
+   
       226 Binary transfer complete.
+   
       107 bytes received in 0.000143 secs (748.25 Kbytes/sec)
+   
       **ftp>quit**
 
    -  FTP를 실행 후 결과 입니다.
-     ![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/chapter8_17.PNG))
+     
+       ![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/chapter8_17.PNG))
 
     
 
