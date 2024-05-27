@@ -63,7 +63,7 @@
     
 - Pipeline 탭에서 다음과 같이 매핑합니다
     - **fileName**에서 **fileName**으로 매핑
-    - **result**에서**result**로 매핑
+    - **result**에서 **result**로 매핑
     
 ![Untitled](%5BWorkbook%205%5D%20Building%20Flow%20Services%20-%20SEQUENCE%20a8b9a6266353486e8a0b2ddefd0adee4/Untitled%2011.png)
     
