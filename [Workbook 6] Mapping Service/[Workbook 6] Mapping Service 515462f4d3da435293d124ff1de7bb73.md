@@ -9,58 +9,58 @@
 
 #### STEP 1. 암묵적 매핑 서비스
     
-    - Designer는 하나의 flow내에 같은 이름, 데이터 타입이 적합한 변수들을 암묵적으로 연결하거나 매핑합니다. 
+- Designer는 하나의 flow내에 같은 이름, 데이터 타입이 적합한 변수들을 암묵적으로 연결하거나 매핑합니다. 
 
-    a. 최상위 폴더 아래 IF0005 와 svc 폴더를 생성한 후, svc_IF0005_implicitMap라는 Flow service를 생성하세요. 
+  a. 최상위 폴더 아래 IF0005 와 svc 폴더를 생성한 후, svc_IF0005_implicitMap라는 Flow service를 생성하세요. 
     
-    ![Untitled](%5BWorkbook%206%5D%20Mapping%20Service%2032520d2f4376462f83bb53b45e0694d8/Untitled.png)
+  ![Untitled](%5BWorkbook%206%5D%20Mapping%20Service%2032520d2f4376462f83bb53b45e0694d8/Untitled.png)
     
-    b. pub.math:divideInts 서비스를 호출합니다.
+  b. pub.math:divideInts 서비스를 호출합니다.
 
-    ![Untitled](%5BWorkbook%206%5D%20Mapping%20Service%2032520d2f4376462f83bb53b45e0694d8/Untitled%201.png)
+  ![Untitled](%5BWorkbook%206%5D%20Mapping%20Service%2032520d2f4376462f83bb53b45e0694d8/Untitled%201.png)
     
-    c. Input/Output 탭에서 input/output 변수를 각각 추가 해줍니다.
+  c. Input/Output 탭에서 input/output 변수를 각각 추가 해줍니다.
 
-    ![Untitled](%5BWorkbook%206%5D%20Mapping%20Service%2032520d2f4376462f83bb53b45e0694d8/Untitled%202.png)
+  ![Untitled](%5BWorkbook%206%5D%20Mapping%20Service%2032520d2f4376462f83bb53b45e0694d8/Untitled%202.png)
     
-    d. Service Out의 value 값을 Pipeline Out의 result에 명시적으로 매핑해줍니다.
+  d. Service Out의 value 값을 Pipeline Out의 result에 명시적으로 매핑해줍니다.
 
-    ![Untitled](%5BWorkbook%206%5D%20Mapping%20Service%2032520d2f4376462f83bb53b45e0694d8/Untitled%203.png)
+  ![Untitled](%5BWorkbook%206%5D%20Mapping%20Service%2032520d2f4376462f83bb53b45e0694d8/Untitled%203.png)
     
-    암묵적 연결은 회색선으로 연결됩니다.
+  암묵적 연결은 회색선으로 연결됩니다.
     
      
 
 #### STEP 2. 조건적 Mapping
 
-    - Designer는 하나의 flow내에 같은 이름, 데이터 타입이 적합한 변수들을 암묵적으로 연결하거나 매핑합니다. 
+- Designer는 하나의 flow내에 같은 이름, 데이터 타입이 적합한 변수들을 암묵적으로 연결하거나 매핑합니다. 
 
-    a. 최상위 폴더 아래 IF0005 와 svc 폴더를 생성한 후, svc_IF0005_conditionalMap라는 Flow service를 생성하세요. 
+  a. 최상위 폴더 아래 IF0005 와 svc 폴더를 생성한 후, svc_IF0005_conditionalMap라는 Flow service를 생성하세요. 
     
-    ![Untitled](%5BWorkbook%206%5D%20Mapping%20Service%2032520d2f4376462f83bb53b45e0694d8/Untitled%204.png)
+  ![Untitled](%5BWorkbook%206%5D%20Mapping%20Service%2032520d2f4376462f83bb53b45e0694d8/Untitled%204.png)
     
-    b. MAP 서비스를 추가 해줍니다.
+  b. MAP 서비스를 추가 해줍니다.
 
-    ![Untitled](%5BWorkbook%206%5D%20Mapping%20Service%2032520d2f4376462f83bb53b45e0694d8/Untitled%205.png)
+  ![Untitled](%5BWorkbook%206%5D%20Mapping%20Service%2032520d2f4376462f83bb53b45e0694d8/Untitled%205.png)
     
-    c. Input/Output 변수를 추가 해줍니다.
+  c. Input/Output 변수를 추가 해줍니다.
 
-    ![Untitled](%5BWorkbook%206%5D%20Mapping%20Service%2032520d2f4376462f83bb53b45e0694d8/Untitled%206.png)
+  ![Untitled](%5BWorkbook%206%5D%20Mapping%20Service%2032520d2f4376462f83bb53b45e0694d8/Untitled%206.png)
     
-    d. Pipeline에서 Value1부터 차례로 outputString에 연결하고 Mapping 연결선을 클릭하여 Properties>Copy condition과 Indices를 채워줍니다.
+  d. Pipeline에서 Value1부터 차례로 outputString에 연결하고 Mapping 연결선을 클릭하여 Properties>Copy condition과 Indices를 채워줍니다.
     
-    ![Untitled](%5BWorkbook%206%5D%20Mapping%20Service%2032520d2f4376462f83bb53b45e0694d8/Untitled%207.png)
+  ![Untitled](%5BWorkbook%206%5D%20Mapping%20Service%2032520d2f4376462f83bb53b45e0694d8/Untitled%207.png)
     
-    - 조건적 연결은 파란색으로 연결됩니다.
-    - Copy condition 값이 true일 때, 해당하는 값이 outputString에 복사됩니다.
+- 조건적 연결은 파란색으로 연결됩니다.
+- Copy condition 값이 true일 때, 해당하는 값이 outputString에 복사됩니다.
     
-    e. 서비스를 실행하여 결과값을 확인하세요.
+  e. 서비스를 실행하여 결과값을 확인하세요.
 
-    ![Untitled](%5BWorkbook%206%5D%20Mapping%20Service%2032520d2f4376462f83bb53b45e0694d8/Untitled%208.png)
+  ![Untitled](%5BWorkbook%206%5D%20Mapping%20Service%2032520d2f4376462f83bb53b45e0694d8/Untitled%208.png)
 
-    ![Untitled](%5BWorkbook%206%5D%20Mapping%20Service%2032520d2f4376462f83bb53b45e0694d8/Untitled%209.png)
+  ![Untitled](%5BWorkbook%206%5D%20Mapping%20Service%2032520d2f4376462f83bb53b45e0694d8/Untitled%209.png)
 
-    ![Untitled](%5BWorkbook%206%5D%20Mapping%20Service%2032520d2f4376462f83bb53b45e0694d8/Untitled%2010.png)
+  ![Untitled](%5BWorkbook%206%5D%20Mapping%20Service%2032520d2f4376462f83bb53b45e0694d8/Untitled%2010.png)
     
 **note! Mapping Indices**
 
