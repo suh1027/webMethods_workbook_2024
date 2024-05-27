@@ -19,25 +19,22 @@
 
 ![Untitled](%5BWorkbook%201%5D%20Packages%20and%20Folders%2056c093055c3c4316823cf3b81439a900/167b22ea-9c09-4378-bb90-dc947074fcd2.png)
 
-![Untitled](%5BWorkbook%201%5D%20Packages%20and%20Folders%2056c093055c3c4316823cf3b81439a900/Untitled%201.png)
+![Untitled](%5BWorkbook%201%5D%20Packages%20and%20Folders%2056c093055c3c4316823cf3b81439a900/new1.png)
 
-접속정보 
+- 접속정보 
+ - Name : 디자이너에서 접속할 IS 서버의 별칭 지정 (ex. IS_100)
+ - Host: 192.168.1.100
+ - Port : 5555
+ - User : SJH(이니셜)
+ - Password: SJH(이니셜)
+
+#### STEP 3. Designer 에서 IS 개발 환경 화면인 Service Development 화면을 엽니다.
+
+- 메인화면의 Open the Service Development Perspective 를 클릭합니다.
+![Untitled](%5BWorkbook%201%5D%20Packages%20and%20Folders%2056c093055c3c4316823cf3b81439a900/new2.png)
  
- Host: 192.168.1.100
- 
- Port:5555
- 
- User : SJH(이니셜)
- 
- Password: SJH(이니셜)
 
-#### STEP 3. Designer에서 기본 시작 화면을 표시하는 경우
-
-![Untitled](%5BWorkbook%201%5D%20Packages%20and%20Folders%2056c093055c3c4316823cf3b81439a900/Untitled%202.png)
-
-![Untitled](%5BWorkbook%201%5D%20Packages%20and%20Folders%2056c093055c3c4316823cf3b81439a900/Untitled%203.png)
-
-#### STEP 4. 본 연습에서는 실습자 본인의 소속회사+이니셜을 사용하여 New package를 만듭니다. (ex. CUDO_SJH) 패키지는 Package Navigator 에서 우클릭 New > Package 를 클릭하여 생성 할 수 있습니다.
+#### STEP 4. 본 연습에서는 실습자 본인의 소속회사 + 이니셜을 사용하여 New package를 만듭니다. (ex. CUDO_SJH) 패키지는 Package Navigator 에서 우클릭 New > Package 를 클릭하여 생성 할 수 있습니다.
 
 ![Untitled](%5BWorkbook%201%5D%20Packages%20and%20Folders%2056c093055c3c4316823cf3b81439a900/Untitled%204.png)
 
@@ -56,12 +53,12 @@
 #### STEP 6. 생성 된 하위폴더에 IF0001이라는 폴더를 만듭니다.
 
 #### STEP 7. IF0001 폴더에 다음과 같은 6개의 폴더를 생성합니다.
- - adpt (Adapter Service용 폴더)
- - docs (Document Type용 폴더)
- - noti (Notification용 폴더)
- - ws (WebService용 폴더)
- - api (REST API용 폴더)
- - svc (Flow Service용 폴더)
+ - adpt (Adapter Service용 폴더 예시)
+ - docs (Document Type용 폴더 예시)
+ - noti (Notification용 폴더 예시)
+ - ws (WebService용 폴더 예시)
+ - api (REST API용 폴더 예시)
+ - svc (Flow Service용 폴더 예시)
 
 ![Untitled](%5BWorkbook%201%5D%20Packages%20and%20Folders%2056c093055c3c4316823cf3b81439a900/Untitled%208.png)
 
