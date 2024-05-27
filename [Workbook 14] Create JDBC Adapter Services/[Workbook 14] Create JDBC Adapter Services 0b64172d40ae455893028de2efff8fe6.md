@@ -7,7 +7,10 @@
 
 ## Steps
 
-#### STEP 1. Designer 를 시작하고 acme.PurchaseOrder.adapters:insertOrderHeader 라는 새 Adapter Service를 생성합니다.
+#### STEP 1. 최상위 폴더 아래 IF0013를 생성한 후 그 아래 svc, adpt 폴더를 생성합니다.
+
+![Untitled](%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/15a2d6c8-9f90-49fd-b99b-960e2516f04b.png)
+
 #### STEP 2. Adapter Service Type으로 JDBC Adapter를 선택합니다.
 
 ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%200b64172d40ae455893028de2efff8fe6/Untitled.png)
