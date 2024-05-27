@@ -20,7 +20,7 @@
 - Table tab에서, Table Name을 Acme.dbo.ORDER_HEADER으로 선택하세요.
     
 
-![Untitled](%5BWorkbook%2015%5D%20JDBC%20Adapter%20Notifications%20366348d839fe499f9a7892f1bbd20595/chapter15_3.png)
+![Untitled](%5BWorkbook%2015%5D%20JDBC%20Adapter%20Notifications%20366348d839fe499f9a7892f1bbd20595/chapter15_3.png))
 
 - **Joins** tab 은 skip 합니다.
 
