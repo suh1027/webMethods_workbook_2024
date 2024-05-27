@@ -42,7 +42,7 @@
 
 ![Untitled](%5BWorkbook%201%5D%20Packages%20and%20Folders%2056c093055c3c4316823cf3b81439a900/Untitled%205.png)
 
-**Note.** Package 와 Folder의 네이밍 룰은 고객사 별로 상이하게 관리하며, 일반적으로 IFID을 포함하여 생성합니다. (ex. {IFID)_{소스시스템명}_{타겟시스템명} )   
+**Note.** Package 와 Folder의 네이밍 룰은 고객사 별로 상이하게 관리하며, 일반적으로 IFID을 포함하여 생성합니다. (ex. IFID_소스시스템명_타겟시스템명)   
 
 #### STEP 5. 생성 된 package에서 “소속 + 이니셜” 동일한 명칭의 Folder를 만듭니다.
 
