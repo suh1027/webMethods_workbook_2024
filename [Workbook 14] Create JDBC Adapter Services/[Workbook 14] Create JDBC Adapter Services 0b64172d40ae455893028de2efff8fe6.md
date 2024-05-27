@@ -9,7 +9,7 @@
 
 #### STEP 1. 최상위 폴더 아래 IF0013를 생성한 후 그 아래 svc, adpt 폴더를 생성합니다.
 
-![Untitled](%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/15a2d6c8-9f90-49fd-b99b-960e2516f04b.png)
+![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/Untitled.png)
 
 #### STEP 2. Adapter Service Type으로 JDBC Adapter를 선택합니다.
 
