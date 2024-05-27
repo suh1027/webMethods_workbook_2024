@@ -262,7 +262,8 @@
       226 Binary transfer complete.
       107 bytes received in 0.000143 secs (748.25 Kbytes/sec)
       **ftp>quit**
-    ```
+
+    
 
 
  
