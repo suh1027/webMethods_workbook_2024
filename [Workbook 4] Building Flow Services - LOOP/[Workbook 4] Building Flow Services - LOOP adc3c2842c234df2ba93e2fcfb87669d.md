@@ -7,11 +7,11 @@
 
 ## Steps
 
-#### STEP 0. 최상위 폴더 아래 IF0003 와 svc 와 docs 폴더를 생성합니다. docs 폴더 아래 Depart 라는 명칭으로 다음과 같은 새로운 Document Type 을 생성합니다.
+#### STEP 0. 최상위 폴더 아래 IF0003 와 svc 와 docs 폴더를 생성합니다. docs 폴더 아래 docs_IF0003_Depart 라는 명칭으로 다음과 같은 새로운 Document Type 을 생성합니다.
 
 ![Untitled](%5BWorkbook%204%5D%20Building%20Flow%20Services%20-%20LOOP%20adc3c2842c234df2ba93e2fcfb87669d/new1.png)   
 
-**Note.** Document List Type은 다건의 Document 를 처리하는데 사용하는 타입 입니다.
+**Note.** Document List Type은 다 건의 Document 를 처리하는데 사용하는 타입 입니다.
 
 
 #### STEP 1. 생성 한 svc 폴더 아래 svc_IF0003_loopTest 라는 새 빈 Flow service 을 만듭니다. 
