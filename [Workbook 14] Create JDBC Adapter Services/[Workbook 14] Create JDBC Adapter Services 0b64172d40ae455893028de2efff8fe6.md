@@ -137,7 +137,7 @@
 
 다음 몇 단계에서는, 데이터베이스에 canonical order 을 저장하는데 필요한 service logic 을 생성합니다. 이건 order 에 속한 order header 와 order details 을 저장하는 것을 의미합니다.
 
-#### STEP 6. CUDO_SJH.IF0013.svc 폴더에서, svc_IF0013_insertOrderCanonical 라는 새로운 Flow service 를 생성하세요. 이름이 TestOrderCanonical 인 acmeSupport.docs:TestOrderCanonical document 에 대한 Document Reference(참조) 가 되도록 설정하세요.
+#### STEP 7. CUDO_SJH.IF0013.svc 폴더에서, svc_IF0013_insertOrderCanonical 라는 새로운 Flow service 를 생성하세요. 이름이 TestOrderCanonical 인 acmeSupport.docs:TestOrderCanonical document 에 대한 Document Reference(참조) 가 되도록 설정하세요.
 
 ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/Untitled%2024.png)
 
