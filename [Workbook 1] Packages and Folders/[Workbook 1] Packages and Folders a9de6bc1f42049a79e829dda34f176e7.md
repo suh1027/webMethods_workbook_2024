@@ -22,9 +22,13 @@
 ![Untitled](%5BWorkbook%201%5D%20Packages%20and%20Folders%2056c093055c3c4316823cf3b81439a900/Untitled%201.png)
 
 접속정보 
+ 
  Host: 192.168.1.100
+ 
  Port:5555
+ 
  User : SJH(이니셜)
+ 
  Password: SJH(이니셜)
 
 #### STEP 3. Designer에서 기본 시작 화면을 표시하는 경우
