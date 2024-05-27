@@ -263,6 +263,9 @@
       107 bytes received in 0.000143 secs (748.25 Kbytes/sec)
       **ftp>quit**
 
+   -  FTP를 실행 후 결과 입니다.
+     ![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/chapter8_17.png)
+
     
 
 
