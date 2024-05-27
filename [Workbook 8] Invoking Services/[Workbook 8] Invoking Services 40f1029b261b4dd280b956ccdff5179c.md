@@ -215,7 +215,7 @@
 - FTP를 사용하기 전에 통합 서버에 활성화된 FTP포트가 있는지 확인하세요. Integration Server Administration Console을 열고 **Security** Æ **Ports** 하위 메뉴로 이동하세요. 포트 9021을 위한 FTP 포트가 있는지 확인하고 해당 액세스 모드 설정이 모든 서비스 실행을 허용하는지 확인하세요:   
 
 
- ![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/chapter8_14.png)  
+ ![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/chapter8_18.png)  
  ![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/chapter8_15.png)  
  ![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/chapter8_16.png) 
 
