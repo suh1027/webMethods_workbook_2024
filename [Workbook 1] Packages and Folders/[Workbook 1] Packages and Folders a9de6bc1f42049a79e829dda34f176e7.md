@@ -34,7 +34,9 @@
 ![Untitled](%5BWorkbook%201%5D%20Packages%20and%20Folders%2056c093055c3c4316823cf3b81439a900/new2.png)
  
 
-#### STEP 4. 본 연습에서는 실습자 본인의 소속회사 + 이니셜을 사용하여 New package를 만듭니다. (ex. CUDO_SJH) 패키지는 Package Navigator 에서 우클릭 New > Package 를 클릭하여 생성 할 수 있습니다.
+#### STEP 4. 본 연습에서는 실습자 본인의 소속회사 + 이니셜을 사용하여 New package를 만듭니다. (ex. CUDO_SJH) 
+
+- 패키지는 Package Navigator 에서 우클릭 New > Package 를 클릭하여 생성 할 수 있습니다.
 
 ![Untitled](%5BWorkbook%201%5D%20Packages%20and%20Folders%2056c093055c3c4316823cf3b81439a900/Untitled%204.png)
 
