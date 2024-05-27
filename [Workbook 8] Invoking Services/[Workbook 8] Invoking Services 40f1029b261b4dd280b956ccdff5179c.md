@@ -215,13 +215,14 @@
 - FTP를 사용하기 전에 통합 서버에 활성화된 FTP포트가 있는지 확인하세요. Integration Server Administration Console을 열고 **Security** Æ **Ports** 하위 메뉴로 이동하세요. 포트 9021을 위한 FTP 포트가 있는지 확인하고 해당 액세스 모드 설정이 모든 서비스 실행을 허용하는지 확인하세요:   
 
 
- ![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/chapter8_18.png)  
+ ![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/chapter8_14.png)  
  ![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/chapter8_15.png)  
  ![Untitled](%5BWorkbook%208%5D%20Invoking%20Services%2040f1029b261b4dd280b956ccdff5179c/chapter8_16.png) 
 
--  이제 (CentOS7 기준입니다) 명령 프롬프트를 열고 아래와 같이 표시된 명령을 실행하세요
+-  이제 (CentOS7 기준입니다) 명령 프롬프트를 열고 아래와 같이 표시된 명령을 실행하세요.
+    AcmeSupport의 패키지의 acmeSupport.xml 폴더를 CUDO_SJH.IF0007로 복사후 진행하세요.
     
-      **[sol@192 pub]$ cd /webM/IS01/IntegrationServer/instances/default/packages/AcmeSupport/pub**
+      **[sol@192 pub]$ cd /webM/IS01/IntegrationServer/instances/default/packages/CUDO_SJH/pub**
    
       **[sol@192 pub]$ ftp**
    
@@ -249,7 +250,7 @@
    
       250 CWD command successful.
    
-      **ftp> cd acmeSupport**
+      **ftp> cd CUDO_SJH**
    
       250 CWD command successful.
    
