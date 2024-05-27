@@ -61,7 +61,7 @@
 
     ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/Untitled%2011.png)
 
-    - Table tab 에서, Table Name 컬럼의 첫 번째 행을 클릭하고 **CUDO_SJH.ORDER_HEADER**을 선택합니다.
+    - - **INSERT** tab 에서, 먼저 **Insert** 행 버튼을 한번 누릅니다.
       다음 **Fill in all rows to the Table** 버튼을 클릭 합니다.
 
     ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/Untitled%2012.png)
