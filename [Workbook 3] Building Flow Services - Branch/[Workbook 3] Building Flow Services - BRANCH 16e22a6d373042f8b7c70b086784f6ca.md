@@ -70,7 +70,7 @@
 ![Untitled](%5BWorkbook%203%5D%20Building%20Flow%20Services%20-%20BRANCH%2016e22a6d373042f8b7c70b086784f6ca/Untitled%208.png)
 
 - **cost** 변수의 값이 **>= 100**인 경우 **IS Server log**에 **Free Shipping** 로그를 남깁니다.
-- **Account** 의 값이 **PRE0 ~ PRE9**로 시작하는 경우 **IS Server log**에 **50% Shopping Discount**라고 로그를 남깁니다. *참고*: **%account% = /^PRE[0-9]/**와 같은 정규식을 사용하여 구성 할 수 있습니다.
+- **Account** 의 값이 **PRE0 ~ PRE9**로 시작하는 경우 **IS Server log**에 **50% Shopping Discount**라고 로그를 남깁니다. **참고**: account% = /^PRE[0-9]/와 같은 정규식을 사용하여 구성 할 수 있습니다.
 - 위에 모두 해당되지 않을 경우 **IS Server log**에 **Full Shipping** 로그를 남깁니다.
         
 ![Untitled](%5BWorkbook%203%5D%20Building%20Flow%20Services%20-%20BRANCH%2016e22a6d373042f8b7c70b086784f6ca/Untitled%209.png)
