@@ -77,24 +77,27 @@ Nth Field는 스키마의 정의에 따라 Field를 구분하는 방식
     
 ![Untitled](%5BWorkbook%209%5D%20Working%20With%20Flat%20Files%20bacbba872fe74e12adf97c424524e971/Untitled%2011.png)
 
+생성 된 Document Type은 Service의 Input/Output 등으로 활용 가능
+
+![Untitled](%5BWorkbook%209%5D%20Working%20With%20Flat%20Files%20bacbba872fe74e12adf97c424524e971/Untitled%2012.png)
     
 #### STEP 8. 1. **pub.file:getFIle, pub.flatFile:convertToValues** 서비스를 사용한 예시.  **IF0008.svc** 아래 **svc_IF0008_receive** 서비스 ****생성합니다.
     
 **Input/Output**에 **fileName** 추가합니다.
 
-![Untitled](%5BWorkbook%209%5D%20Working%20With%20Flat%20Files%20bacbba872fe74e12adf97c424524e971/Untitled%2012.png)
+![Untitled](%5BWorkbook%209%5D%20Working%20With%20Flat%20Files%20bacbba872fe74e12adf97c424524e971/Untitled%2013.png)
 
 **pub.file:getFIle**, **pub.string:bytesToString**, **pub.flatFile:convertToValues** 서비스를 위치 시킵니다.
 
-![Untitled](%5BWorkbook%209%5D%20Working%20With%20Flat%20Files%20bacbba872fe74e12adf97c424524e971/Untitled%2013.png)
+![Untitled](%5BWorkbook%209%5D%20Working%20With%20Flat%20Files%20bacbba872fe74e12adf97c424524e971/Untitled%2014.png)
 
 **string**과 **ffData**를 매핑하고, **ffSchema**에 생성했던 **schema**인 **addressFixed** 입력합니다.
 
-![Untitled](%5BWorkbook%209%5D%20Working%20With%20Flat%20Files%20bacbba872fe74e12adf97c424524e971/Untitled%2014.png)
+![Untitled](%5BWorkbook%209%5D%20Working%20With%20Flat%20Files%20bacbba872fe74e12adf97c424524e971/Untitled%2015.png)
 
 실행 결과 값 예시 (**Input**에 **addressFixed.txt** 파일 경로 넣고 실행) 
 
-![Untitled](%5BWorkbook%209%5D%20Working%20With%20Flat%20Files%20bacbba872fe74e12adf97c424524e971/Untitled%2015.png)
+![Untitled](%5BWorkbook%209%5D%20Working%20With%20Flat%20Files%20bacbba872fe74e12adf97c424524e971/Untitled%2016.png)
 
 ## Check Your Understanding
 #### QUIZ 1. Flat files 을 XML 문서처럼 가져올 수 없는 이유는 무엇입니까?
