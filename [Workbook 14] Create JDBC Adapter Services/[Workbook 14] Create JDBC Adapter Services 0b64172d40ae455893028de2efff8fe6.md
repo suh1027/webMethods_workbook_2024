@@ -11,9 +11,11 @@
 
 ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/Untitled.png)
 
-#### STEP 2. Adapter Service Type으로 JDBC Adapter를 선택합니다.
+#### STEP 2. IS Server에서 Adapter Connection Alias를 생성합니다.
 
-![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%200b64172d40ae455893028de2efff8fe6/Untitled.png)
+- Adapter Service Type으로 JDBC Adapter를 선택합니다.
+
+![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/15a2d6c8-9f90-49fd-b99b-960e2516f04b.png)
 
 #### STEP 3. 다음  Adapter Connection Alias 로 commonSupport.adapters:acmeAdapter를 선택합니다.
 
