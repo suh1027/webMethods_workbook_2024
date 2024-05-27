@@ -64,11 +64,11 @@
     
 **note! Mapping Indices**
 
-    - 배열의 개별 요소를 매핑할 수 있습니다. 이렇게 하려면, Indices property를 편집하고 입/출력값 변수를 설정합니다.
+- 배열의 개별 요소를 매핑할 수 있습니다. 이렇게 하려면, Indices property를 편집하고 입/출력값 변수를 설정합니다.
     
-    - 새로운 동작을 보여주기 위해 선이 파란색으로 바뀝니다.
+- 새로운 동작을 보여주기 위해 선이 파란색으로 바뀝니다.
 
-    ![Untitled](%5BWorkbook%206%5D%20Mapping%20Service%2032520d2f4376462f83bb53b45e0694d8/Untitled%2011.png)
+  ![Untitled](%5BWorkbook%206%5D%20Mapping%20Service%2032520d2f4376462f83bb53b45e0694d8/Untitled%2011.png)
 
 
 
