@@ -22,10 +22,10 @@
 ![Untitled](%5BWorkbook%201%5D%20Packages%20and%20Folders%2056c093055c3c4316823cf3b81439a900/Untitled%201.png)
 
 접속정보 
-Host: 192.168.1.100
-Port:5555
-User : SJH(이니셜)
-Password: SJH(이니셜)
+ Host: 192.168.1.100
+ Port:5555
+ User : SJH(이니셜)
+ Password: SJH(이니셜)
 
 #### STEP 3. Designer에서 기본 시작 화면을 표시하는 경우
 
@@ -39,7 +39,7 @@ Password: SJH(이니셜)
 
 ![Untitled](%5BWorkbook%201%5D%20Packages%20and%20Folders%2056c093055c3c4316823cf3b81439a900/Untitled%205.png)
 
-Note. Package 와 Folder의 네이밍 룰은 고객사 별로 상이하게 관리하며, 일반적으로 IFID을 포함하여 생성합니다. (ex. {IFID)_{소스시스템명}_{타겟시스템명} )   
+**Note.** Package 와 Folder의 네이밍 룰은 고객사 별로 상이하게 관리하며, 일반적으로 IFID을 포함하여 생성합니다. (ex. {IFID)_{소스시스템명}_{타겟시스템명} )   
 
 #### STEP 5. 생성 된 package에서 “소속 + 이니셜” 동일한 명칭의 Folder를 만듭니다.
 
@@ -47,7 +47,7 @@ Note. Package 와 Folder의 네이밍 룰은 고객사 별로 상이하게 관�
 
 ![Untitled](%5BWorkbook%201%5D%20Packages%20and%20Folders%2056c093055c3c4316823cf3b81439a900/Untitled%207.png)
 
-Note. Integration Server 는 Folder 구조에 의해 컴포넌트들이 고유하게 식별되므로 Package 바로 하위 폴더는 Package 명과 동일하게 구성할 것을 권장 드립니다. (Namespace 충돌 방지)
+**Note.** Integration Server 는 Folder 구조에 의해 컴포넌트들이 고유하게 식별되므로 Package 바로 하위 폴더는 Package 명과 동일하게 구성할 것을 권장 드립니다. (Namespace 충돌 방지)
 
 #### STEP 6. 생성 된 하위폴더에 IF0001이라는 폴더를 만듭니다.
 
@@ -61,11 +61,12 @@ Note. Integration Server 는 Folder 구조에 의해 컴포넌트들이 고유�
 
 ![Untitled](%5BWorkbook%201%5D%20Packages%20and%20Folders%2056c093055c3c4316823cf3b81439a900/Untitled%208.png)
 
-참고: 이 폴더들을 모두 정확한 위치에 놓으려면 매번 폴더를 생성할 상위 폴더에  마우스 오른쪽 단추로 클릭하고 New -> Folder를 선택합니다. 만약 이름을 잘못 입력한 경우에는 마우스 오른쪽 단추로 클릭하고 Rename을 선택합니다.
+**참고:** 이 폴더들을 모두 정확한 위치에 놓으려면 매번 폴더를 생성할 상위 폴더에  마우스 오른쪽 단추로 클릭하고 New -> Folder를 선택합니다. 만약 이름을 잘못 입력한 경우에는 마우스 오른쪽 단추로 클릭하고 Rename을 선택합니다.
 
 #### STEP 8. IF0001.ws 와 IF0001.api 폴더에서는 다음과 같은 하위 폴더 두개를 새로 만듭니다.
  - **consumer (Consumer 용** **폴더)**
  - **provider (Provider 용** **폴더)**
+
    ![Untitled](%5BWorkbook%201%5D%20Packages%20and%20Folders%2056c093055c3c4316823cf3b81439a900/Untitled%209.png)
 
    
