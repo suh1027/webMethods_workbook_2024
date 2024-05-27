@@ -33,7 +33,7 @@
 
 #### STEP 2. 조건적 Mapping
 
-- Designer는 하나의 flow내에 같은 이름, 데이터 타입이 적합한 변수들을 암묵적으로 연결하거나 매핑합니다. 
+- Mapping 연결에 조건을 둘 수 있습니다.
 
   a. 최상위 폴더 아래 IF0005 와 svc 폴더를 생성한 후, svc_IF0005_conditionalMap라는 Flow service를 생성하세요. 
     
