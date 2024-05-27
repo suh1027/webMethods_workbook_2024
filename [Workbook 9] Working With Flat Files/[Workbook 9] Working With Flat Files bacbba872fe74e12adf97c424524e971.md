@@ -8,7 +8,7 @@
 
 **Flat File Dictionary** 에는 재사용 가능한 **record definition**을 생성하고,
 
-**Flat File Schema** 에서는 생성 된 **record definition**를 참조하여 스키마를 구성합니다. 
+**Flat File Schema** 에서는 생성 된 **record definition**을 참조하여 스키마를 구성합니다. 
 
 구성 된 컴포넌트를 사용하여 서비스를 생성 & 테스트 합니다.
 
