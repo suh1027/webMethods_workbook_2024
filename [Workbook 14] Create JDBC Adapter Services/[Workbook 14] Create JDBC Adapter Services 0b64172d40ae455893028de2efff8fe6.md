@@ -104,13 +104,13 @@
 
 #### STEP 5. IF0013.adpt 폴더에 IF0013_ORA_S_01 라는 새로운 Adapter Service 를 생성하세요.  JDBC Adapter type 의 Adapter Service 로  CUDO_Conn.ORA:CUDO_SJH 를 사용하고, SelectSQL template 를 선택하세요.  
 
-![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%200b64172d40ae455893028de2efff8fe6/Untitled%2019.png)
+![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/Untitled%2019.png)
 
 - 생성된 JDBC Adapter Service **IF0013_ORA_S_01** 를 다음과 같이 구성합니다.
 
     - **Tables tab** 에서, in the first row 선택, **Table Name** 으로 CODO_Conn.ORDER_HEADER 을 선택합니다.
  
-      ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%200b64172d40ae455893028de2efff8fe6/Untitled%2020.png)
+      ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/Untitled%2020.png)
 
     - Joins tab은 skip 하세요.
  
