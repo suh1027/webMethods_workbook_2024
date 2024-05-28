@@ -4,7 +4,7 @@
 
 이번 연습에서는 JDBC Adapter Notification 을 생성합니다.
 
-JDBC Adapter Notification 은 Database 의 특정 테이블을 모니터링 하며 Insert, Update 와 같이 특정 로직 (데이터 변경)등 로직이 수행 되었을 때
+JDBC Adapter Notification 은 Database 의 특정 테이블을 모니터링 하며 Insert, Update 와 같이 특정 로직 (데이터 변경) 로직이 수행 되었을 때
 
 변경된 데이터가 EAI 서버로 자동으로 흘러 변경 된 데이터에 따른 적절한 후속 Flowserivce, 특정 로직을 수행 시키도록 자동화 할 수 있습니다.
 
