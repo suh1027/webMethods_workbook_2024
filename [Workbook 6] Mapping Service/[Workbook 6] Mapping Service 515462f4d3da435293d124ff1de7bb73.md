@@ -58,12 +58,13 @@
     
   - Pipeline에서 Value1 를 outputString 에 연결하고 우측 Properties > Copy Condition 의 조건 값을 입력하여 매핑 조건을 설정합니다.
   
-    **Note.** Copy Condition 값은 정규표현식을 사용해 입력하며 위 값은 /Source/switchValue 값이 1일 경우를 표현합니다.
+    
   
 
   ![Untitled](%5BWorkbook%206%5D%20Mapping%20Service%2032520d2f4376462f83bb53b45e0694d8/Untitled%207.png)
     
   **Note.** 조건적 매핑의 선은 파란색으로 연결됩니다.
+  **Note.** Copy Condition 값은 정규표현식을 사용해 입력하며 위 값은 /Source/switchValue 값이 1일 경우를 표현합니다.
   
     
   - 서비스를 실행하여 결과값을 확인하세요.
