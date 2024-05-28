@@ -51,6 +51,8 @@ JDBC Adapter Service 는 일종의 Database 에 쿼리문을 수행하는 서비
 
 ---
 
+### SELECT
+
 #### STEP 3. Select 쿼리문을 수행하는 Select Adapter Service 를 생성하고, 실행 시켜 Database 로 부터 정상적인 데이터를 Select 할 수 있는지 확인합니다.
 
 - IF0013.adpt 폴더 아래 새로운 Adapter Service 를 생성합니다.
@@ -105,11 +107,12 @@ JDBC Adapter Service 는 일종의 Database 에 쿼리문을 수행하는 서비
 
 ---
 
+### INSERT
+
 #### STEP 4. Insert 쿼리문을 수행하는 Insert Adapter Service 를 생성하고, 실행 시켜 테이블에 데이터를 Insert 할 수 있는지 확인합니다.
 
 
 ---
-
 
 ### UPDATE
 
