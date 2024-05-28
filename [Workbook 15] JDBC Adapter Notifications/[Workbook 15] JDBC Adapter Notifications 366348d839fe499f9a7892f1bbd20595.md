@@ -2,78 +2,114 @@
 
 ## Overview
 
-이번 exercise 에서는, 데이터베이스 inserts 를 볼 수 있는 Notification Service 를 생성할 수 있습니다. 새로운 orders 이 ordering interface 의 데이터베이스에 입력 되면, 시스템과 서비스가 insertion(삽입) 을 인식 할 수 있도록 Notification document 를 게시해야 합니다.
+이번 연습에서는 JDBC Adapter Notification 을 생성합니다.
+
+JDBC Adapter Notification 은 Database 의 특정 테이블을 모니터링 하며 Insert, Update 와 같이 특정 로직 (데이터 변경)등 로직이 수행 되었을 때
+
+변경된 데이터가 EAI 서버로 자동으로 흘러 변경 된 데이터에 따른 적절한 후속 Flowserivce, 특정 로직을 수행 시키도록 자동화 할 수 있습니다.
+
+이번 연습에서는 InsertNotification 을 생성하여 Database 테이블에 Insert 로직이 수행되는 것을 모니터링 & 변경 데이터를 이용한 후속 서비스가 수행 되는 것을 테스트 합니다.
+
 
 ## Steps
+
 #### STEP 0. 상위 폴더 아래 IF0014 와 그 아래 adpt, noti, svc 폴더를 생성합니다.
 
-#### STEP 1.IF0014.noti 폴더아래 IF0014_ORA_noti 라는 새 Adapter Notification 을 생성합니다. JDBC Adapter type 이 되도록 지정하고, InsertNotification template 선택, Adapter Connection Alias 는 CUDO_ConnORA:CUDO_SJH 를 사용하세요.
-기본 Punblish Document 이름인 orderCanonicalNotifierPublishDocument 을 변경하지 말고 Finish를 클릭하세요.
+![Untitled](%5BWorkbook%2015%5D%20JDBC%20Adapter%20Notifications%20366348d839fe499f9a7892f1bbd20595/new1.png)
 
-![Untitled](%5BWorkbook%2015%5D%20JDBC%20Adapter%20Notifications%20366348d839fe499f9a7892f1bbd20595/chapter15_1.png)
+- 미리 svc 폴더 아래 svc_IF0014_insertNoti 라는 새로운 Flowservice 를 생성해 둡니다.
 
-#### STEP 2. 다음과 같이 Adapter Notification 을 구성합니다:
-- Notification Configure tab에서, Base Name 을 ORDER로 지정합니다.
-    
-![Untitled](%5BWorkbook%2015%5D%20JDBC%20Adapter%20Notifications%20366348d839fe499f9a7892f1bbd20595/chapter15_2.png)
-    
-- Table tab에서, Table Name을 Acme.dbo.ORDER_HEADER으로 선택하세요.
-    
+![Untitled](%5BWorkbook%2015%5D%20JDBC%20Adapter%20Notifications%20366348d839fe499f9a7892f1bbd20595/new13.png)
 
-![Untitled](%5BWorkbook%2015%5D%20JDBC%20Adapter%20Notifications%20366348d839fe499f9a7892f1bbd20595/chapter15_3.png))
 
-- **Joins** tab 은 skip 합니다.
+#### STEP 1. IF0014.noti 폴더아래 IF0014_SRC_noti 라는 새 Adapter Notification 을 생성합니다. 
 
-- SELECT tab 에서, Insert Row 버튼을 한번 클릭, 다음 Fill in all rows to the table 버튼을
-       클릭하세요.  
+- noti 폴더에서 우클릭 > New > Adapter Notification 선택
 
-![Untitled](%5BWorkbook%2015%5D%20JDBC%20Adapter%20Notifications%20366348d839fe499f9a7892f1bbd20595/chatper15_4.png))
+![Untitled](%5BWorkbook%2015%5D%20JDBC%20Adapter%20Notifications%20366348d839fe499f9a7892f1bbd20595/new2.png)
 
-- **WHEN** 및**Adapter Settings** tabs 을 skip 합니다. 
-- 작업을 저장하세요.
+- IF0014_SRC_noti 입력 후 Next 
 
-#### STEP 3. [IS](http://3.IS) Administration Console에서, 
- **Adapters** →**JDBC Adapter → Polling Notifications** link. 
-새로운 notification service  목록들을 볼 수 있습니다.   
+![Untitled](%5BWorkbook%2015%5D%20JDBC%20Adapter%20Notifications%20366348d839fe499f9a7892f1bbd20595/new3.png)
 
-![Untitled](%5BWorkbook%2015%5D%20JDBC%20Adapter%20Notifications%20366348d839fe499f9a7892f1bbd20595/chapter15_5.png)
+- Adatper 타입은 JDBC 로 선택
 
-#### STEP 4.  Notification Schedule 편집은**Edit Schedule** 아이콘을 클릭하세요. 다음 parameters 를 지정한 다음 **Save Settings** 을 선택합니다:
-- Interval =10
-- Overlap=unchecked
-- Immediate=unchecked
+![Untitled](%5BWorkbook%2015%5D%20JDBC%20Adapter%20Notifications%20366348d839fe499f9a7892f1bbd20595/new4.png)
 
-![Untitled](%5BWorkbook%2015%5D%20JDBC%20Adapter%20Notifications%20366348d839fe499f9a7892f1bbd20595/chapter15_6.png)
+- InsertNotification 을 선택 후 Next
 
-- Notification Scheule 을 Enable합니다.
+![Untitled](%5BWorkbook%2015%5D%20JDBC%20Adapter%20Notifications%20366348d839fe499f9a7892f1bbd20595/new5.png)
 
-![Untitled](%5BWorkbook%2015%5D%20JDBC%20Adapter%20Notifications%20366348d839fe499f9a7892f1bbd20595/chapter15_7.png)
-
-#### STEP 5. Designer 에서 , **CUDO_SJH.**‌**IF0014.‌trigger:orderCanonicalInsertTrigger** 라는 새로운 Broker Local Trigger 을 생성합니다:   
-![Untitled](%5BWorkbook%2015%5D%20JDBC%20Adapter%20Notifications%20366348d839fe499f9a7892f1bbd20595/chapter15_8.png)
-    
-- 생성된 Drag ‌**PurchaseOrder.‌notifiers:IF0014_ORA_notiPublishDocumentt** 를 Trigger 의 Condition detail 패널에 있는 첫 번째 Document type 행에 추가합니다.
+- 다음 본인이 생성한 Connection Alias 명을 선택합니다.
   
-![Untitled](%5BWorkbook%2015%5D%20JDBC%20Adapter%20Notifications%20366348d839fe499f9a7892f1bbd20595/chapter15_9.png)
-    
-- 기존 서비스 ‌**CUDO_SJH.IF0014.noti:‌processOrderCanonical** 를 drag 하여 새 trigger Condition detail 패널에 있는 Service field 에 입력합니다.  
-    
-*Hint*: 드래그된 **processOrderCanonical** 서비스는 **documentToXMLString** 서비스를 호출하여 수신 문서를 XML 표현을 포함하는 문자열로 변환합니다. 이건 XML document 를 IS Server log 에 나열하기 위해 **debugLog** 서비스를 호출합니다.
-    
-- Trigger definition 을 저장 합니다.
-    
-완성된 Trigger 는 다음과 같아야 합니다:
-    
+![Untitled](%5BWorkbook%2015%5D%20JDBC%20Adapter%20Notifications%20366348d839fe499f9a7892f1bbd20595/new6.png)
 
-![Untitled](%5BWorkbook%2015%5D%20JDBC%20Adapter%20Notifications%20366348d839fe499f9a7892f1bbd20595/Untitled%207.png)
+- 생성 될 Publish Document Name 을 확인 후, Finish 를 눌러 Notification 생성 완료
 
-#### STEP 6. 이전 exercise 에서 **insertOrderCanonical** 서비스를 실행하여 작업을 테스트 합니다. 동일한 파일(**...\‌IntegrationServer\‌packages\‌AcmeSupport\‌pub\‌order_canonical_input.txt**)을 다시 로드할 수 있습니다.    **Include empty values for String Types** 을 체크하고 **OK** 를 클릭하세요. IS Server Log 에서 polling interval (10 seconds) 내에 orderHeader document 의 XML 표현이 표시되어야 합니다.         
+![Untitled](%5BWorkbook%2015%5D%20JDBC%20Adapter%20Notifications%20366348d839fe499f9a7892f1bbd20595/new7.png)
 
-![Untitled](%5BWorkbook%2015%5D%20JDBC%20Adapter%20Notifications%20366348d839fe499f9a7892f1bbd20595/Untitled%208.png)
 
-#### STEP 7. IS Administration Console 을 사용하여 선택 :**Adapters** → **JDBC Adapter → Polling Notifications**
+- 생성 된 Insert Notification 에서 Notification Configure 탭을 확인합니다.
+    - Insert, Update, Delete 등의 Notification 은 트리거, 버퍼 테이블의 조합을 사용하여 특정 테이블에서 발생하는 이벤트들을 모니터링 합니다.
+    - Notification Configure 탭에서는 기존에 생성한 Connection Alias, Schema 내부에 해당 테이블을 생성합니다. (**연결 된 JDBC Connection 계정은 TABLE, TRIGGER 생성 권한 필요**)
+    - Base Name 을 지정하여 관리 가능
 
-Polling Notification 을 Disable 합니다.   
+![Untitled](%5BWorkbook%2015%5D%20JDBC%20Adapter%20Notifications%20366348d839fe499f9a7892f1bbd20595/new8.png)
+
+- Tables 탭에서 모니터링 할 Database 내 테이블을 선택합니다. 기존에 생성해 두었던 SRC_EMPLOYEES_TABLE 을 선택 합니다.
+
+![Untitled](%5BWorkbook%2015%5D%20JDBC%20Adapter%20Notifications%20366348d839fe499f9a7892f1bbd20595/new9.png)
+
+- SELECT 탭에서 모니터링할 상세 컬럼들을 지정합니다. 모든 컬럼을 지정하고 ID 의 Output Field Type 을 java.lang.String 으로 지정합니다.
+
+![Untitled](%5BWorkbook%2015%5D%20JDBC%20Adapter%20Notifications%20366348d839fe499f9a7892f1bbd20595/new10.png)
+
+- 다음 Adapter Settings 탭으로 넘어가 Messaging Provider 를 IS_LOCAL_CONNECTION 으로 선택 후 저장합니다.
+    - 변경 된 데이터는 IS_LOCAL_CONNECTION (local queue) 로 전송되어 적재됩니다.
+  
+![Untitled](%5BWorkbook%2015%5D%20JDBC%20Adapter%20Notifications%20366348d839fe499f9a7892f1bbd20595/new11.png)
+ 
+ - Trigger 를 사용하여 Local Queue 에 적재 되어있는 데이터를 처리하는 후속 Flowserivce 를 연결합니다.
+    - trig 폴더 아래 trig_IF0014_insertNoti 명칭의 새로운 webMethods Messaging Trigger 를 생성합니다.
+      
+![Untitled](%5BWorkbook%2015%5D%20JDBC%20Adapter%20Notifications%20366348d839fe499f9a7892f1bbd20595/new12.png)
+
+
+- 생성 된 Trigger 는 다음과 같이 설정합니다.
+    - Service : 미리 생성 한 svc_IF0014_insertNoti 연결
+    - Properties > Enabled = True 로 변경 후 저장
+
+![Untitled](%5BWorkbook%2015%5D%20JDBC%20Adapter%20Notifications%20366348d839fe499f9a7892f1bbd20595/new15.png)
+
+    - Document 는 Notification 을 생성하면서 자동 생성 된 Publish Document 지정 후 저장
+
+![Untitled](%5BWorkbook%2015%5D%20JDBC%20Adapter%20Notifications%20366348d839fe499f9a7892f1bbd20595/new14.png)
+
+
+- 이제 svc 폴더 아래 svc_IF0014_insertNoti 서비스를 개발합니다.
+    - Input/Output 탭으로 이동하여 Input 필드를 다음과 같이 구성합니다.
+  
+![Untitled](%5BWorkbook%2015%5D%20JDBC%20Adapter%20Notifications%20366348d839fe499f9a7892f1bbd20595/new16.png)
+
+    - pub.json:documentToJSONString 서비스 스탭을 추가하고 다음과 같이 매핑합니다.
+
+![Untitled](%5BWorkbook%2015%5D%20JDBC%20Adapter%20Notifications%20366348d839fe499f9a7892f1bbd20595/new17.png)
+
+    - 그 아래 pub.flow:debugLog 서비스를 추가 jsonString 을 message 에 매핑 후 서비스를 저장합니다.
+
+![Untitled](%5BWorkbook%2015%5D%20JDBC%20Adapter%20Notifications%20366348d839fe499f9a7892f1bbd20595/new18.png)
+
+
+- 서비스 저장 후 IF0013 에서 테스트 했던 IF0013.adpt:IF0013_SRC_I_01 서비스를 실행시켜 결과를 확인합니다.
+
+![Untitled](%5BWorkbook%2015%5D%20JDBC%20Adapter%20Notifications%20366348d839fe499f9a7892f1bbd20595/new19.png)
+
+
+
+
+
+- Notification 의 여러 Type 에 대한 자세한 정보는 이곳을 참고 부탁드립니다.
+https://documentation.softwareag.com/webmethods/adapters_estandards/Adapters/JDBC/JDBC_10-3/10-3_Adapter_for_JDBC_webhelp/index.html#page/jdbc-webhelp%2Fco-notif_types.html%23
 
 
 ## Check Your Understanding
