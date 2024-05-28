@@ -289,11 +289,11 @@ JDBC Adapter Service 는 일종의 Database 에 쿼리문을 수행하는 서비
 ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/new43.png)
 
 - Insert Adapter Serivce 설정입니다.
-          - TABLE 탭에서 TGT_EMPLOYEES_TABLE 테이블로 설정  
+ - TABLE 탭에서 TGT_EMPLOYEES_TABLE 테이블로 설정 
 
 ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/new44.png)
 
-          - INSERT 탭에서 모든 필드 (컬럼) 선택 후 저장 (**ID 값의 Input Field Type 을 java.lang.String 으로 변경 주의**)
+ - INSERT 탭에서 모든 필드 (컬럼) 선택 후 저장 (**ID 값의 Input Field Type 을 java.lang.String 으로 변경 주의**)
 
 ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/new45.png)
 
