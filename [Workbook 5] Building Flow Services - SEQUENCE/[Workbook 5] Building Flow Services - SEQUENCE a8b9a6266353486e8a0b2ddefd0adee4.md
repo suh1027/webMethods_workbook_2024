@@ -82,7 +82,7 @@
     
 ![Untitled](%5BWorkbook%205%5D%20Building%20Flow%20Services%20-%20SEQUENCE%20a8b9a6266353486e8a0b2ddefd0adee4/Untitled%2014.png)
 
-![Untitled](%5BWorkbook%205%5D%20Building%20Flow%20Services%20-%20SEQUENCE%20a8b9a6266353486e8a0b2ddefd0adee4/Untitled%2015.png)
+![Untitled](%5BWorkbook%205%5D%20Building%20Flow%20Services%20-%20SEQUENCE%20a8b9a6266353486e8a0b2ddefd0adee4/workbook5_step10_2.png)
 
 
 #### STEP 11. **Service**를 저장하고 실행합니다. **Results** 탭과 **IS Server log**를 확인합니다.
