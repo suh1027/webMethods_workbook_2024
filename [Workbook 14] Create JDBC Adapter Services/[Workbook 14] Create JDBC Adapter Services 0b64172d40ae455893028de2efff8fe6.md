@@ -289,7 +289,7 @@ JDBC Adapter Service 는 일종의 Database 에 쿼리문을 수행하는 서비
 ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/new43.png)
 
 - Insert Adapter Serivce 설정입니다.
- - TABLE 탭에서 TGT_EMPLOYEES_TABLE 테이블로 설정 
+   - TABLE 탭에서 TGT_EMPLOYEES_TABLE 테이블로 설정 
 
 ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/new44.png)
 
@@ -298,7 +298,7 @@ JDBC Adapter Service 는 일종의 Database 에 쿼리문을 수행하는 서비
 ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/new45.png)
 
 - Update Adapter Serivce 설정입니다.
-  - TABLE 탭에서 TGT_EMPLOYEESTABLE 테이블로 설정
+   - TABLE 탭에서 TGT_EMPLOYEESTABLE 테이블로 설정
 
 ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/new46.png)
    - UPDATE 탭에서 ID(PK값) 를 제외한 모든 필드 선택
@@ -315,7 +315,7 @@ JDBC Adapter Service 는 일종의 Database 에 쿼리문을 수행하는 서비
 
 - IF0013.svc 폴더 아래 svc_IF0013_upsert 라는 새 Flowservice 를 생성 후 다음과 같이 구성합니다.
 
- - 위에서 생성한 Select Adpater Service 를 맨 위 스탭에 생성하고 TRY-CATCH Sequence 블록을 생성 (Success - Failure - Done)
+  - 위에서 생성한 Select Adpater Service 를 맨 위 스탭에 생성하고 TRY-CATCH Sequence 블록을 생성 (Success - Failure - Done)
 
 ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/new32.png)
           
