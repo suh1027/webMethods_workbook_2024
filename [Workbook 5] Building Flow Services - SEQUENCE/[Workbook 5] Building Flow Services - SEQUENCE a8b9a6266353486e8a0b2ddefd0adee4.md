@@ -32,7 +32,7 @@
     
 ![Untitled](%5BWorkbook%205%5D%20Building%20Flow%20Services%20-%20SEQUENCE%20a8b9a6266353486e8a0b2ddefd0adee4/Untitled%204.png)
     
-![Untitled](%5BWorkbook%205%5D%20Building%20Flow%20Services%20-%20SEQUENCE%20a8b9a6266353486e8a0b2ddefd0adee4/workbook5_step3_2.png)
+![Untitled](%5BWorkbook%205%5D%20Building%20Flow%20Services%20-%20SEQUENCE%20a8b9a6266353486e8a0b2ddefd0adee4/workbook5_step3.png)
     
 
 #### STEP 4. **Service**를 저장하고 실행합니다. **/webM/IS01/test.txt** 라는 값으로 **input 의 filename** 값을 입력합니다. (또는 존재하지 않는 다른 파일 명으로 입력 eg. /notthere.txt)  
