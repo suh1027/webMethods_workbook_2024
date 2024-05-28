@@ -87,24 +87,40 @@ JDBC Adapter Notification 은 Database 의 특정 테이블을 모니터링 하�
 
 
 - 이제 svc 폴더 아래 svc_IF0014_insertNoti 서비스를 개발합니다.
-    - Input/Output 탭으로 이동하여 Input 필드를 다음과 같이 구성합니다.
+  - Input/Output 탭으로 이동하여 Input 필드를 다음과 같이 구성합니다.
   
 ![Untitled](%5BWorkbook%2015%5D%20JDBC%20Adapter%20Notifications%20366348d839fe499f9a7892f1bbd20595/new16.png)
 
-    - pub.json:documentToJSONString 서비스 스탭을 추가하고 다음과 같이 매핑합니다.
+  - pub.json:documentToJSONString 서비스 스탭을 추가하고 다음과 같이 매핑합니다.
 
 ![Untitled](%5BWorkbook%2015%5D%20JDBC%20Adapter%20Notifications%20366348d839fe499f9a7892f1bbd20595/new17.png)
 
-    - 그 아래 pub.flow:debugLog 서비스를 추가 jsonString 을 message 에 매핑 후 서비스를 저장합니다.
+  - 그 아래 pub.flow:debugLog 서비스를 추가 jsonString 을 message 에 매핑 후 서비스를 저장합니다.
 
 ![Untitled](%5BWorkbook%2015%5D%20JDBC%20Adapter%20Notifications%20366348d839fe499f9a7892f1bbd20595/new18.png)
 
+- 모든 컴포넌트가 생성 되면 IS Admin 관리자 페이지 > Adapter > webMethods Adapter for JDBC 에 접속합니다.
+  - Polling Notifications 탭으로 들어가 본인이 생성한 Notification 을 Fiter 를 사용하여 검색합니다.
 
-- 서비스 저장 후 IF0013 에서 테스트 했던 IF0013.adpt:IF0013_SRC_I_01 서비스를 실행시켜 결과를 확인합니다.
+![Untitled](%5BWorkbook%2015%5D%20JDBC%20Adapter%20Notifications%20366348d839fe499f9a7892f1bbd20595/new20.png)
+
+  - Edit Schedule 을 클릭 Interval 을 5초 로 설정 후 Save 합니다.
+
+  **Note.** JDBC Notification 은 Polling 방식의 알림 기능입니다. 일정 주기를 설정하여 Database 의 변경 데이터를 수신 받는 방식입니다.
+
+![Untitled](%5BWorkbook%2015%5D%20JDBC%20Adapter%20Notifications%20366348d839fe499f9a7892f1bbd20595/new21.png)
+
+
+  - 저장 후 State 를 Disable 에서 Enable 로 변경 합니다.
+![Untitled](%5BWorkbook%2015%5D%20JDBC%20Adapter%20Notifications%20366348d839fe499f9a7892f1bbd20595/new22.png)
+![Untitled](%5BWorkbook%2015%5D%20JDBC%20Adapter%20Notifications%20366348d839fe499f9a7892f1bbd20595/new23.png)
+
+
+- 서비스 저장 후 IF0013 에서 테스트 했던 IF0013.adpt:IF0013_SRC_I_01 서비스를 실행시켜 결과를 확인합니다. IS 관리자 페이지에서 Log 가 남는지 확인합니다.
 
 ![Untitled](%5BWorkbook%2015%5D%20JDBC%20Adapter%20Notifications%20366348d839fe499f9a7892f1bbd20595/new19.png)
 
-
+![Untitled](%5BWorkbook%2015%5D%20JDBC%20Adapter%20Notifications%20366348d839fe499f9a7892f1bbd20595/new24.png)
 
 
 
