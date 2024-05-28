@@ -21,7 +21,7 @@ JDBC Adapter Service 는 일종의 Database 에 쿼리문을 수행하는 서비
 
 ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/15a2d6c8-9f90-49fd-b99b-960e2516f04b.png)
 
-- webMethods Adapter for JDBC Connection 클릭하여 JDBC Conenction 을 생성합니다.
+- Configure New Connection > webMethods Adapter for JDBC Connection 클릭하여 JDBC Conenction 을 생성합니다.
 
 ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/Untitled%201.png)
 
