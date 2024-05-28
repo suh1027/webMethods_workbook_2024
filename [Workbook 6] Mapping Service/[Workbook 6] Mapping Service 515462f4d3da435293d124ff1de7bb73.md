@@ -143,8 +143,11 @@
 
   - MAP 단계에서 Transformer에 string:toUpper서비스를 추가하세요 . 다음 변수를 Transformer 로 그리고 Transformer 에서 pipeline out의 변수 outputName 으로 매핑하세요.
   
-    ![Untitled](%5BWorkbook%206%5D%20Mapping%20Service%2032520d2f4376462f83bb53b45e0694d8/Untitled%2022.png)  
+    ![Untitled](%5BWorkbook%206%5D%20Mapping%20Service%2032520d2f4376462f83bb53b45e0694d8/Untitled%2022.png)
 
+    ![Untitled](%5BWorkbook%206%5D%20Mapping%20Service%2032520d2f4376462f83bb53b45e0694d8/workbook6_44.png
+)
+    
   - 서비스를 저장하고 입력값을 넣어 실행 후 결과창을 확인하세요. 특히 현재 날짜 및 대문자로 바뀐 name 값을 확인하십시오.
   
     ![Untitled](%5BWorkbook%206%5D%20Mapping%20Service%2032520d2f4376462f83bb53b45e0694d8/Untitled%2023.png)  
