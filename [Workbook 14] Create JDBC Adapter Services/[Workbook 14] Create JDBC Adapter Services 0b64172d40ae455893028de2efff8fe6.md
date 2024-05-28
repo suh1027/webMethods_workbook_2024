@@ -8,12 +8,10 @@ JDBC Adapter Service 는 일종의 Database 에 쿼리문을 수행하는 서비
 
 이번 연습에서는 **SELECT, UPDATE, INSERT, BATCH UPDATE** 네가지의 Adpater Service 를 연습합니다.
 
-// 새로작성 해야할 듯 함 //
-
 
 ## Steps
 
-#### STEP 1. 최상위 폴더 아래 IF0013를 생성한 후 그 아래 svc, adpt 폴더를 생성합니다.
+#### STEP 1. 최상위 폴더 아래 IF0013 을 생성한 후 그 아래 svc, adpt 폴더를 생성합니다.
 
 ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/Untitled.png)
 
@@ -50,10 +48,86 @@ JDBC Adapter Service 는 일종의 Database 에 쿼리문을 수행하는 서비
 
 ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/Untitled%204.png)
 
+
+---
+
+#### STEP 3. Select 쿼리문을 수행하는 Select Adapter Service 를 생성하고, 실행 시켜 Database 로 부터 정상적인 데이터를 Select 할 수 있는지 확인합니다.
+
+- IF0013.adpt 폴더 아래 새로운 Adapter Service 를 생성합니다.
+- adpt 폴더 에서 우클릭 New > Adapter Service 를 클릭하여 새로운 Adapter Service 를 생성합니다.
+![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/Untitled%205.png)
+
+- Adapter Service 명은 IF0013_SRC_S_01 로 입력 후 Next를 클릭합니다.
+![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/new1.png)
+**Note.** Adpater Service 의 네이밍 룰은 고객사별 상이하며, 일반적으로 IFID + SRC/TGT 시스템 명 + 로직 + 시퀀스 번호 로 구분하여 생성합니다.
+
+- 다음 화면에서 설치된 Adapter 목록을 확인할 수 있습니다. 이번 연습에서는 JDBC Adpater 를 사용할 것이므로 JDBC Adpater 를 선택 후 Next 를 누릅니다.
+![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/new2.png)
+
+- 다음 화면에서는 IS 관리자 웹 페이지에서 생성 한 JDBC 커넥션 리스트를 확인하실 수 있습니다. 본인이 생성한 Connection 명을 선택 하시고 Next 를 누릅니다.
+![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/new3.png)
+
+- 실행 할 쿼리문의 템플릿을 선택합니다. JDBC Adapter 는 GUI 환경에서 개발 할 수 있도록 미리 생성 된 템플릿을 사용하여 쿼리문 서비스를 수행합니다. SelectSQL 을 선택 후 Finish 를 눌러 생성합니다.
+![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/new4.png)
+
+**Note.** 생성 된 Adapter 서비스는 Flowservice 에서 서비스 단계로 추가하여 사용하거나, 단독으로 Service 를 수행하여 사용하실 수 있습니다.
+
+- 다음은 생성 된 Adapter Service 개발 방법 입니다. 생성 된 Select Adpater 의 Table 탭에서는 Select 쿼리문을 수행 할 테이블을 선택할 수 있습니다. ... 아이콘을 클릭합니다.
+![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/new5.png)
+
+- 개인별로 미리 생성 된 계정 (회사명_이니셜) 과 동일한 이름의 Schema 로 접속하여 SRC_EMPLOYEES_TABLE 을 선택 후 OK 를 누릅니다.
+![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/new6.png)
+**스키마가 보이지 않거나, 테이블이 없는 경우 문의해주세요**
+
+- Adapter Service 를 저장하고, SELECT 탭을 클릭합니다. 해당 탭에서는 SELECT 문에서 SELECT 할 필드들을 선택합니다. 선택한 테이블의 필드를 그대로 가져올 수 있습니다.
+     - Insert Row 를 클릭하여 필드를 개별 등록 가능
+     - Fill in all rows to the Table 을 클릭하여 모든 필드 한번에 등록 가능
+![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/new7.png)
+![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/new8.png)
+
+
+- 다음은 SELECT 문의 세부 설정입니다. SELECT 할 Row 의 수, Timeout 설정, Result Field 를 설정 할 수 있습니다.
+     - Maximum Row : 한번에 SELECT 할 Row 의 수 지정 (Default : 0, 전체 Row 한번에 SELECT)
+     - Query Time out : -1 (Query 실행 Timeout 시간을 초단위로 지정, -1 은 별도의 Timeout 설정 없이 실행 됨)
+     - Result Field : Select 레코드 수를 출력할 필드명 지정 (ex. record_count)
+     - Result Field Type : Result Field 의 타입 지정 (Integer, String 으로 지정이 가능하며 String 을 권장)  
+![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/new9.png)
+
+- WHERE 탭에서 SELECT 문의 조건을 설정할 수 있습니다. WHERE 조건에 EAI_FLAG 값을 기준으로 다음과 같이 설정합니다.
+       - Insert Row 를 클릭하여 하나의 조건절을 추가하고, EAI_FLAG 컬럼을 지정, Input Field 에 'N' 을 입력하고 저장합니다.
+![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/new10.png)
+
+
+- 저장 된 Adapter Service 를 우클릭하여 Run As > Run Service 를 눌러 서비스를 실행시켜 결과값을 확인합니다. 
+![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/new12.png)
+![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/new11.png)
+
+
+---
+
+#### STEP 4. Insert 쿼리문을 수행하는 Insert Adapter Service 를 생성하고, 실행 시켜 테이블에 데이터를 Insert 할 수 있는지 확인합니다.
+
+
+---
+
+
+### UPDATE
+
+
+
+
+---
+
+### BATCH UPDATE
+
+
+
+---
+
 #### STEP 3. IF0013.adpt 아래 IF0013_ORA_I_01 라는 새 Adapter Service 를 생성합니다.
 
 - adpt 폴더 에서 우클릭 New > Adapter Service 를 클릭하여 새로운 Adapter Service 를 생성합니다.
-![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/Untitled%205.png)
+
 
 - Adapter Service 명은 IF0013_ORA_I_01 로 지정합니다.
 ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/Untitled%206.png)
