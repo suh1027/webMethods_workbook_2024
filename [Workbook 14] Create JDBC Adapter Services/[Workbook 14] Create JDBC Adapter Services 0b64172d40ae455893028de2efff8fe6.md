@@ -345,7 +345,9 @@ JDBC Adapter Service 는 일종의 Database 에 쿼리문을 수행하는 서비
 
 
 **추가 참고 Note. 트랜잭션 처리는 pub.art.transaction:startTransaction, pub.art.transaction:commitTransaction, pub.art.transaction:rollbackTransaction 세개의 서비스를 사용하여 트랜잭션을 묶어 구성합니다.** 
+
 - 개발 예시
+
 ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/new56.png)
 
 
