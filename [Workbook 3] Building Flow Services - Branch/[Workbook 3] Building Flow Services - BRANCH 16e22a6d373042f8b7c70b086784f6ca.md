@@ -90,4 +90,4 @@
 
 ## Check Your Understanding
 #### QUIZ 1. BRANCH에서 정규 표현식은 언제 유용합니까?
-#### QUIZ 2. BRANCH 문의 속성인 switch 와 Evaluate labels=true 속성을 결합하여 사용할 수 있습니까?
+#### QUIZ 2. BRANCH 문의 속성인 switch 와 Evaluate labels=true 속성은 결합하여 사용할 수 있습니까?
