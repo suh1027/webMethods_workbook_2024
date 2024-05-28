@@ -2,7 +2,7 @@
 
 ## Overview
 
-이 연습에서는 Flow service의 Loop 문을 사용하여 직원 목록을 처리하는 비즈니스 로직을 생성합니다.
+이 연습에서는 Flow service의 Loop 문을 사용하여 다 건의 직원 목록을 처리하는 비즈니스 로직을 생성합니다.
 
 
 ## Steps
