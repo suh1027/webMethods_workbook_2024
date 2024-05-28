@@ -83,9 +83,9 @@ Nth Field는 스키마의 정의에 따라 Field를 구분하는 방식
     
 #### STEP 8. **pub.file:getFIle, pub.flatFile:convertToValues** 서비스를 사용한 예시.  **IF0008.svc** 아래 **svc_IF0008_receive** 서비스를 생성합니다.
     
-**Input/Output**에 **fileName** 추가합니다.
+**Input/Output**에 **filename** 추가합니다.
 
-![Untitled](%5BWorkbook%209%5D%20Working%20With%20Flat%20Files%20bacbba872fe74e12adf97c424524e971/Untitled%2013.png)
+![Untitled](%5BWorkbook%209%5D%20Working%20With%20Flat%20Files%20bacbba872fe74e12adf97c424524e971/workbook9_step8.png)
 
 **pub.file:getFIle**, **pub.string:bytesToString**, **pub.flatFile:convertToValues** 서비스를 위치 시킵니다.
 
