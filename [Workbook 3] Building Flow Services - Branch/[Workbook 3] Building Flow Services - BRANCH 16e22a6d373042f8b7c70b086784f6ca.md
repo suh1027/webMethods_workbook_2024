@@ -63,7 +63,7 @@
 
 ---
 
-#### STEP 6. IF0002.svc 폴더에서 String type의 Input값 2개 (account & cost) 와 String type의 Output값 (message)가 있는 svc_IF0002_branch2 라는 다른 Flow Service를 만듭니다. 
+#### STEP 6. IF0002.svc 폴더에 svc_IF0002_branch2 라는 다른 Flow Service를 만들어 String type의 Input값 2개 (account & cost) 와 String type의 Output값 (message)를 생성합니다.
     
 ![Untitled](%5BWorkbook%203%5D%20Building%20Flow%20Services%20-%20BRANCH%2016e22a6d373042f8b7c70b086784f6ca/Untitled%207.png)
     
