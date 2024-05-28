@@ -34,7 +34,7 @@
 ![Untitled](%5BWorkbook%203%5D%20Building%20Flow%20Services%20-%20BRANCH%2016e22a6d373042f8b7c70b086784f6ca/Untitled%204.png)
         
 
-#### STEP 4. Branch 문 하위에 pub.flow:debugLog 문을 세 개 더 추가합니다 (모두 Branch 하위로 들여쓰기 하여 Branch 로직의 일부가 되도록 구성하십시오). 다음과 같이 각각의 Label 속성과 변수 메시지를 설정합니다.
+#### STEP 4. BRANCH 문 하위에 pub.flow:debugLog 문을 세 개 더 추가합니다 (모두 BRANCH 하위로 들여쓰기 하여 BRANCH 로직의 일부가 되도록 구성하십시오). 다음과 같이 각각의 Label 속성과 변수 메시지를 설정합니다.
 - flow:debugLog (**Label = true**)
      - message = The value is TRUE
      - function = +++++
@@ -54,7 +54,7 @@
 ![Untitled](%5BWorkbook%203%5D%20Building%20Flow%20Services%20-%20BRANCH%2016e22a6d373042f8b7c70b086784f6ca/Untitled%205.png)
     
 
-#### STEP 5. testValue 에 대해 매번 다른 값을 입력하며 Service를 여러 번 실행 테스트합니다. Output 이 IDE 하단의 Service Result(서비스 결과) 탭에 나타나야 하고 Integration Server 웹 관리 화면 > Server Log(서버 로그)에서도 확인 가능해야 합니다.   
+#### STEP 5. testValue 에 대해 매번 다른 값을 입력하며 Service를 여러 번 실행 테스트합니다. Output 이 IDE 하단의 Service Result(서비스 결과) 탭에 나타나야 하고 Integration Server 웹 관리 화면 > Server Log에서도 확인 가능해야 합니다.   
     
 ![Untitled](%5BWorkbook%203%5D%20Building%20Flow%20Services%20-%20BRANCH%2016e22a6d373042f8b7c70b086784f6ca/Untitled%206.png)
     
