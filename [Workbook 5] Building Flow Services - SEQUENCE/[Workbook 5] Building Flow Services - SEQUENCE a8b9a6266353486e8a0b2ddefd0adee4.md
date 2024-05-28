@@ -14,7 +14,7 @@
 #### STEP 0. IS 가 설치 된 서버 내 (Linux 기준) /webM/IS01/ 아래 test.txt 라는 파일을 미리 생성해 두었습니다.
 ![Untitled](%5BWorkbook%205%5D%20Building%20Flow%20Services%20-%20SEQUENCE%20a8b9a6266353486e8a0b2ddefd0adee4/Untitled.png))
 
-#### STEP 1. 최상위 폴더 아래 IF0004와 svc 폴더를 생성하고 svc_IF0004_riskOperation이라는 새 Flow service를 만듭니다. Input은 String으로 fileName, Output은 String으로 result를 설정합니다. 
+#### STEP 1. 최상위 폴더 아래 IF0004와 IF0004.svc 폴더를 생성하고 svc_IF0004_riskOperation이라는 새 Flow service를 만듭니다. Input은 String으로 fileName, Output은 String으로 result를 설정합니다. 
     
 ![Untitled](%5BWorkbook%205%5D%20Building%20Flow%20Services%20-%20SEQUENCE%20a8b9a6266353486e8a0b2ddefd0adee4/Untitled%201.png)
     
