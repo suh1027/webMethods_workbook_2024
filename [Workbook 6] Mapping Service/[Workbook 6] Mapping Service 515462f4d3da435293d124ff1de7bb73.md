@@ -57,9 +57,17 @@
   ![Untitled](%5BWorkbook%206%5D%20Mapping%20Service%2032520d2f4376462f83bb53b45e0694d8/Untitled%206.png)
     
   - Pipeline에서 Value1 를 outputString 에 연결하고 우측 Properties > Copy Condition 의 조건 값을 입력하여 매핑 조건을 설정합니다.
-  
-    
-  
+    - **Value1 - ouputString**
+        Copy condition: %Source/switchValue%==1
+        Indices: /Source/Elements/Value1 --> /outputString
+
+    - **Value2 - ouputString**
+        Copy condition: %Source/switchValue%==2
+        Indices: /Source/Elements/Value2 --> /outputString
+
+    - **Value3 - ouputString**
+        Copy condition: %Source/switchValue%==3
+        Indices: /Source/Elements/Value3 --> /outputString
 
   ![Untitled](%5BWorkbook%206%5D%20Mapping%20Service%2032520d2f4376462f83bb53b45e0694d8/Untitled%207.png)
     
