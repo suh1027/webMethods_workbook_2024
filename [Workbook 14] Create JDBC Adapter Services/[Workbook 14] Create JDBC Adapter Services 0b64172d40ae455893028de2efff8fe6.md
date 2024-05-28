@@ -26,7 +26,10 @@ JDBC Adapter Service 는 일종의 Database 에 쿼리문을 수행하는 서비
 ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/Untitled%201.png)
 
 - 접속할 DB 접속 정보 입력 후 Test Connection 성공하면 Save Connection 을 클릭하여 커넥션을 저장합니다.  
-      **DB 접속 정보**
+
+
+  **DB 접속 정보**
+  
     - Folder Name : CUDO_Conn.ORA
     - Connection Name : {회사명}_{이니셜} (ex. CUDO_SJH)
     - DataSource Class : oracle.jdbc.pool.OracleDataSource
@@ -36,6 +39,7 @@ JDBC Adapter Service 는 일종의 Database 에 쿼리문을 수행하는 서비
     - Database Name : XE
     - Port Number : 1521
     - Other Properties : driverType=Thin
+
       **계정 문제로 접속이 되지 않을 시 문의 부탁드립니다.**
       
 ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/Untitled%202.png)
