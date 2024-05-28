@@ -206,7 +206,8 @@ JDBC Adapter Service 는 일종의 Database 에 쿼리문을 수행하는 서비
 
 ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/new28.png)
 
-- WHERE 탭으로 이동, ID(PK 값) 을 조건으로 선택 한 후 다음과 같이 설정합니다.
+
+- WHERE 탭으로 이동, ID(PK 값)을 조건으로 선택 한 후 다음과 같이 설정합니다.
     - Input Field Type 을 java.lang.String 으로 설정, Input Field 를 ID 로 입력 후 저장
 
 ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/new29.png)
@@ -297,50 +298,48 @@ JDBC Adapter Service 는 일종의 Database 에 쿼리문을 수행하는 서비
 ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/new45.png)
 
 - Update Adapter Serivce 설정입니다.
-
-          - TABLE 탭에서 TGT_EMPLOYEESTABLE 테이블로 설정
+  - TABLE 탭에서 TGT_EMPLOYEESTABLE 테이블로 설정
 
 ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/new46.png)
-          
-          - UPDATE 탭에서 ID(PK값) 를 제외한 모든 필드 선택
+   - UPDATE 탭에서 ID(PK값) 를 제외한 모든 필드 선택
 
 ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/new47.png)
           
-          - WHERE 탭에서 다음과 같이 PK 값 기준으로 Update 로직이 수행되도록 조건을 설정 (**Input Field Type, Input Field 설정 주의**)
+ - WHERE 탭에서 다음과 같이 PK 값 기준으로 Update 로직이 수행되도록 조건을 설정 (**Input Field Type, Input Field 설정 주의**)
 
 ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/new48.png)
           
-          - Update Adapter Service 의 성공/실패 여부를 판단하는 Results Field 설정
+ - Update Adapter Service 의 성공/실패 여부를 판단하는 Results Field 설정
 
 ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/new51.png)
 
 - IF0013.svc 폴더 아래 svc_IF0013_upsert 라는 새 Flowservice 를 생성 후 다음과 같이 구성합니다.
 
-          - 위에서 생성한 Select Adpater Service 를 맨 위 스탭에 생성하고 TRY-CATCH Sequence 블록을 생성 (Success - Failure - Done)
+ - 위에서 생성한 Select Adpater Service 를 맨 위 스탭에 생성하고 TRY-CATCH Sequence 블록을 생성 (Success - Failure - Done)
 
 ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/new32.png)
           
-          - TRY 블록에서 LOOP 단계 추가, Select Output 의 Results DocumentList 를 Input Array 에 입력합니다.
+ - TRY 블록에서 LOOP 단계 추가, Select Output 의 Results DocumentList 를 Input Array 에 입력합니다.
 
 ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/new49.png)
          
-          - LOOP 문 안에 위에서 새로 생성한 IF0013_TGT_U_01 Adapter Service 단계를 추가하고 다음과 같이 매핑합니다. EAI_RESULTS 필드는 Set value 기능 또는 더블클릭하여 Success 를 입력합니다.
+ - LOOP 문 안에 위에서 새로 생성한 IF0013_TGT_U_01 Adapter Service 단계를 추가하고 다음과 같이 매핑합니다. EAI_RESULTS 필드는 Set value 기능 또는 더블클릭하여 Success 를 입력합니다.
 
 ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/new50.png)    
-          
-          - Update 아래 BRANCH 문을 추가 후 Switch 속성애 다음 필드를 입력합니다.
+ 
+ - Update 아래 BRANCH 문을 추가 후 Switch 속성애 다음 필드를 입력합니다.
 
 ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/new52.png)    
           
-          - BRANCH 문 안에 생성한 Insert Adapter Service 단계를 추가 합니다. Label 엔 0 (Update 로직이 실패했을 때 Insert 로직 수행), 매핑은 다음과 같이 매핑합니다.
+ - BRANCH 문 안에 생성한 Insert Adapter Service 단계를 추가 합니다. Label 엔 0 (Update 로직이 실패했을 때 Insert 로직 수행), 매핑은 다음과 같이 매핑합니다.
 
 ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/new53.png)    
 
-          - Batch Update Adapter Service 를 Loop 밖 아래 단계에 추가하고 다음과 같이 매핑 합니다. **들여쓰기 주의**
+ - Batch Update Adapter Service 를 Loop 밖 아래 단계에 추가하고 다음과 같이 매핑 합니다. **들여쓰기 주의**
 
 ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/new54.png)     
           
-          - 서비스를 저장 후 실행시켜 결과를 확인해봅니다. (Select Adapter 를 생성하여 TGT_EMPLOYEES_TABLE 에 데이터가 저장 되었는지 확인하세요)
+ - 서비스를 저장 후 실행시켜 결과를 확인해봅니다. (Select Adapter 를 생성하여 TGT_EMPLOYEES_TABLE 에 데이터가 저장 되었는지 확인하세요)
 
 ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/new55.png)           
 
