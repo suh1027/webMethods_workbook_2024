@@ -253,6 +253,7 @@ JDBC Adapter Service 는 일종의 Database 에 쿼리문을 수행하는 서비
 
 ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/new38.png)
 
+
 - 서비스를 저장 후 실행시켜 봅니다.
 
 ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/new39.png)
@@ -260,7 +261,7 @@ JDBC Adapter Service 는 일종의 Database 에 쿼리문을 수행하는 서비
 ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/new40.png)
 
 - Select Adapter Service 를 재 실행 하여 Select 되는 값들이 있는지 확인합니다.
-    - SELECT 절 조건에 EAI_FLAG = 'N' 인 값이 없어 결과 값이 0 건 결과가 리턴 됩니다.
+   - SELECT 절 조건에 EAI_FLAG = 'N' 인 값이 없어 결과 값이 0 건 결과가 리턴 됩니다.
 
 ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/new41.png)
 
