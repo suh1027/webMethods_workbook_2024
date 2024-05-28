@@ -170,7 +170,7 @@ JDBC Adapter Service 는 일종의 Database 에 쿼리문을 수행하는 서비
 **Note.** Insert Adapter 의 Result Field 는 Adapter Service 의 실행 성공 유무에 따라 1 또는 0 으로 반환되며, 서비스 성공 시 1, 실패 시 0 이 반환됩니다.
 
 - 해당 서비스를 저장하고 다음과 같이 쿼리문을 실행시켜 결과값을 확인합니다.
-     - 해당 테이블의 PK 값은 ID 로 1~1000 까지는 더미 데이터가 생성되어 있습니다.
+    - 해당 테이블의 PK 값은 ID 로 1~1000 까지는 더미 데이터가 생성되어 있습니다.
 
 ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/new21.png)    
 
@@ -207,7 +207,7 @@ JDBC Adapter Service 는 일종의 Database 에 쿼리문을 수행하는 서비
 ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/new28.png)
 
 - WHERE 탭으로 이동, ID(PK 값) 을 조건으로 선택 한 후 다음과 같이 설정합니다.
-     - Input Field Type 을 java.lang.String 으로 설정, Input Field 를 ID 로 입력 후 저장
+    - Input Field Type 을 java.lang.String 으로 설정, Input Field 를 ID 로 입력 후 저장
 
 ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/new29.png)
 
@@ -260,17 +260,17 @@ JDBC Adapter Service 는 일종의 Database 에 쿼리문을 수행하는 서비
 ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/new40.png)
 
 - Select Adapter Service 를 재 실행 하여 Select 되는 값들이 있는지 확인합니다.
-     - SELECT 절 조건에 EAI_FLAG = 'N' 인 값이 없어 결과 값이 0 건 결과가 리턴 됩니다.
+    - SELECT 절 조건에 EAI_FLAG = 'N' 인 값이 없어 결과 값이 0 건 결과가 리턴 됩니다.
 
 ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/new41.png)
 
 - Batch Update 의 WHERE 탭을 다음과 같이 수정 후 저장합니다.
-     - WHERE 조건에 기존 EAI_FLAG 컬럼 제거
-     - 필드 하나 추가 후 ID = ? 로 설정 (PK 값을 조건으로 사용)
-     - 아래 부분에 Insert Row 하여 EAI 서비스 에서 ID 컬럼에 매핑될 Field 설정
-            - JDBC Type : VARCHAR
-            - Input Field Type : java.lang.String
-            - Input Field : ID
+    - WHERE 조건에 기존 EAI_FLAG 컬럼 제거
+    - 필드 하나 추가 후 ID = ? 로 설정 (PK 값을 조건으로 사용)
+    - 아래 부분에 Insert Row 하여 EAI 서비스 에서 ID 컬럼에 매핑될 Field 설정
+        - JDBC Type : VARCHAR
+        - Input Field Type : java.lang.String
+        - Input Field : ID
 
 ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/new42.png)
 
