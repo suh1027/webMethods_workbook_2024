@@ -18,7 +18,7 @@
 ![Untitled](%5BWorkbook%203%5D%20Building%20Flow%20Services%20-%20BRANCH%2016e22a6d373042f8b7c70b086784f6ca/Untitled.png)
     
 
-#### STEP 3. 다음 단계에서 testValue 변수의 내용을 기반으로 조건부로 Server Log에 메시지를 작성하는 BRANCH 문을 Flow service에 구성합니다. 예를 들어 testValue = true인 경우 IS Server 로그에 The value is TRUE 메시지를 작성합니다.
+#### STEP 3. testValue 변수 값에 따라 조건부 Server Log 메시지를 작성하는 BRANCH 문을 Flow service에 구성합니다. 예를 들어 testValue = true인 경우 IS Server 로그에 The value is TRUE 메시지를 작성합니다.
 - service에 BRANCH문을 추가합니다. Switch 속성으로 /testValue를 지정합니다.    
         
 ![Untitled](%5BWorkbook%203%5D%20Building%20Flow%20Services%20-%20BRANCH%2016e22a6d373042f8b7c70b086784f6ca/Untitled%201.png)
