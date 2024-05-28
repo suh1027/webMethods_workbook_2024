@@ -99,4 +99,4 @@
 #### QUIZ 1. Service의 순서가 중요한 이유는 무엇입니까?
 #### QUIZ 2. string:toUpper service는 몇 개의 input값을 받을 수 있습니까?
 #### QUIZ 3. server log는 어디에 표시됩니까?
-#### QUIZ 4. Upper service의 output값을 매핑할 필요가 없는 무엇입니까?
+#### QUIZ 4. pub.string:toUpper service의 output 값을 매핑할 필요가 없는 무엇입니까?
