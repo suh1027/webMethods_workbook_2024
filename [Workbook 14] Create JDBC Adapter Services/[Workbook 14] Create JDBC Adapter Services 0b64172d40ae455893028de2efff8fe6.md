@@ -32,6 +32,7 @@ JDBC Adapter Service 는 일종의 Database 에 쿼리문을 수행하는 서비
   
     - Folder Name : CUDO_Conn.ORA
     - Connection Name : {회사명}_{이니셜} (ex. CUDO_SJH)
+    - Transaction Type : LOCAL_TRANSACTION
     - DataSource Class : oracle.jdbc.pool.OracleDataSource
     - Server Name : 192.168.1.54
     - User : {회사명}_{이니셜} 
@@ -39,6 +40,7 @@ JDBC Adapter Service 는 일종의 Database 에 쿼리문을 수행하는 서비
     - Database Name : XE
     - Port Number : 1521
     - Other Properties : driverType=Thin
+    - Minimum Pool Size : 0
 
       **계정 문제로 접속이 되지 않을 시 문의 부탁드립니다.**
       
