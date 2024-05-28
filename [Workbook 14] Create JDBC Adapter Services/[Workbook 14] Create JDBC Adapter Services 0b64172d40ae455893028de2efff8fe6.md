@@ -2,7 +2,11 @@
 
 ## Overview
 
-이번 exercise 에서는, insert 와 select JDBC Adapter services 를 생성할 수 있습니다. 상위 Flow service 와 결합할 수 있습니다. 이들을 함께 사용하면 database 의 데이터로 쉽게 작업할 수 있습니다.
+이번 연습 에서는 JDBC Connection 을 활용하여 Adapter services 를 생성, Database 의 데이터를 쉽게 작업할 수 있습니다.
+
+JDBC Adapter Service 는 일종의 Database 에 쿼리문을 수행하는 서비스로 
+
+이번 연습에서는 **SELECT, UPDATE, INSERT, BATCH UPDATE** 네가지의 Adpater Service 를 연습합니다.
 
 
 ## Steps
@@ -13,56 +17,69 @@
 
 #### STEP 2. IS Server에서 Adapter Connection Alias를 생성합니다.
 
-- IS Server 에 설정한 사용자 이름과 비밀번호로 로그인 후  좌측 Adapters →webMethods Adapter for JDBC 클릭
+- IS 웹 관리자 화면에 접속하여 좌측 Adapters > webMethods Adapter for JDBC 클릭
 
 ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/15a2d6c8-9f90-49fd-b99b-960e2516f04b.png)
 
-- webMethods Adapter for JDBC Connection 클릭
+- webMethods Adapter for JDBC Connection 클릭하여 JDBC Conenction 을 생성합니다.
 
 ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/Untitled%201.png)
 
-- DB접속 정보 입력 후 Test Connection 성공하면 Save Connection 클릭
-
+- 접속할 DB 접속 정보 입력 후 Test Connection 성공하면 Save Connection 을 클릭하여 커넥션을 저장합니다.  
+      **DB 접속 정보**
+    - Folder Name : CUDO_Conn.ORA
+    - Connection Name : {회사명}_{이니셜} (ex. CUDO_SJH)
+    - DataSource Class : oracle.jdbc.pool.OracleDataSource
+    - Server Name : 192.168.1.54
+    - User : {회사명}_{이니셜} 
+    - password : {회사명}_{이니셜}
+    - Database Name : XE
+    - Port Number : 1521
+    - Other Properties : driverType=Thin
+      **계정 문제로 접속이 되지 않을 시 문의 부탁드립니다.**
 ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/Untitled%202.png)
 
-- 생성 된 커넥션 확인 후 Enbled의 no를 yes로 변경
+
+- Save Connection 을 눌러 생성 된 본인의 커넥션을 확인 후 Enbled 의 no 를 yes로 변경하여 커넥션을 활성화 합니다.
 
 ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/Untitled%203.png)
 
-- Designer 해당 패키지 새로고침하여 생성 된 커넥션 확인
+- Designer 로 돌아가 Package Navigator 서버에서 우클릭 Refresh 하여 커넥션 컴포넌트가 생성 되었는지 확인합니다.
 
 ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/Untitled%204.png)
 
-#### STEP 3. adpt 아래 IF0013_ORA_I_01 라는 새 Adapter Service 를 생성합니다.
+#### STEP 3. IF0013.adpt 아래 IF0013_ORA_I_01 라는 새 Adapter Service 를 생성합니다.
 
-- **Adapter Service Type**으로 **JDBC Adapter**를 선택합니다.
-
+- adpt 폴더 에서 우클릭 New > Adapter Service 를 클릭하여 새로운 Adapter Service 를 생성합니다.
 ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/Untitled%205.png)
 
+- Adapter Service 명은 IF0013_ORA_I_01 로 지정합니다.
 ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/Untitled%206.png)
 
-- **Adapter Service Type**으로 **JDBC Adapter**를 선택합니다.
-
+- **Adapter Service Type** 은 **JDBC Adapter**를 선택합니다.
 ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/Untitled%207.png)
 
-- 다음  **Adapter Connection Alias** 로 **CUDO_Conn.ORA:CUDO_SJH**를 선택합니다.
+- 다음 **Adapter Connection Alias** 로 **본인이 생성한 커넥션을**를 선택합니다.
 
 ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/Untitled%208.png)
 
-- 마지막으로 **InsertSQL**을 template으로 선택하고 Finish을 클릭합니다.
+- 마지막으로 **InsertSQL**을 template 을 선택하고 Finish을 클릭합니다.
 
 ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/Untitled%209.png)
 
-- 생성된 JDBC Adapter Service insertOrderHeader를 다음과 같이 Configure(구성)합니다.
+- 생성된 JDBC Adapter Service "IF0013_ORA_I_01" 를 다음과 같이 Configure(구성)합니다.
 
-    - Table tab 에서, Table Name 컬럼의 첫 번째 행을 클릭하고 **CUDO_SJH.ORDER_HEADER**을 선택합니다.
+    -  Table tab 에서 Insert 쿼리문을 수행 할 Table 을 선택합니다. Table Name 을 클릭하여 **본인의 스키마 명.ORDER_HEADER**을 선택합니다.
+       
 
     ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/Untitled%2010.png)
 
+    **해당 ORDER_HEADER 테이블이 생성되어 있지 않은 경우 문의 부탁드립니다.**
+  
     ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/Untitled%2011.png)
 
-    - - **INSERT** tab 에서, 먼저 **Insert** 행 버튼을 한번 누릅니다.
-      다음 **Fill in all rows to the Table** 버튼을 클릭 합니다.
+    - 이제 Insert 쿼리문을 설정하기 위해 **INSERT** tab 을 클릭합니다. 다음 **Fill in all rows to the Table** 버튼을 클릭 합니다.
+          **Note.** 해당 옵션은 테이블의 모든 행을 불러오는 기능입니다.
 
     ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/Untitled%2012.png)
 
@@ -70,23 +87,27 @@
 
     ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/Untitled%2014.png)
 
-    - **Result tab** 에서, **Result Field: insertCount** / **Result Field Type: java.lang.String** 설정합니다
+    - **Result tab** 에서 Insert 문의 성공 실패를 확인하기 위해 Result 필드를 선언합니다. **Result Field: results** / **Result Field Type: java.lang.String** 설정합니다
+
+//// Insert Count 가 아니라 Insert 문은 Result 가 1(성공) 0(실패) 로 표현됩니다. 캡쳐 수정해주세요 results 로 변경////
 
     ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/Untitled%2015.png)
 
-    - **Package Navigator view** 에서 Adapter Service 인 **IF0013_ORA_I_01**를 저장하고 우클릭→Run As→ Run Service를 눌러 실행합니다.
+    - Adapter Service 인 **IF0013_ORA_I_01**를 저장하고 우클릭 → Run As → Run Service를 눌러 실행합니다.
 
     ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/Untitled%2016.png)
 
-    - **OverrideCredentials** 및 **$connectionName** 을 제외한 모든 입력 필드에 데이터를 삽입합니다.
+    - 모든 입력 필드에 데이터를 삽입합니다.
   
     ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/Untitled%2017.png)
 
-    - **insertCount** 가 ‘1’ 로 반환 되는지 확인합니다.
+    - **results** 가 ‘1’ 로 반환되어 DB에 정상적으로 Insert 되었는지 확인합니다.
   
     ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/Untitled%2018.png)
 
 #### STEP 4. 위 단계와 마찬가지로, IF0013.adpt 폴더에 IF0013_ORA_I_02  라는 또 다른 Adapter Service를 생성합니다. CUDO_Conn.ORA:CUDO_SJH 를 사용하는 JDBC Adapter type 의 Adapter Service 를 지정하고 InsertSQL template 을 선택합니다. 
+
+// 캡쳐 추가해 주세요 //
 
 - 생성된 JDBC Adapter Service  **IF0013_ORA_I_02** 를 다음과 같이 구성합니다.
   
@@ -102,7 +123,7 @@
     
     InsertCount 가 ‘1’로 반환 되는지 확인합니다.
 
-#### STEP 5. IF0013.adpt 폴더에 IF0013_ORA_S_01 라는 새로운 Adapter Service 를 생성하세요.  JDBC Adapter type 의 Adapter Service 로  CUDO_Conn.ORA:CUDO_SJH 를 사용하고, SelectSQL template 를 선택하세요.  
+#### STEP 5. IF0013.adpt 폴더에 IF0013_ORA_S_01 라는 새로운 Adapter Service 를 생성하세요. JDBC Adapter type 의 Adapter Service 로  CUDO_Conn.ORA:CUDO_SJH 를 사용하고, SelectSQL template 를 선택하세요.  
 
 ![Untitled](%5BWorkbook%2014%5D%20Create%20JDBC%20Adapter%20Services%20de5383e748184e9dbd34a7cff5d5864d/Untitled%2019.png)
 
