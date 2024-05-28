@@ -130,7 +130,7 @@
 
 #### STEP 4. Transformer 를 이용한 mapping
 
-  - 최상위 폴더 아래 IF0005 와 svc 폴더를 생성한 후 svc_IF0005_transformer 라는 서비스를 생성 하세요.
+  - 최상위 폴더 아래 IF0005 와 그 하위 폴더 svc를 생성합니다. svc 폴더 아래 svc_IF0005_transformer 라는 서비스를 생성 하세요.
 
 ![Untitled](%5BWorkbook%206%5D%20Mapping%20Service%2032520d2f4376462f83bb53b45e0694d8/Untitled%2021.png)  
 
