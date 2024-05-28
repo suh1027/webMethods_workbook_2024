@@ -77,8 +77,8 @@
 
   ![Untitled](%5BWorkbook%206%5D%20Mapping%20Service%2032520d2f4376462f83bb53b45e0694d8/Untitled%207.png)
   
-  **Note.** num1 과 num2 는 동일한 타입, 동일한 명칭의 변수로 암묵적으로 매핑 되어 있는 것을 확인할 수 있습니다.
-  **Note.** 암묵적 연결은 회색선으로 연결됩니다. (ex. num1, num2, value)
+  **Note.** Copy Condition 값은 정규표현식을 사용해 입력하며 위 값은 /Source/switchValue 값이 1일 경우를 표현합니다.
+  **Note.** 조건적 매핑의 선은 파란색으로 연결됩니다.
   
     
   **Note.** 조건적 매핑의 선은 파란색으로 연결됩니다.
