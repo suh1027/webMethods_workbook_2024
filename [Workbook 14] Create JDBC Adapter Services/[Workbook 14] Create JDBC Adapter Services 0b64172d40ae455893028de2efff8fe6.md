@@ -8,6 +8,8 @@ JDBC Adapter Service 는 일종의 Database 에 쿼리문을 수행하는 서비
 
 이번 연습에서는 **SELECT, UPDATE, INSERT, BATCH UPDATE** 네가지의 Adpater Service 를 연습합니다.
 
+// 새로작성 해야할 듯 함 //
+
 
 ## Steps
 
