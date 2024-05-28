@@ -4,9 +4,9 @@
 
 이 장에서는 **Designer**를 사용하여 **Java** 서비스를 생성, 컴파일하고 실행합니다.
 
-특정 문자열이 두 번째 문자열로 끝나는지 테스트하는 특별한 서비스가 필요하다고 상상해보세요. 
+특정 문자열이 두 번째 문자열로 끝나는지 테스트하는 특별한 서비스를 개발합니다.
 
-webMethods 내 Built-in 된 **pub.string** 폴더 아래는 이와 같은 서비스가 없지만 **Java** 런타임 환경의 **String.endsWith()** 메서드를 사용하려고 합니다. 
+webMethods 내 Built-in 된 **pub.string** 폴더 아래는 이와 같은 서비스가 없지만 **Java** 런타임 환경의 **String.endsWith()** 메서드를 사용합니다.
 
 
 ## Steps
