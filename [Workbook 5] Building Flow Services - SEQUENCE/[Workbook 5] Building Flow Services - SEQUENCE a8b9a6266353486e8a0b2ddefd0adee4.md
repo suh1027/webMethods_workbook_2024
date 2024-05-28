@@ -44,7 +44,7 @@
 
 #### STEP 5. IF0004.svc 폴더 아래 svc_IF0004_sequenceTryCatch 라는 이름으로 Flow service를 생성합니다. Input/Output은 위 서비스와 동일하게 구성합니다.   
     
-![Untitled](%5BWorkbook%205%5D%20Building%20Flow%20Services%20-%20SEQUENCE%20a8b9a6266353486e8a0b2ddefd0adee4/Untitled%208.png)
+![Untitled](%5BWorkbook%205%5D%20Building%20Flow%20Services%20-%20SEQUENCE%20a8b9a6266353486e8a0b2ddefd0adee4/workbook5_step5.png)
     
 
 #### STEP 6. svc_IF0004_sequenceTryCatch에서 다음과 같이 세 개의 SEQUENCE를 추가하여 Flow try/catch 블록을 만듭니다.
