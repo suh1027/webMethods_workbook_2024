@@ -93,9 +93,9 @@ Nth Field는 스키마의 정의에 따라 Field를 구분하는 방식
 
 **string**과 **ffData**를 매핑하고, **ffSchema**에 생성했던 **schema**인 **addressFixed** 입력합니다.
 
-![Untitled](%5BWorkbook%209%5D%20Working%20With%20Flat%20Files%20bacbba872fe74e12adf97c424524e971/Untitled%2015.png)
+![Untitled](%5BWorkbook%209%5D%20Working%20With%20Flat%20Files%20bacbba872fe74e12adf97c424524e971/workbook9_step8_3.png)
 
-실행 결과 값 예시 (**Input**에 **addressFixed.txt** 파일 경로 넣고 실행) 
+실행 결과 값 예시 (**Input**에 **addressFixed.txt** 파일 경로 넣고 실행 - /webM/addressFixed.txt) 
 
 ![Untitled](%5BWorkbook%209%5D%20Working%20With%20Flat%20Files%20bacbba872fe74e12adf97c424524e971/Untitled%2016.png)
 
