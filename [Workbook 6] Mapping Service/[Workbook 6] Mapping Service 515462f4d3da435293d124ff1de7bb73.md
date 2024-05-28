@@ -2,7 +2,14 @@
 
 ## Overview
 
-이 장에서는 미리 만들어진 Document Type 컴포넌트를 사용하여 한 데이터 형식에서 다른 데이터 형식으로 매핑하는 플로우 서비스를 생성합니다.
+이 장에서는 한 데이터 형식에서 다른 데이터 형식으로 매핑하는 플로우 서비스를 생성합니다.
+
+총 세가지 방식의 Mapping 방식이 있습니다.
+1. 암묵적 매핑
+2. 조건적 매핑
+3. Set Value 를 사용한 매핑
+
+추가로 MAP 단계에서 Transformer 기능을 설명합니다.
 
 
 ## Steps
@@ -11,19 +18,19 @@
     
 - Designer는 하나의 flow내에 같은 이름, 데이터 타입이 적합한 변수들을 암묵적으로 연결하거나 매핑합니다. 
 
-  a. 최상위 폴더 아래 IF0005 와 svc 폴더를 생성한 후, svc_IF0005_implicitMap라는 Flow service를 생성하세요. 
+  - 최상위 폴더 아래 IF0005 와 svc 폴더를 생성한 후, svc_IF0005_implicitMap라는 Flow service를 생성하세요. 
     
   ![Untitled](%5BWorkbook%206%5D%20Mapping%20Service%2032520d2f4376462f83bb53b45e0694d8/Untitled.png)
     
-  b. pub.math:divideInts 서비스를 호출합니다.
+  - pub.math:divideInts 서비스를 호출합니다.
 
   ![Untitled](%5BWorkbook%206%5D%20Mapping%20Service%2032520d2f4376462f83bb53b45e0694d8/Untitled%201.png)
     
-  c. Input/Output 탭에서 input/output 변수를 각각 추가 해줍니다.
+  - Input/Output 탭에서 input/output 변수를 각각 추가 해줍니다.
 
   ![Untitled](%5BWorkbook%206%5D%20Mapping%20Service%2032520d2f4376462f83bb53b45e0694d8/Untitled%202.png)
     
-  d. Service Out의 value 값을 Pipeline Out의 result에 명시적으로 매핑해줍니다.
+  - Service Out의 value 값을 Pipeline Out의 result에 명시적으로 매핑해줍니다.
 
   ![Untitled](%5BWorkbook%206%5D%20Mapping%20Service%2032520d2f4376462f83bb53b45e0694d8/Untitled%203.png)
     
