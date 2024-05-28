@@ -16,7 +16,7 @@
 
 #### STEP 1. 최상위 폴더 아래 IF0004와 IF0004.svc 폴더를 생성하고, 그 안에 svc_IF0004_riskOperation이라는 새 Flow service를 만듭니다. Input은 String으로 fileName, Output은 String으로 result를 설정합니다. 
     
-![Untitled](%5BWorkbook%205%5D%20Building%20Flow%20Services%20-%20SEQUENCE%20a8b9a6266353486e8a0b2ddefd0adee4/Untitled%201.png)
+![Untitled](%5BWorkbook%205%5D%20Building%20Flow%20Services%20-%20SEQUENCE%20a8b9a6266353486e8a0b2ddefd0adee4/workbook5_step1.png)
     
 
 #### STEP 2. **pub.file:getFile**를 **Service** 스탭에 추가하고 **fileName**을 **filename**에 그대로 매핑합니다. (*Note. 이름이 동일한 필드의 경우 자동으로 매핑됩니다.*)   
