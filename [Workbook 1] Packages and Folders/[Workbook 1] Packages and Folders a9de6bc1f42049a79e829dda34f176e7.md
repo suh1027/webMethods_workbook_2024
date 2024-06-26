@@ -23,10 +23,10 @@
 
 - 접속정보 
   - Name : 디자이너에서 접속할 IS 서버의 별칭 지정 (ex. IS_100)
-  - Host: 192.168.1.100
+  - Host: 211.238.108.79
   - Port : 5555
-  - User : SJH(이니셜)
-  - Password: SJH(이니셜)
+  - User : Administrator
+  - Password: manage
 
 #### STEP 3. Designer 에서 IS 개발 환경 화면인 Service Development 화면을 엽니다.
 
