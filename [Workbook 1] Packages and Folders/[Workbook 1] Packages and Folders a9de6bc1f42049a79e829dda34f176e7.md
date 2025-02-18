@@ -11,7 +11,7 @@
 
 개발을 시작하기 위해서 개발 컴포넌트들을 보관할 Package 와 Folder 가 필요합니다.
 
-#### STEP 1. Software AG Designer 를 열고 기본 workspace을 유지한 다음 Use this as the default and do not ask again 옆의 상자를 선택합니다.
+#### STEP 1. IBM webMethods Designer 를 열고 기본 workspace을 유지한 다음 Use this as the default and do not ask again 옆의 상자를 선택합니다.
 
 ![Untitled](%5BWorkbook%201%5D%20Packages%20and%20Folders%2056c093055c3c4316823cf3b81439a900/Untitled.png)
 
@@ -28,8 +28,8 @@
 ![Untitled](%5BWorkbook%201%5D%20Packages%20and%20Folders%2056c093055c3c4316823cf3b81439a900/new1.png)
 
 - 접속정보 
-  - Name : 디자이너에서 접속할 IS 서버의 별칭 지정 (ex. IS_100)
-  - Host: 211.238.108.79
+  - Name : 디자이너에서 접속할 IS 서버의 별칭 지정 (ex. IS_75)
+  - Host: 211.238.108.75
   - Port : 5555
   - User : Administrator
   - Password: manage
